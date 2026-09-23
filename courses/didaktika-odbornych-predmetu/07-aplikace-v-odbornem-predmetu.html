@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="cs" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Aplikace didaktiky v odborném předmětu · Didaktika odborných předmětů</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237aa2ff'/%3E%3Cpath d='M5 13l11-5 11 5-11 5z' fill='%2308101f'/%3E%3Cpath d='M9 16v5c0 1.5 3.5 3 7 3s7-1.5 7-3v-5l-7 3z' fill='%2308101f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>try{var t=JSON.parse(localStorage.getItem('dps.v1')).theme;if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="chapter" data-course="didaktika-odbornych-predmetu" data-chapter="07-aplikace-v-odbornem-predmetu">
+<article id="chapter">
+
+<!-- ============ 1 ============ -->
+<section id="ostre-nasazeni">
+  <h2>Cvičení pro ostré nasazení</h2>
+  <p>V předchozích kapitolách jste dostali jednotlivé nástroje: cíle, rozbor učiva, hodnocení, komunikaci. Tady je poprvé složíte dohromady. Na konci kapitoly budete mít <b>jednu celou výukovou jednotku</b>, kterou můžete opravdu učit: jeden až dva vyučovací bloky na téma z vašeho předmětu nebo výcviku.</p>
+  <p>Jednotka má šest částí a musí do sebe zapadat jako ozubená kola. Když jedno nesedí, zasekne se celek.</p>
+
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th>Část jednotky</th><th>Otázka, na kterou odpovídá</th></tr></thead>
+    <tbody>
+      <tr><td><b>Cíl</b></td><td>Co bude žák po jednotce umět udělat a podle čeho to poznám?</td></tr>
+      <tr><td><b>Jádro učiva</b></td><td>Co z tématu žák nutně potřebuje, aby cíl splnil? Co může počkat?</td></tr>
+      <tr><td><b>Aktivita žáků</b></td><td>Co žáci sami dělají a jakou metodou je k tomu vedu?</td></tr>
+      <tr><td><b>Ověření</b></td><td>Čím zjistím, že cíle dosáhli všichni, ne jen ti, kdo se hlásí?</td></tr>
+      <tr><td><b>Čas</b></td><td>Kolik minut zabere každá část včetně přesunů a úklidu?</td></tr>
+      <tr><td><b>Rizika</b></td><td>Co může ublížit nebo se pokazit a co udělám, když se to stane (plán B)?</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>Nejdřív si ověřte, že řetěz držíte v hlavě. Doplňte chybějící slova.</p>
+
+  <div class="ex" data-type="cloze" data-id="jednotka-cloze">
+    <script type="application/json">
+    {
+      "title": "Doplňte, jak jednotka drží pohromadě",
+      "text": "Jednotka začíná [[cílem]], který popisuje, co bude umět [[žák]]. Aktivita a [[ověření]] musí s cílem souhlasit: co se má žák naučit, to má ve výuce dělat a to se má také zkoušet. Čas se plánuje v [[minutách]], protože bez čísel nejde plán zkontrolovat. Do plánu patří i to, co udělám, když se něco pokazí, tedy [[plán B]].",
+      "bank": ["výkladem", "učitel", "kapitolách", "hodnocení učitele", "známkách"],
+      "after": "Tyto čtyři věty jsou v podstatě celá kapitola. Zbytek je řemeslo: jak ji udělat tak, aby v pondělí fungovala."
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="vyvoj-jednotky">
+  <h2>Vývoj jednotky krok za krokem</h2>
+  <p>Kdo píše přípravu od začátku hodiny do konce, obvykle zjistí až na konci, že nemá čas na ověření. Osvědčuje se pevné pořadí: nejdřív podmínky, pak cíl a teprve potom to, co se v hodině děje. Na každém kroku se ptejte, co z toho <b>udělají žáci</b>. Seřaďte kroky.</p>
+
+  <div class="ex" data-type="order" data-id="jednotka-postup">
+    <script type="application/json">
+    {
+      "title": "V jakém pořadí jednotku vyvíjet",
+      "items": [
+        { "t": "Zjistit podmínky: počet žáků, jejich předchozí znalosti, délku bloku, vybavení", "why": "Bez podmínek plánujete pro imaginární třídu. Dvanáct žáků na třech strojích vyžaduje jinou jednotku než dvanáct žáků na dvanácti." },
+        { "t": "Napsat cíl (ABCD) tak, aby šel ověřit", "why": "Cíl je z celé jednotky nejdůležitější rozhodnutí. Všechno další se od něj odvozuje." },
+        { "t": "Vybrat jádro učiva, které k cíli nutně vede", "why": "Jádro se odvozuje z cíle, ne naopak. Co k cíli nevede, počká na jinou hodinu nebo se z jednotky vypustí." },
+        { "t": "Navrhnout aktivitu žáků a zvolit metodu", "why": "Teprve když víte, co žák má umět a co k tomu potřebuje, můžete vybrat činnost, která k tomu vede." },
+        { "t": "Určit, jak ověříte, že cíle dosáhli všichni", "why": "Ověření se plánuje s aktivitou, aby na něj zbyl čas. Zároveň zkontrolujete, že zkouší totéž, co cíl slibuje." },
+        { "t": "Rozepsat časový plán v minutách včetně přesunů, úklidu a rezervy", "why": "Čas se dá spočítat až tehdy, když víte, co všechno se bude dělat." },
+        { "t": "Zapsat rizika, bezpečnost a plán B", "why": "Rizika vznikají z aktivit a vybavení, které jste právě navrhli. Plán B zapisujete naposledy, když už víte, co se může pokazit." }
+      ],
+      "after": "Hotový dokument čtete v pořadí cíl, jádro, aktivita, ověření, čas, rizika. Vyvíjíte ho ale tak, aby se v každém kroku hlídal soulad s cílem."
+    }
+    </script>
+  </div>
+
+  <h3>Chyby, které v cizí jednotce vidíte hned</h3>
+  <p>Cizí přípravu se čte snáz než vlastní. Přečtěte si plán jednotky a označte pět míst, která byste při kontrole vrátili k přepracování. Tři úseky jsou v pořádku.</p>
+
+  <div class="ex" data-type="spot" data-id="jednotka-spot">
+    <script type="application/json">
+    {
+      "title": "Najděte v plánu jednotky pět slabých míst",
+      "intro": "<p>Vaše zaměření: <b data-profile-name></b>. Příklad se přizpůsobuje, změnit ho můžete v nastavení vpravo nahoře.</p>",
+      "needed": 0.7,
+      "byProfile": {
+        "ov": { "parts": [
+          "Plán bloku výcviku: 2. ročník, 90 minut, 14 žáků, tři univerzální brusky.\n\n",
+          { "t": "Cíl: Žák obrousí rovinnou plochu na rozměr 20 ± 0,05 mm a zkontroluje ho mikrometrem.", "bad": false, "why": "V pořádku. Cíl začíná žákem, má pozorovatelné sloveso, podmínky i kritérium." },
+          " ",
+          { "t": "Jádro učiva: všechny druhy brusných kotoučů, značení zrnitosti i broušení kulatých ploch.", "bad": true, "why": "Přeplněné jádro. Cíl se týká rovinné plochy, ostatní téma do devadesáti minut nepatří. Co k cíli nevede, se z jednotky vypouští." },
+          "\n\n",
+          { "t": "Průběh: 60 minut výklad a předvedení postupu učitelem na jedné brusce, žáci sledují od stolu.", "bad": true, "why": "Chybí aktivita žáků. Dovednost se nenaučí pozorováním, žák musí obrábět sám a dostávat zpětnou vazbu." },
+          " ",
+          { "t": "Na samostatnou práci zbývá 10 minut, každý žák obrousí a změří svůj kus.", "bad": true, "why": "Nereálný čas. Deset minut a tři stroje znamenají necelé dvě minuty u stroje na žáka (14 žáků). Žáci se nedostanou ani k upnutí." },
+          "\n\n",
+          { "t": "Bezpečnost práce: v plánu se neuvádí, žáci byli poučeni v prvním ročníku.", "bad": true, "why": "U stroje s rotujícím kotoučem patří do plánu bloku ochranné pomůcky, kontrola krytu, upnutí a poučení před zahájením práce. Odkaz na loňské poučení nestačí." },
+          " ",
+          { "t": "Ověření: závěrečný písemný test s deseti otázkami na názvy částí brusky.", "bad": true, "why": "Cíl je dovednost a test ověřuje názvy. Cíl se ověřuje tím, že žák obrousí kus a změří ho podle kontrolního listu." },
+          "\n\n",
+          { "t": "Plán B: když stroj vypadne, žák z jeho stanice měří hotové kusy z minulého bloku a zapisuje odchylky do protokolu.", "bad": false, "why": "V pořádku. Náhradní činnost je smysluplná a vede k témuž cíli, žák neztrácí čas čekáním." },
+          " ",
+          { "t": "Závěr: 10 minut na společný rozbor odchylek podle kontrolního listu.", "bad": false, "why": "V pořádku. Závěr má vyhrazený čas a opírá se o kritéria z cíle." }
+        ] },
+        "inf": { "parts": [
+          "Plán hodiny: informatika, 1. ročník, 45 minut, 24 žáků. Učebna má 15 funkčních počítačů.\n\n",
+          { "t": "Cíl: Žák napíše cyklus for, který vypíše čísla 1 až 10, a spustí ho bez chyb.", "bad": false, "why": "V pořádku. Cíl je pozorovatelný a má kritérium." },
+          " ",
+          { "t": "Jádro učiva: cykly for a while, vnořené cykly, generátory a rekurze.", "bad": true, "why": "Přeplněné jádro. Do 45 minut se vejde jeden cyklus, ostatní by žák jen slyšel a nezvládl." },
+          "\n\n",
+          { "t": "Průběh: 30 minut promítání 40 snímků s ukázkami kódu, žáci sledují.", "bad": true, "why": "Chybí aktivita žáků. Programovat se učí programováním, ne sledováním ukázek." },
+          " ",
+          { "t": "Žáci si nejdřív každý nainstalují vývojové prostředí a napíší tři různé programy, na což zbývá 10 minut.", "bad": true, "why": "Nereálný čas. Instalace sama zabere víc než deset minut a tři programy se nestihnou." },
+          "\n\n",
+          { "t": "Každý žák pracuje sám na svém počítači.", "bad": true, "why": "Nesedí s vybavením. Počítačů je 15 pro 24 žáků. Plán s tím musí počítat (např. práce ve dvojicích) a mít plán B." },
+          " ",
+          { "t": "Ověření: písemný test s výběrem odpovědí o rozdílu mezi for a while.", "bad": true, "why": "Cíl je napsat program, test ověřuje teorii. Ověřením je spuštěný program, který projde zadanými testy." },
+          "\n\n",
+          { "t": "Úvod: učitel řekne cíl a ukáže hotový vzorový výstup, který mají žáci vytvořit.", "bad": false, "why": "V pořádku. Žáci vědí, kam mají dojít, a mohou svou práci porovnat se vzorem." },
+          " ",
+          { "t": "Závěr: každý žák napíše na lístek, co dělá řádek s příkazem for.", "bad": false, "why": "V pořádku. Krátké individuální ověření u všech žáků." }
+        ] },
+        "_": { "parts": [
+          "Plán hodiny: ekonomika, 2. ročník, 45 minut, 26 žáků, téma kalkulace ceny.\n\n",
+          { "t": "Cíl: Žák podle zadaných údajů sestaví kalkulaci ceny výrobku a vypočte prodejní cenu s odchylkou nejvýše 1 Kč.", "bad": false, "why": "V pořádku. Cíl je pozorovatelný, má podmínky i kritérium." },
+          " ",
+          { "t": "Jádro učiva: všechny kalkulační vzorce, členění nákladů, metody kalkulace a účtování nákladů.", "bad": true, "why": "Přeplněné jádro. Cíl vyžaduje jednu kalkulaci. Účtování a další metody do 45 minut nepatří." },
+          "\n\n",
+          { "t": "Průběh: 25 minut diktování definic a vzorců, žáci opisují.", "bad": true, "why": "Chybí aktivita žáků. Kalkulaci se žák naučí tím, že ji počítá, ne opisem." },
+          " ",
+          { "t": "Na samostatné počítání zbývá 5 minut, každý má vypočítat tři kalkulace.", "bad": true, "why": "Nereálný čas. Pětiminutový úsek nestačí ani na jednu kalkulaci s kontrolou." },
+          "\n\n",
+          { "t": "Ověření: ústní zkoušení definic u tří žáků.", "bad": true, "why": "Cíl je počítat, zkouší se definice a jen tři z 26 žáků. Ověření má zjistit, zda umí počítat všichni." },
+          " ",
+          { "t": "Plán B: není, když žáci nestihnou dopočítat, zazvoní a hodina skončí.", "bad": true, "why": "Chybí plán B. Předem se rozhodněte, co se stane při zpoždění: co zkrátíte a kam přesunete dopočítání, ale závěrečné ověření vynechat nelze." },
+          "\n\n",
+          { "t": "Úvod – 5 minut: učitel ukáže hotovou kalkulaci a řekne, co budou žáci po hodině umět.", "bad": false, "why": "V pořádku. Krátký úvod s příkladem výsledku." },
+          " ",
+          { "t": "Závěr – 5 minut: každý žák napíše na lístek výslednou cenu a jeden krok, který mu dělal potíže.", "bad": false, "why": "V pořádku. Ověření u všech žáků a zpětná vazba pro učitele." }
+        ] }
+      }
+    }
+    </script>
+  </div>
+
+  <h3>Trojúhelník soulad</h3>
+  <p>Nejčastější skryté selhání jednotky je neshoda mezi <b>cílem, aktivitou a ověřením</b>. Cíl slibuje jedno, žáci dělají druhé a zkouší se třetí. Už z první kapitoly znáte princip constructive alignment. Tady ho použijete na hotové trojice.</p>
+
+  <figure class="fig"><svg viewBox="0 0 400 290" role="img" aria-label="Trojúhelník: nahoře cíl, vlevo dole aktivita žáků, vpravo dole ověření. Všechny tři strany musí souhlasit.">
+    <g fill="none" stroke="var(--line)" stroke-width="2">
+      <line x1="160" y1="58" x2="98" y2="196"/>
+      <line x1="240" y1="58" x2="302" y2="196"/>
+      <line x1="188" y1="218" x2="212" y2="218"/>
+    </g>
+    <g fill="var(--surface-2)" stroke="var(--accent)" stroke-width="2">
+      <rect x="110" y="14" width="180" height="44" rx="10"/>
+      <rect x="8" y="196" width="180" height="44" rx="10"/>
+      <rect x="212" y="196" width="180" height="44" rx="10"/>
+    </g>
+    <g fill="currentColor" font-size="18" text-anchor="middle" font-weight="600">
+      <text x="200" y="43">Cíl</text>
+      <text x="98" y="225">Aktivita žáků</text>
+      <text x="302" y="225">Ověření</text>
+    </g>
+    <g fill="var(--tx-2)" font-size="16">
+      <text x="118" y="132" text-anchor="end">vede k cíli</text>
+      <text x="282" y="132" text-anchor="start">ověřuje cíl</text>
+      <text x="200" y="270" text-anchor="middle">ověřuje se to, co žáci procvičovali</text>
+    </g>
+  </svg><figcaption>Všechny tři strany musí souhlasit. Když jedna nesedí, jednotka nefunguje, ať jsou zbylé části sebelepší.</figcaption></figure>
+
+  <div class="ex" data-type="classify" data-id="jednotka-soulad">
+    <script type="application/json">
+    {
+      "title": "Sedí cíl, aktivita a ověření?",
+      "intro": "<p>Každá karta je trojice cíl, aktivita a ověření. Rozhodněte, zda spolu souhlasí, nebo kde se rozcházejí.</p>",
+      "instant": true,
+      "bins": [
+        { "id": "ok", "name": "Sedí", "hint": "všechny tři strany souhlasí" },
+        { "id": "ov", "name": "Ověření neověřuje cíl" },
+        { "id": "ak", "name": "Aktivita k cíli nevede" }
+      ],
+      "byProfile": {
+        "ov": { "cards": [
+          { "t": "<b>Zapojení:</b> žák sestaví zapojení podle schématu | žáci zapojení sami sestavují | kontrolní list při zkoušce zapojení", "bin": "ok", "why": "Cíl je dovednost, žáci ji procvičují a ověřuje se jejím předvedením." },
+          { "t": "<b>Svařování:</b> žák svaří koutový spoj bez vad | učitel svařuje a žáci sledují | hodnocení svaru podle kritérií", "bin": "ak", "why": "Žáci svařování jen sledují a nemají příležitost si ho procvičit. Ověření samo je v pořádku, aktivita k cíli nevede." },
+          { "t": "<b>Měření:</b> žák změří průměr hřídele mikrometrem | žáci měří vlastní kusy | písemný test s výběrem odpovědí", "bin": "ov", "why": "Žáci se učí měřit, ale test ověří jen znalost. Ověřením má být měření hřídele se zápisem výsledku." },
+          { "t": "<b>Řezná kapalina:</b> žák vysvětlí, proč se používá | dvojice si princip vysvětlují a hledají příklady | ústní vysvětlení vlastními slovy", "bin": "ok", "why": "Cíl je porozumět, žáci vysvětlují a vysvětlení se také ověřuje." },
+          { "t": "<b>Diagnostika:</b> žák určí příčinu závady na zadaném zařízení | učitel závadu najde a vysvětlí postup | žák určí příčinu na nové závadě", "bin": "ak", "why": "Žák se závadu nikdy neučil hledat sám, jen poslouchal. K cíli musí vést vlastní pátrání s vedením." },
+          { "t": "<b>Broušení nože:</b> žák vybrousí nůž na správný úhel | nácvik na vlastním noži s kontrolou učitele | písemný test na názvy úhlů", "bin": "ov", "why": "Nácvik i cíl souhlasí. Test ale zkouší názvy, ne to, zda je nůž vybroušený správně." },
+          { "t": "<b>Bezpečnost:</b> žák při práci na vrtačce dodržuje zásady | rozbor nehody a nácvik | pozorování při práci podle kontrolního listu", "bin": "ok", "why": "Postoj a chování se ověřuje pozorováním při skutečné práci, nikoli písemným testem." },
+          { "t": "<b>Volba otáček:</b> žák zdůvodní volbu řezných podmínek | žáci opisují tabulku z tabule | žák zdůvodní volbu u nové součásti", "bin": "ak", "why": "Opisování tabulky žáka nenaučí volbu odůvodnit. Potřebuje řešit úlohy s různými zadáními." },
+          { "t": "<b>Posuvné měřidlo:</b> žák změří s chybou do 0,1 mm | nácvik měření se zpětnou vazbou | otázka „Rozumíte?“ na závěr", "bin": "ov", "why": "Otázka „Rozumíte?“ nic neověří. Ověřením je změřený kus s kontrolou chyby." }
+        ] },
+        "inf": { "cards": [
+          { "t": "<b>Cyklus:</b> žák napíše program s cyklem for | žáci programy píší ve dvojicích | spuštění programu proti zadaným testům", "bin": "ok", "why": "Cíl je dovednost, aktivita je psaní programu a ověřuje se spuštěním." },
+          { "t": "<b>Podmínky:</b> žák napíše funkci s podmínkou if | žáci funkce píší a ladí | písemný test s výběrem odpovědí o syntaxi", "bin": "ov", "why": "Žáci píší, ale test ověřuje jen znalost syntaxe. Ověřením je funkce, která projde testy." },
+          { "t": "<b>Databáze:</b> žák navrhne tabulku pro zadanou situaci | učitel projde jeden návrh a žáci sledují | žák navrhne tabulku pro novou situaci", "bin": "ak", "why": "Bez vlastního navrhování se návrh tabulky nenaučí. Aktivita k cíli nevede." },
+          { "t": "<b>Chyby:</b> žák najde a opraví chybu v zadaném kódu | žáci ladí kód s cíleně vloženými chybami | opravený kód projde testy", "bin": "ok", "why": "Cíl, činnost i ověření se týkají hledání chyb." },
+          { "t": "<b>Bezpečné heslo:</b> žák vytvoří heslo splňující kritéria | učitel vysvětluje pravidla pro hesla | žák vytvoří heslo a zdůvodní volbu", "bin": "ak", "why": "Výklad pravidel nestačí. Žák si volbu hesla musí sám vyzkoušet." },
+          { "t": "<b>Síť:</b> žák určí adresu sítě z IP adresy a masky | žáci počítají zadané příklady | ústní otázka „Rozumíte podsítím?“", "bin": "ov", "why": "Otázka „Rozumíte?“ nezjistí, zda žák umí adresu určit. Ověřením je výpočet na dalším příkladu." },
+          { "t": "<b>Webová stránka:</b> žák vytvoří stránku podle zadání | žáci stránku tvoří a porovnávají se vzorem | hodnocení stránky podle kritérií", "bin": "ok", "why": "Ověření se opírá o kritéria zadání a žáci mají příležitost si výsledek zkontrolovat." },
+          { "t": "<b>Zálohování:</b> žák zvolí a zdůvodní strategii zálohování | žáci porovnávají scénáře ve skupinách | test na názvy typů záloh", "bin": "ov", "why": "Cíl je zvolit a zdůvodnit, ověřuje se znalost názvů. Ověřením má být zdůvodnění volby ve scénáři." }
+        ] },
+        "_": { "cards": [
+          { "t": "<b>Kalkulace:</b> žák sestaví kalkulaci ceny | žáci počítají zadání ve dvojicích | kontrola výsledku s tolerancí 1 Kč", "bin": "ok", "why": "Cíl je dovednost, žáci počítají a výsledek se kontroluje podle kritéria." },
+          { "t": "<b>Reklamace:</b> žák vyřídí reklamaci podle postupu | hra rolí se zákazníkem | písemný test o lhůtách", "bin": "ov", "why": "Hra rolí je v pořádku, test ale zkouší jiné věci. Ověřením je vedení reklamace podle hodnoticího archu." },
+          { "t": "<b>Žádost:</b> žák vyplní žádost o dávku podle případu | učitel žádost vyplňuje a žáci sledují | žák vyplní žádost pro nový případ", "bin": "ak", "why": "Bez vlastního vyplňování se žák žádost nenaučí vyplnit. Aktivita k cíli nevede." },
+          { "t": "<b>Objednávka:</b> žák zpracuje objednávku hosta | práce s modelovou rezervací ve dvojicích | kontrolní list zpracování rezervace", "bin": "ok", "why": "Cíl i ověření se týkají zpracování a žáci na modelu procvičují totéž." },
+          { "t": "<b>Kompozice:</b> žák navrhne plakát s čitelnou kompozicí | žáci si prohlédnou hotové plakáty | žák navrhne plakát podle kritérií", "bin": "ak", "why": "Prohlížení cizích prací nenaučí navrhovat. Žák musí vlastní návrh vytvořit a upravit podle zpětné vazby." },
+          { "t": "<b>Rozpočet:</b> žák sestaví rozpočet akce | žáci sestavují rozpočet ve skupinách | písemný test na definice pojmů", "bin": "ov", "why": "Žáci rozpočet sestavují, ale test zkouší definice. Ověřením má být hotový rozpočet podle kritérií." },
+          { "t": "<b>Daně:</b> žák rozliší přímé a nepřímé daně | třídění příkladů do skupin | třídění nových příkladů", "bin": "ok", "why": "Rozlišování se procvičuje a ověřuje třídění, cíl souhlasí s aktivitou i ověřením." },
+          { "t": "<b>Prezentace:</b> žák obhájí svůj návrh před třídou | žáci návrh píší doma | hodnocení obhajoby podle archu", "bin": "ak", "why": "Obhajoba se nedá nacvičit psaním doma. Žák musí obhajovat nahlas a s reakcí posluchačů." }
+        ] }
+      }
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="aktivizujici-metody">
+  <h2>Aktivizující metody: kdy se vyplatí a kdy ne</h2>
+  <p>Aktivizující metody nejsou samoúčelné. Sáhnete po nich tehdy, když má žák něco <b>dělat, rozhodovat nebo obhajovat</b>, ne jen poslouchat. Každá něco stojí: čas na přípravu, vybavení, riziko chaosu. Proto ji volíte podle cíle a podmínek, ne podle toho, co je právě populární. V české didaktice se hry, simulace a problémové úlohy běžně řadí mezi metody aktivizující (viz např. Maňák a Švec, <i>Výukové metody</i>).</p>
+
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th>Metoda</th><th>K čemu se hodí</th><th>Kdy ne</th><th>Co stojí</th></tr></thead>
+    <tbody>
+      <tr><td><b>Didaktická hra</b> (kvíz s pravidly, soutěž týmů, karty)</td><td>Opakování a procvičení, motivace, uvolnění po výkladu</td><td>Při prvním seznámení se složitou látkou. Když by soutěž zesměšnila slabší žáky.</td><td>Příprava pravidel a materiálů; čas na rozbor</td></tr>
+      <tr><td><b>Simulace a hra rolí</b></td><td>Nácvik jednání v situaci (zákazník, pohovor, porucha na modelu). Chybu žák udělá bez následků.</td><td>Když žáci neznají základní postup. Když by se hra pletla s ostrou činností na skutečném stroji.</td><td>Čas na role, vybavení či simulátor, rozbor</td></tr>
+      <tr><td><b>Problémová úloha, případová studie</b></td><td>Analýza a rozhodování: diagnostika závady, rozbor případu, volba varianty</td><td>Když žák nemá základní znalosti, z nichž by řešení skládal. Nehodí se pro nácvik jednoduchého úkonu.</td><td>Čas; učitel vede otázkami, neřeší za žáky</td></tr>
+      <tr><td><b>Projekt</b></td><td>Delší práce s výsledkem: výrobek, návrh, prezentace</td><td>Pro jednu hodinu. Když si nejste jisti základy.</td><td>Dny až týdny; hodnocení výsledku i postupu</td></tr>
+      <tr><td><b>Skupinová práce</b></td><td>Sdílení práce, různé pohledy, aktivních je víc žáků</td><td>U dovednosti, kterou musí každý zvládnout sám (svařování, měření). Ve skupině ji nacvičí jen ti aktivnější.</td><td>Role a pravidla; hlídání, aby nikdo nejel „zadarmo“</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout callout--warn">
+    <div>
+      <div class="cl-title">Hra bez rozboru je jen zábava</div>
+      <p>Aktivizující metoda nenahradí cíl ani ověření. Žák se z ní poučí až při společném rozboru: co jsme dělali, co vyšlo, co bychom udělali jinak. Na rozbor proto vyhraďte čas předem (viz plánovač v pozdější části kapitoly).</p>
+    </div>
+  </div>
+
+  <p>Vyzkoušejte si výběr na situacích z praxe. Jedna situace je záměrně taková, že aktivizující metoda není potřeba: někdy je nejlepší krátký výklad s ukázkou.</p>
+
+  <div class="ex" data-type="match" data-id="metoda-situace">
+    <script type="application/json">
+    {
+      "title": "Situace a vhodná metoda",
+      "leftTitle": "Situace",
+      "rightTitle": "Metoda",
+      "byProfile": {
+        "ov": {
+          "pairs": [
+            { "l": "V posledních deseti minutách bloku chcete, aby si žáci procvičili názvy nástrojů a značky.", "r": "Didaktická hra (kvíz v týmech)" },
+            { "l": "Budoucí opraváři mají poprvé přijmout zakázku od zákazníka s vadným výrobkem.", "r": "Simulace, hra rolí" },
+            { "l": "Cvičný stroj vibruje a žáci mají určit možné příčiny a navrhnout, co prověří jako první.", "r": "Problémová úloha" },
+            { "l": "Třída má za dva týdny vyrobit sadu pomůcek pro první ročník včetně výkresů a kalkulace.", "r": "Projekt" },
+            { "l": "Žáci poprvé vidí bezpečný postup upnutí obrobku.", "r": "Výklad s předvedením učitelem, potom nácvik" },
+            { "l": "Čtyři žáci mají společně sestavit plán údržby zařízení, každý má podklady k jedné části.", "r": "Skupinová práce s rozdělenými rolemi" }
+          ],
+          "extra": ["Samostatné čtení textu bez úkolů"]
+        },
+        "inf": {
+          "pairs": [
+            { "l": "Před písemkou chcete v posledních minutách zopakovat pojmy z HTML a CSS.", "r": "Didaktická hra (kvíz v týmech)" },
+            { "l": "Žáci mají zažít schůzku se zákazníkem, který zadává požadavky na webovou stránku.", "r": "Simulace, hra rolí" },
+            { "l": "Aplikace vypíše chybu a žáci mají zjistit příčinu z chybové hlášky a navrhnout opravu.", "r": "Problémová úloha" },
+            { "l": "Třída má za měsíc navrhnout, vytvořit a předvést jednoduchý web pro místní spolek.", "r": "Projekt" },
+            { "l": "Žáci nikdy neviděli, jak se v editoru zakládá projekt a spouští program.", "r": "Výklad s předvedením učitelem, potom nácvik" },
+            { "l": "Čtyři žáci mají společně navrhnout databázi, každý zpracuje jednu část a pak je sladí.", "r": "Skupinová práce s rozdělenými rolemi" }
+          ],
+          "extra": ["Samostatné čtení textu bez úkolů"]
+        },
+        "_": {
+          "pairs": [
+            { "l": "Před písemkou chcete v posledních minutách zopakovat pojmy z daní a pojištění.", "r": "Didaktická hra (kvíz v týmech)" },
+            { "l": "Žáci mají zažít jednání s klientem, který reklamuje zboží nebo službu.", "r": "Simulace, hra rolí" },
+            { "l": "Firma měla nečekaný pokles tržeb a žáci mají z podkladů určit možné příčiny a navrhnout opatření.", "r": "Problémová úloha" },
+            { "l": "Třída má za měsíc připravit a předvést plán školní minifirmy včetně rozpočtu.", "r": "Projekt" },
+            { "l": "Žáci poprvé vidí, jak se počítá čistá mzda z hrubé.", "r": "Výklad s předvedením učitelem, potom nácvik" },
+            { "l": "Čtyři žáci mají společně sestavit rozpočet akce, každý zpracuje jednu položku a pak je sladí.", "r": "Skupinová práce s rozdělenými rolemi" }
+          ],
+          "extra": ["Samostatné čtení textu bez úkolů"]
+        }
+      },
+      "after": "Neexistuje metoda, která je „nejlepší“. Rozhoduje cíl, počet žáků, čas a vybavení."
+    }
+    </script>
+  </div>
+
+  <h3>Když nemáte čas ani vybavení</h3>
+  <p>Na papíře je všechno snadné. Ve skutečné třídě je méně strojů, než je žáků, kopírka se pokazí a hodina má 45 minut. Vyzkoušejte, jak zvolíte aktivitu, když vám cíl zůstává a podmínky se zhorší.</p>
+
+  <div class="ex" data-type="scenario" data-id="jednotka-scenar">
+    <script type="application/json">
+    {
+      "title": "Málo strojů, málo času",
+      "start": "n1",
+      "byProfile": {
+        "ov": {
+          "nodes": {
+            "n1": {
+              "who": "Dílna, blok 90 minut",
+              "text": "Máte 12 žáků, tři vrtačky a na samostatnou práci asi 50 minut. Cíl: každý žák sám upne obrobek a vyvrtá dva otvory podle výkresu s odchylkou polohy do ±0,3 mm. Jak zorganizujete práci?",
+              "choices": [
+                { "t": "Žáci půjdou k vrtačkám postupně, zbytek počká, až na ně přijde řada.", "to": "e1", "pts": 0, "fb": "Devět žáků čeká a poslední se ke stroji dostane pozdě. Čekání není aktivita." },
+                { "t": "Čtyři skupiny po třech žácích a čtyři stanice: vrtání (u strojů jsem já), rýsování a kontrola výkresu, měření hotových kusů podle kontrolního listu, zápis a příprava. Rotace po 12 minutách.", "to": "n2", "pts": 2, "fb": "Aktivní je celá třída a vy jste u stanice s největším rizikem." },
+                { "t": "Vrtání předvedu sám a žáci si zapisují postup. Samostatné vrtání odložím na příště.", "to": "e2", "pts": 0, "fb": "Je to bezpečné a rychlé, ale žáci si dovednost nevyzkoušejí, takže cíl se nesplní." }
+              ]
+            },
+            "n2": {
+              "text": "Po první rotaci vidíte, že žáci na stanici měření si nejsou jistí, jak číst a zapisovat výsledek, a zdržují se. Zbývá 36 minut.",
+              "choices": [
+                { "t": "Rotaci na 3 minuty zastavím, na jednom kusu ukážu čtení a zápis a pokračujeme.", "to": "e3", "pts": 2, "fb": "Chybu opravíte u všech naráz a hned. Ztráta tří minut se vrátí kvalitou měření." },
+                { "t": "Nechám je, ať se poradí mezi sebou. U vrtaček mám dost práce.", "to": "e4", "pts": 1, "fb": "U vrtaček zůstat je správně. Chyba v měření ale zůstane u řady dvojic bez opravy." },
+                { "t": "Měření zruším a všechen čas dám vrtání.", "to": "e5", "pts": 0, "fb": "Kritérium cíle (odchylka do ±0,3 mm) nelze bez měření ověřit." }
+              ]
+            },
+            "e1": { "end": true, "title": "Čekání místo práce", "text": "Většina žáků stála bez práce a několik z nich se ke stroji vůbec nedostalo.", "lesson": "Málo strojů neznamená málo práce. Ostatní žáci mohou zatím dělat činnosti, které k cíli také patří." },
+            "e2": { "end": true, "title": "Cíl se nesplnil", "text": "Postup si žáci zapsali, ale nikdo si ho nevyzkoušel.", "lesson": "Praktický cíl se nedá splnit pozorováním. Když chybí vybavení, upravte organizaci, ne cíl." },
+            "e3": { "end": true, "title": "Rotace doběhla", "text": "Všichni žáci prošli všemi stanicemi, měření bylo správné a v rozboru zbylo dost času.", "lesson": "Dobrá organizace je taková, kde pracují všichni a učitel vidí na nejrizikovější místo." },
+            "e4": { "end": true, "title": "Rotace s dírou", "text": "Žáci vrtali i měřili, ale měření bylo nespolehlivé a rozbor musel opravit chyby, které šly opravit hned.", "lesson": "Když se chyba opakuje u víc dvojic, opravte ji společně a krátce." },
+            "e5": { "end": true, "title": "Bez ověření", "text": "Všichni vrtali, ale nikdo pořádně nezjistil, jestli jsou otvory ve správné poloze.", "lesson": "Bez měření cíl neověříte. Kritérium z cíle je součástí práce, ne příloha." }
+          }
+        },
+        "inf": {
+          "nodes": {
+            "n1": {
+              "who": "Učebna, 45 minut",
+              "text": "Máte 24 žáků, ale jen 15 funkčních počítačů. Cíl: žák napíše program s cyklem for, který vypíše násobilku čísla 7, a spustí ho proti třem zadaným testům. Jak zorganizujete práci?",
+              "choices": [
+                { "t": "Prvních 15 žáků programuje a ostatní sledují přes rameno. Po 10 minutách se vymění.", "to": "e1", "pts": 0, "fb": "Polovina třídy jen sleduje a výměny stojí čas. K cíli se každý dostane pozdě." },
+                { "t": "Žáci pracují ve dvojicích (pilot a navigátor), role se po sedmi minutách vymění. Nakonec spustí program i druhý z dvojice.", "to": "n2", "pts": 2, "fb": "Počítačů stačí, aktivní je celá třída a role se střídají." },
+                { "t": "Program napíšu na tabuli a žáci ho opíší do sešitu. Spouštění nechám na příště.", "to": "e2", "pts": 0, "fb": "Opisování programu nenaučí psát program. Cíl vyžaduje spuštění." }
+              ]
+            },
+            "n2": {
+              "text": "Po deseti minutách vidíte, že v několika dvojicích píše jen jeden žák a druhý se dívá. Zbývá 25 minut.",
+              "choices": [
+                { "t": "Pevné role s výměnou po sedmi minutách oznámím nahlas, hlídám je a na konci vyžaduji od každého lístek: co dělá řádek s příkazem for.", "to": "e3", "pts": 2, "fb": "Střídání rolí je vynucené a individuální ověření odhalí, kdo cíl nesplnil." },
+                { "t": "Nechám to být. Hlavně ať se program spustí.", "to": "e4", "pts": 1, "fb": "Program se spustí, ale kdo psal, ten se něco naučil. Druhý žák se jen díval." },
+                { "t": "Před třídou pojmenuji, kdo nepracuje.", "to": "e5", "pts": 0, "fb": "Veřejné pojmenování žáky zahanbí a zhorší spolupráci ve dvojici." }
+              ]
+            },
+            "e1": { "end": true, "title": "Polovina třídy bez práce", "text": "Žáci u počítačů psali, ostatní se dívali a mnozí ztratili pozornost.", "lesson": "Nedostatek vybavení řešte organizací práce (dvojice, střídání), ne čekáním." },
+            "e2": { "end": true, "title": "Cíl se nesplnil", "text": "Žáci program opsali, ale nikdo si nevyzkoušel ani jeden.", "lesson": "Opisování nezvládá cíl. Když chybí počítače, upravte organizaci, ne cíl." },
+            "e3": { "end": true, "title": "Práce ve dvojicích funguje", "text": "Každý žák psal i navigoval a lístek ukázal, kdo cíl nesplnil.", "lesson": "Dvojice s pevnými rolemi a individuální ověření vyřeší nedostatek vybavení i pasivitu." },
+            "e4": { "end": true, "title": "Splněno jen částečně", "text": "Většina programů běžela, ale několik žáků se jen dívalo.", "lesson": "Dvojice bez vynucených rolí a bez ověření u každého skrývá pasivitu." },
+            "e5": { "end": true, "title": "Zhoršená spolupráce", "text": "Pojmenovaný žák se stáhl a dvojice přestaly komunikovat.", "lesson": "Pasivitu řešte změnou pravidel, ne hanbou před třídou." }
+          }
+        },
+        "_": {
+          "nodes": {
+            "n1": {
+              "who": "Učebna, 45 minut",
+              "text": "Máte 26 žáků a připravené zadání kalkulace ceny. Kopírka nefunguje, takže máte jen 13 vytištěných zadání. Cíl: žák podle zadaných údajů sestaví kalkulaci a vypočte prodejní cenu s odchylkou do 1 Kč. Co uděláte?",
+              "choices": [
+                { "t": "Žáci si pracují ve dvojicích: jeden počítá, druhý kontroluje a zapisuje. V polovině se role vymění.", "to": "n2", "pts": 2, "fb": "Zadání stačí, pracují všichni a role se střídají." },
+                { "t": "Pošlu zadání po třídě, každý si ho přečte a počítá zpaměti.", "to": "e1", "pts": 0, "fb": "Zadání kolující po třídě zabere čas a počítání zpaměti není pro kalkulaci vhodné." },
+                { "t": "Aktivitu zruším a postup kalkulace přednesu výkladem.", "to": "e2", "pts": 0, "fb": "Poslech výkladu žáka kalkulovat nenaučí. Cíl se nesplní." }
+              ]
+            },
+            "n2": {
+              "text": "Po deseti minutách vidíte, že v několika dvojicích počítá jen jeden žák a druhý se dívá. Zbývá 20 minut.",
+              "choices": [
+                { "t": "Zavedu výměnu rolí po pěti minutách a každý žák si zapisuje mezivýsledek na vlastní lístek, který vyberu.", "to": "e3", "pts": 2, "fb": "Vynucená výměna a individuální zápis ukážou, kdo počítá a kdo ne." },
+                { "t": "Nechám to být. Hlavně ať dopočítají.", "to": "e4", "pts": 1, "fb": "Dopočítají, ale u části dvojic počítá jen jeden. Cíl u druhého nevíte, zda splnil." },
+                { "t": "Před třídou pojmenuji, kdo nepracuje.", "to": "e5", "pts": 0, "fb": "Veřejné pojmenování žáky zahanbí a zhorší spolupráci ve dvojici." }
+              ]
+            },
+            "e1": { "end": true, "title": "Ztracené minuty", "text": "Zadání kolovalo po třídě a do výpočtů se žáci pustili až po deseti minutách. Většina nestihla dokončit.", "lesson": "Chybějící kopie řešte tím, že pracují dvojice nebo promítnete zadání, ne kolováním papíru." },
+            "e2": { "end": true, "title": "Cíl se nesplnil", "text": "Žáci postup slyšeli, ale nikdo si kalkulaci nezkusil.", "lesson": "Praktický cíl se nesplní výkladem. Když chybí materiál, upravte organizaci, ne cíl." },
+            "e3": { "end": true, "title": "Dvojice pracují", "text": "Každý žák počítal i kontroloval a lístky ukázaly, kdo cíl nesplnil.", "lesson": "Vynucené role a individuální ověření vyřeší nedostatek materiálu i pasivitu." },
+            "e4": { "end": true, "title": "Splněno jen částečně", "text": "Kalkulace vznikly, ale u části dvojic je počítal jen jeden žák.", "lesson": "Dvojice bez vynucených rolí a bez individuálního ověření skrývá pasivitu." },
+            "e5": { "end": true, "title": "Zhoršená spolupráce", "text": "Pojmenovaný žák se stáhl a dvojice přestaly komunikovat.", "lesson": "Pasivitu řešte změnou pravidel, ne hanbou před třídou." }
+          }
+        }
+      }
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="klicove-kompetence">
+  <h2>Klíčové kompetence bez slepých frází</h2>
+  <p>Do příprav se často píše řádek „rozvíjené kompetence“ a pod každou hodinu se opíše týchž šest slov. Pak nic neznamená. Poctivé pravidlo je jednoduché: kompetenci uveďte jen tehdy, když ji aktivita <b>opravdu vyžaduje</b> a vy umíte říct, kde ji u žáků uvidíte. Jedna aktivita obvykle rozvíjí víc kompetencí. Do plánu stačí jedna až dvě, které jsou v zadání nejvíc vidět.</p>
+
+  <div class="callout callout--rev">
+    <div>
+      <div class="cl-title">Jak se kompetence pojmenovávají (stav k 9/2026, ověřte)</div>
+      <p>V rámcových vzdělávacích programech pro střední odborné vzdělávání a v profilech absolventů oborů se uvádí osm klíčových kompetencí: kompetence k učení, k řešení problémů, komunikativní, personální a sociální, občanské kompetence a kulturní povědomí, kompetence k pracovnímu uplatnění a podnikatelským aktivitám, matematické kompetence a kompetence využívat prostředky informačních a komunikačních technologií a pracovat s informacemi. Starší materiály, včetně původní prezentace tohoto kurzu, uvádějí jen šest zkrácených názvů. Kurikulární dokumenty se revidují. Přesné znění a případné změny si vždy ověřte v RVP svého oboru a ve školním vzdělávacím programu.</p>
+    </div>
+  </div>
+
+  <p>Jak takové přiřazení vypadá v praxi? Zkuste ke každé aktivitě přiřadit kompetenci, která je v ní nejvíc vidět. Dvě kompetence jsou navíc a k žádné z aktivit nepatří.</p>
+
+  <div class="ex" data-type="match" data-id="kompetence-match">
+    <script type="application/json">
+    {
+      "title": "Aktivita a kompetence, kterou rozvíjí především",
+      "leftTitle": "Aktivita žáků",
+      "rightTitle": "Kompetence",
+      "pairs": [
+        { "l": "U zadané poruchy žáci stanoví možné příčiny, vyřadí neprůkazné a navrhnou, co změřit jako první.", "r": "Kompetence k řešení problémů" },
+        { "l": "Žák sám najde v katalogu nebo tabulkách chybějící údaj a zapíše, odkud ho vzal.", "r": "Kompetence k učení" },
+        { "l": "Družstvo před třídou zdůvodní svůj postup a odpoví na otázky spolužáků.", "r": "Komunikativní kompetence" },
+        { "l": "Skupina si rozdělí role, dohodne postup a na konci zhodnotí, jak spolupracovala.", "r": "Personální a sociální kompetence" },
+        { "l": "Žáci přepočítají jednotky a odhadnou, zda výsledek dává smysl.", "r": "Matematické kompetence" },
+        { "l": "Žáci zpracují naměřené hodnoty v tabulkovém editoru a vytvoří z nich graf.", "r": "Kompetence využívat ICT a pracovat s informacemi" }
+      ],
+      "extra": ["Občanské kompetence a kulturní povědomí", "Kompetence k pracovnímu uplatnění a podnikatelským aktivitám"],
+      "after": "Všimněte si, že každá aktivita rozvíjí i další kompetence (obhajoba postupu je i komunikace). Do plánu pište jen tu, kterou v ní opravdu vidíte."
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="efektivita">
+  <h2>Jak poznáte, že jednotka fungovala</h2>
+  <p>Až jednotka skončí, začíná nejužitečnější část: zjistit, co se povedlo. Efektivita výuky není to samé jako známky žáků. Ptáte se, zda <b>cíle dosáhli žáci</b> (a kolik jich), zda <b>průběh</b> odpovídal plánu a zda čas a úsilí byly úměrné. Informace máte ze čtyř zdrojů.</p>
+
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th>Zdroj</th><th>Na co se ptá</th><th>Jak ho získat</th></tr></thead>
+    <tbody>
+      <tr><td><b>Výsledky žáků vůči cíli</b></td><td>Kolik žáků splnilo kritérium cíle?</td><td>Kontrolní list ke zkoušce dovednosti nebo krátká závěrečná úloha; zapište počet (např. 9 z 12)</td></tr>
+      <tr><td><b>Pozorování</b></td><td>Kde se žáci zasekli, kdo nepracoval, co se opakovalo?</td><td>Poznámky při obcházení, dvě až tři věty po hodině</td></tr>
+      <tr><td><b>Zpětná vazba žáků</b></td><td>Co jim pomohlo učit se a co bylo nejasné?</td><td>Lístek na konci se dvěma otázkami</td></tr>
+      <tr><td><b>Čas</b></td><td>Kde se plán rozešel se skutečností?</td><td>Zapsat skutečné minuty vedle plánovaných</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>Jedno číslo nestačí. Hra se žákům líbila (zpětná vazba), ale závěrečná úloha dopadla špatně (výsledek): hra bavila, ale neučila. Nebo úloha dopadla dobře, ale trvala dvakrát déle, než jste plánovali: cíl je splněn, ale plán je potřeba předělat.</p>
+  <p>Předem si také určete, co budete považovat za úspěch, například „aspoň 9 z 12 žáků splní kritérium“. Číslo není norma, je to vaše rozhodnutí. Když ho neurčíte předem, po hodině ho přizpůsobíte tomu, co vyšlo. Vyzkoušejte to na dvou příkladech.</p>
+
+  <div class="ex" data-type="rewrite" data-id="efektivita-prepis">
+    <script type="application/json">
+    {
+      "title": "Zpětná vazba a kritérium úspěchu",
+      "need": 0.75,
+      "items": [
+        {
+          "title": "Otázka pro lístek zpětné vazby",
+          "situation": "Na konci jednotky chcete od žáků zjistit, co jim pomohlo učit se a kde se zasekli. Na lístek napíšete otázku.",
+          "bad": "Líbila se vám dnešní hodina?",
+          "task": "Přepište otázku tak, aby zjišťovala, co žákovi při učení pomohlo (nebo nepomohlo), týkala se konkrétní činnosti a nedalo se odpovědět „ano“ ani „ne“.",
+          "checks": [
+            { "label": "Nedá se odpovědět ano nebo ne", "all": ["^(?!\\s*(libi\\w*|byl\\w*|je|jsou|mate|ma|pomohl\\w*|rozumel\\w*|chapal\\w*|zvladl\\w*|bavil\\w*)\\b)"], "hint": "Nezačínejte slovesem, na které se odpoví „ano“ (líbila se, bylo, máte…). Začněte slovy co, jak, kde, proč." },
+            { "label": "Ptá se, co pomohlo nebo bylo nejasné", "any": ["pomohl", "pomaha", "nejasn", "nepochopil", "zmenil", "zmenit", "zasekl", "zdrzel", "naucil", "pochopit", "obtiz", "tezk", "co by vam"], "hint": "Zeptejte se, co žákovi pomohlo pochopit učivo a kde se zasekl." },
+            { "label": "Váže se ke konkrétní činnosti nebo cíli", "any": ["aktivit", "cviceni", "uloh", "postup", "praci", "praci", "skupin", "dvojic", "\\bhr[aeuy]\\b", "vyklad", "ukazk", "\\bcil"], "hint": "Uveďte činnost, o které se ptáte (např. práce ve dvojicích, ukázka, úloha)." },
+            { "label": "Je formulována jako otázka nebo výzva", "any": ["\\?", "napiste", "uvedte", "doplnte", "popiste"], "hint": "Ukončete otazníkem nebo výzvou „napište…“." }
+          ],
+          "model": "Co vám dnes při práci ve dvojicích nejvíc pomohlo pochopit postup a kde jste se zasekli?",
+          "minLen": 25
+        },
+        {
+          "title": "Kritérium úspěchu jednotky",
+          "situation": "Do plánu jednotky píšete, podle čeho po hodině poznáte, že fungovala. Zatím tam stojí věta, která se nedá ověřit.",
+          "bad": "Jednotka je úspěšná, když se žákům bude líbit.",
+          "task": "Přepište větu jako kritérium úspěchu, které jde po hodině zjistit. Uveďte, kolik žáků, co mají splnit, čím to zjistíte a jak to dopadne s časem.",
+          "checks": [
+            { "label": "Uvádí počet nebo podíl žáků", "any": ["\\d+ ?(z|ze) \\d+", "\\d+ ?%", "\\d+ zaku", "vetsin", "polovin", "vsichni", "kazdy", "alespon \\d", "aspon \\d"], "hint": "Napište číslo nebo podíl (např. „aspoň 9 z 12 žáků“)." },
+            { "label": "Říká, čím se to zjistí", "any": ["kontroln", "uloh", "test", "list", "zkousk", "pozorov", "kriteri", "protokol", "hodnotic", "arch"], "hint": "Uveďte nástroj: závěrečná úloha, kontrolní list, kritéria." },
+            { "label": "Nezávisí jen na tom, jestli se to žákům líbilo", "all": ["^(?![\\s\\S]*\\b(libi\\w*|bav\\w*|spokojen\\w*)\\b)"], "hint": "Zábava a spokojenost jsou dobré, ale neříkají, zda žáci dosáhli cíle." },
+            { "label": "Zmiňuje i čas nebo průběh", "any": ["minut", "cas", "plan", "vejde", "stihn"], "hint": "Doplňte, zda se jednotka vejde do plánovaného času." }
+          ],
+          "model": "Jednotka je úspěšná, když aspoň 9 z 12 žáků splní na závěrečné úloze všechna kritéria kontrolního listu a celá jednotka se vejde do plánovaných 90 minut bez zkrácení závěru.",
+          "minLen": 50
+        }
+      ]
+    }
+    </script>
+  </div>
+
+  <h3>Kontrolní seznam jednotky</h3>
+  <p>Před ostrým nasazením projděte každou jednotku tímto seznamem a u každé položky se ohodnoťte. Slabé položky (jednička) opravte dřív, než jednotku použijete. Seznam se ukládá, můžete se k němu vracet.</p>
+
+  <div class="ex" data-type="checklist" data-id="kontrola-jednotky">
+    <script type="application/json">
+    {
+      "title": "Zkontrolujte svou výukovou jednotku",
+      "file": "dop-kontrola-jednotky",
+      "header": "Didaktika odborných předmětů – kapitola 7: kontrola výukové jednotky",
+      "items": [
+        { "t": "Cíl začíná žákem, obsahuje pozorovatelné sloveso a kritérium (ABCD).", "group": "Cíl a ověření" },
+        { "t": "Ověření zkouší přesně to, co cíl slibuje (dovednost se ověřuje předvedením).", "group": "Cíl a ověření" },
+        { "t": "Ověření se týká všech žáků, ne jen těch, kteří se hlásí.", "group": "Cíl a ověření" },
+        { "t": "Jádro učiva obsahuje jen to, co k cíli nutně vede a co se vejde do času.", "group": "Obsah a aktivita" },
+        { "t": "Žáci v převážné části jednotky sami něco dělají, ne jen poslouchají.", "group": "Obsah a aktivita" },
+        { "t": "Metoda odpovídá cíli i podmínkám (počet žáků, vybavení, čas).", "group": "Obsah a aktivita" },
+        { "t": "Zadání aktivity obsahuje výsledek, čas, kritérium hotovosti a ověření porozumění.", "group": "Obsah a aktivita" },
+        { "t": "Časový plán je v minutách, jeho součet odpovídá délce a je v něm rezerva.", "group": "Čas a organizace" },
+        { "t": "Přesuny, příprava a úklid mají v plánu svůj čas.", "group": "Čas a organizace" },
+        { "t": "Rizika a bezpečnost jsou zapsané u činnosti, kde vznikají, a poučení proběhne před jejím zahájením.", "group": "Rizika" },
+        { "t": "Mám plán B pro výpadek vybavení, nedostatek času i slabý průběh.", "group": "Rizika" },
+        { "t": "Předem vím, podle čeho po jednotce poznám, zda fungovala, a co si zapíšu.", "group": "Vyhodnocení" }
+      ],
+      "scale": ["chybí", "částečně", "splněno"]
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="vyukova-jednotka">
+  <h2>Váš výstup: výuková jednotka</h2>
+  <p>Teď to složíte. Vyberte téma, které opravdu budete učit, a připravte pro ně celou jednotku. Nejrychleji se rozpadá <b>čas</b>, proto si ho nejdřív vyzkoušejte na rozvrhu s aktivizující metodou. Pravidla v plánovači nejsou norma, jsou to osvědčená doporučení.</p>
+
+  <div class="ex" data-type="timeplanner" data-id="cas-jednotky">
+    <script type="application/json">
+    {
+      "title": "Rozvrhněte 45 minut s aktivitou žáků",
+      "duration": 45,
+      "task": "Rozdělte 45 minut mezi pět částí tak, aby splnily všechna pravidla. Nejdřív zkuste vlastní rozvrh, potom se podívejte na výchozí rozvrhy.",
+      "phases": [
+        { "id": "uvod", "name": "Úvod a cíl", "sub": "aktivace, cíl", "color": "#7aa2ff", "min": 5 },
+        { "id": "zadani", "name": "Zadání aktivity", "sub": "výsledek, čas, kritérium, role", "color": "#b39bff", "min": 3 },
+        { "id": "aktivita", "name": "Aktivita žáků", "sub": "hra, simulace, úloha", "color": "#4dd0e1", "min": 27 },
+        { "id": "rozbor", "name": "Rozbor aktivity", "sub": "co jsme dělali a co z toho plyne", "color": "#ffb86b", "min": 5 },
+        { "id": "zaver", "name": "Závěr a ověření cíle", "sub": "lístek, krátká úloha", "color": "#8a94a6", "min": 5 }
+      ],
+      "rules": [
+        { "kind": "phaseMin", "id": "uvod", "op": "<=", "value": 7, "text": "Úvod (cíl a aktivace) trvá nejvýše <b>7 min</b>." },
+        { "kind": "phaseMin", "id": "zadani", "op": ">=", "value": 3, "text": "Zadání aktivity má alespoň <b>3 min</b> (výsledek, čas, kritérium, ověření porozumění)." },
+        { "kind": "phaseMin", "id": "aktivita", "op": ">=", "value": 15, "text": "Aktivita žáků má alespoň <b>15 min</b>, jinak není co rozebírat." },
+        { "kind": "phaseMin", "id": "rozbor", "op": ">=", "value": 8, "text": "Rozbor aktivity má alespoň <b>8 min</b>. Bez rozboru je z aktivity jen zábava." },
+        { "kind": "phaseMin", "id": "zaver", "op": ">=", "value": 5, "text": "Závěr má alespoň <b>5 min</b> (ověření, zda žáci dosáhli cíle)." }
+      ],
+      "presets": [
+        { "name": "Hra bez rozboru (běžný stav)", "values": { "uvod": 3, "zadani": 2, "aktivita": 33, "rozbor": 4, "zaver": 3 } },
+        { "name": "Vyvážená jednotka", "values": { "uvod": 5, "zadani": 5, "aktivita": 18, "rozbor": 10, "zaver": 7 } }
+      ],
+      "byProfile": {
+        "ov": {
+          "title": "Rozvrhněte 90minutový blok se stanicemi",
+          "duration": 90,
+          "task": "Rozdělte 90 minut výcviku, v němž žáci rotují po stanicích. Počítejte i s přesuny a úklidem.",
+          "phases": [
+            { "id": "uvod", "name": "Úvodní instruktáž", "sub": "cíl, BOZP, zadání", "color": "#7aa2ff", "min": 20 },
+            { "id": "presun", "name": "Přesuny a příprava stanic", "sub": "", "color": "#b39bff", "min": 2 },
+            { "id": "prace", "name": "Práce na stanicích", "sub": "rotace", "color": "#4dd0e1", "min": 55 },
+            { "id": "rozbor", "name": "Rozbor a zpětná vazba", "sub": "podle kontrolního listu", "color": "#ffb86b", "min": 8 },
+            { "id": "uklid", "name": "Úklid a předání pracoviště", "sub": "", "color": "#8a94a6", "min": 5 }
+          ],
+          "rules": [
+            { "kind": "phaseMin", "id": "uvod", "op": ">=", "value": 10, "text": "Úvodní instruktáž má alespoň <b>10 min</b> (cíl, bezpečnost, zadání)." },
+            { "kind": "phaseMin", "id": "uvod", "op": "<=", "value": 20, "text": "Úvodní instruktáž trvá nejvýše <b>20 min</b>." },
+            { "kind": "phaseMin", "id": "presun", "op": ">=", "value": 5, "text": "Na přesuny a přípravu stanic je alespoň <b>5 min</b>. Rotace mezi stanicemi něco stojí." },
+            { "kind": "phaseMin", "id": "prace", "op": ">=", "value": 40, "text": "Práce žáků na stanicích trvá alespoň <b>40 min</b>." },
+            { "kind": "phaseMin", "id": "rozbor", "op": ">=", "value": 10, "text": "Rozbor a zpětná vazba mají alespoň <b>10 min</b>." },
+            { "kind": "phaseMin", "id": "uklid", "op": ">=", "value": 5, "text": "Na úklid a předání pracoviště zbývá alespoň <b>5 min</b>." }
+          ],
+          "presets": [
+            { "name": "Bez přesunů a rozboru (běžný stav)", "values": { "uvod": 25, "presun": 0, "prace": 55, "rozbor": 5, "uklid": 5 } },
+            { "name": "Vyvážený blok", "values": { "uvod": 15, "presun": 10, "prace": 45, "rozbor": 12, "uklid": 8 } }
+          ]
+        },
+        "_": {}
+      }
+    }
+    </script>
+  </div>
+
+  <p>Nyní zapište celou jednotku. Nejsou tu žádné povinné formuláře: co vyplníte, uložíte a stáhnete jako soubor. Nápovědou je příklad níže. Nekopírujte ho, ale použijte jako měřítko, jak konkrétní má být každá část.</p>
+
+  <div data-only="ov">
+    <details class="acc"><summary>Příklad vyplnění: výcvik (vrtání, blok 90 minut)</summary><div class="acc-body">
+      <p><b>Téma a třída:</b> Vrtání otvorů podle výkresu, 1. ročník, 12 žáků, tři vrtačky, blok 90 minut.</p>
+      <p><b>Cíl:</b> Žák podle výkresu upne obrobek do svěráku a vyvrtá dva otvory ⌀ 6 mm s odchylkou polohy do ±0,3 mm při dodržení bezpečnostních zásad.</p>
+      <p><b>Jádro učiva:</b> volba otáček podle tabulky, upnutí a zajištění obrobku, postup vrtání, kontrola polohy. Vypuštěno: závitování a vrtání do plechu.</p>
+      <p><b>Aktivita žáků a metoda:</b> čtyři skupiny po třech žácích na čtyřech stanicích (vrtání, rýsování a kontrola výkresu, měření hotových kusů podle kontrolního listu, zápis a příprava). Rotace po 12 minutách. Nácvik po instruktáži se zpětnou vazbou.</p>
+      <p><b>Ověření:</b> každý žák vyvrtá dva otvory na zadaném kusu, polohu změří posuvným měřidlem podle kontrolního listu. Kritérium úspěchu jednotky: aspoň 10 z 12 žáků splní toleranci.</p>
+      <p><b>Časový plán:</b> 0–15 úvodní instruktáž a BOZP; 15–20 přesun a příprava stanic; 20–68 rotace (4 × 12 minut); 68–80 rozbor podle kontrolního listu; 80–90 úklid a předání pracoviště.</p>
+      <p><b>Bezpečnost a rizika:</b> rotující vřeteno, třísky, volný oděv a vlasy. Ochranné brýle, obrobek upnutý ve svěráku (nikdy v ruce), skupina u vrtaček vždy pod mým dohledem, poučení před zahájením.</p>
+      <p><b>Plán B:</b> když vrtačka vypadne, žák z její stanice měří kusy z minulého bloku. Při zpoždění zkrátím rozbor, ne poučení a ne závěrečné ověření.</p>
+    </div></details>
+  </div>
+  <div data-only="inf">
+    <details class="acc"><summary>Příklad vyplnění: informatika (cyklus for, 45 minut)</summary><div class="acc-body">
+      <p><b>Téma a třída:</b> Cyklus for v Pythonu, 1. ročník, 24 žáků, 15 funkčních počítačů (práce ve dvojicích), 45 minut.</p>
+      <p><b>Cíl:</b> Žák ve dvojici napíše ve vývojovém prostředí program s cyklem for, který vypíše násobilku čísla 7, tak, aby prošel třemi zadanými testy.</p>
+      <p><b>Jádro učiva:</b> příkaz for a funkce range, odsazení těla cyklu, proměnná cyklu. Vypuštěno: cyklus while a vnořené cykly (příště).</p>
+      <p><b>Aktivita žáků a metoda:</b> osmiminutová ukázka a zadání, potom párové programování (pilot a navigátor, výměna po sedmi minutách). Já obcházím a nápovědu dávám otázkou, ne hotovým kódem.</p>
+      <p><b>Ověření:</b> spuštění programu proti třem testům. Na konci lístek: co dělá řádek s příkazem for. Kritérium úspěchu: aspoň 9 z 12 dvojic projde všemi testy.</p>
+      <p><b>Časový plán:</b> 0–5 cíl a aktivace; 5–13 ukázka a zadání; 13–35 práce ve dvojicích; 35–41 testy a rozbor; 41–45 lístek a závěr.</p>
+      <p><b>Bezpečnost a rizika:</b> nedostatek počítačů (dvojice vyřeší), výpadek sítě nebo prostředí, zdravotní pauza a držení těla po 45 minutách u počítače.</p>
+      <p><b>Plán B:</b> nefunguje vývojové prostředí, použiji online interpret. Při zpoždění vynechám druhý test, ne lístek a závěr.</p>
+    </div></details>
+  </div>
+  <div data-not="ov,inf">
+    <details class="acc"><summary>Příklad vyplnění: ekonomika (kalkulace ceny, 45 minut)</summary><div class="acc-body">
+      <p><b>Téma a třída:</b> Kalkulace ceny výrobku, 2. ročník obchodní akademie, 26 žáků, 45 minut. (Příklad z ekonomiky, upravte podle svého oboru.)</p>
+      <p><b>Cíl:</b> Žák podle zadaných údajů sestaví kalkulaci ceny výrobku a vypočte prodejní cenu s odchylkou nejvýše 1 Kč.</p>
+      <p><b>Jádro učiva:</b> položky kalkulace (přímé náklady, režie, zisk) a pořadí výpočtu. Vypuštěno: účtování nákladů a další metody kalkulace.</p>
+      <p><b>Aktivita žáků a metoda:</b> po ukázce jedné kalkulace pracují dvojice na situaci „cena trička“. Jeden počítá, druhý kontroluje a zapisuje, v polovině se role vymění.</p>
+      <p><b>Ověření:</b> dvojice odevzdá kalkulaci, kontroluji výsledek s tolerancí 1 Kč. Každý žák na lístek zapíše cenu a krok, který mu dělal potíže. Kritérium: aspoň 20 z 26 žáků má cenu správně.</p>
+      <p><b>Časový plán:</b> 0–5 úvod s hotovým příkladem; 5–10 zadání a role; 10–30 práce ve dvojicích; 30–38 rozbor chyb; 38–45 lístek a závěr.</p>
+      <p><b>Bezpečnost a rizika:</b> bez fyzického rizika. Organizační: nedostatek kalkulaček nebo kopií zadání, dvojice, kde počítá jen jeden žák.</p>
+      <p><b>Plán B:</b> nefungují kopie, zadání promítnu a dvojice sdílejí jeden list. Při zpoždění zkrátím rozbor a dopočítání přesunu na začátek příští hodiny s krátkým ověřením.</p>
+    </div></details>
+  </div>
+
+  <div class="ex" data-type="reflect" data-id="vyukova-jednotka">
+    <script type="application/json">
+    {
+      "title": "Moje výuková jednotka",
+      "file": "dop-kapitola-7-vyukova-jednotka",
+      "header": "Didaktika odborných předmětů – kapitola 7: výuková jednotka",
+      "min": 40,
+      "prompts": [
+        { "id": "tema", "q": "Téma a třída (ročník, obor, počet žáků, délka bloku, vybavení)", "ph": "Např. Vrtání otvorů podle výkresu, 1. ročník, 12 žáků, tři vrtačky, 90 minut" },
+        { "id": "cil", "q": "Cíl jednotky ve struktuře ABCD (adresát, chování, podmínky, kritérium)", "ph": "Žák podle … a s použitím … vyvrtá … s odchylkou …" },
+        { "id": "jadro", "q": "Jádro učiva: co žák nutně potřebuje k dosažení cíle a co jste vypustili", "ph": "Nutné: … Vypuštěno: …" },
+        { "id": "aktivita", "q": "Aktivita žáků a metoda: co žáci dělají, v jakém uspořádání a proč tato metoda", "ph": "Dvojice / skupiny / stanice … Metoda: … protože …" },
+        { "id": "overeni", "q": "Ověření: čím zjistíte, že cíle dosáhli všichni, a jaké je kritérium úspěchu jednotky?", "ph": "Ověřím tím, že … Jednotka je úspěšná, když aspoň … žáků …" },
+        { "id": "cas", "q": "Časový plán v minutách (včetně přesunů, úklidu a rezervy; součet odpovídá délce)", "ph": "0–5 úvod, 5–15 zadání a ukázka, …" },
+        { "id": "bezpecnost", "q": "Bezpečnost a rizika: co může ublížit nebo se pokazit a jak tomu předejdete", "ph": "Riziko: … Opatření: … Poučení před …" },
+        { "id": "plan-b", "q": "Plán B: co uděláte, když vypadne vybavení nebo když zbývá málo času", "ph": "Když …, tak … Zkrátím …, ne …" }
+      ]
+    }
+    </script>
+  </div>
+
+  <div class="callout callout--tip">
+    <div>
+      <div class="cl-title">Než jednotku použijete</div>
+      <p>Projděte ji ještě jednou podle kontrolního seznamu výše. Nejčastěji se rozpadá <b>čas</b> (rozbor a přesuny), <b>ověření</b> (zkouší se jiné, než cíl slibuje) a <b>plán B</b> (chybí).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="zaver-kapitoly">
+  <h2>Ověřte si, co víte</h2>
+  <div class="ex" data-type="quiz" data-id="zaver-kviz">
+    <script type="application/json">
+    {
+      "title": "Závěrečný kvíz kapitoly",
+      "pass": 0.7,
+      "shuffleItems": true,
+      "items": [
+        { "q": "Cíl, aktivitu a ověření lze plánovat nezávisle. Hlavní je, aby každá část byla sama o sobě dobrá.", "tf": true, "ok": false, "why": "Rozhoduje jejich soulad. Skvělá aktivita, která k cíli nevede, nebo dobrý test, který zkouší něco jiného než cíl, jednotku nezachrání." },
+        { "q": "Cíl zní: „Žák změří průměr hřídele mikrometrem.“ Které ověření k němu sedí?", "pick": ["Písemný test, ve kterém žák pojmenuje a popíše všechny části mikrometru", "Žák změří zadanou hřídel a zapíše výsledek, učitel ho porovná s kontrolním měřením", "Ústní zkoušení tří žáků na definici pojmu měření", "Domácí referát o historii přesného měření"], "answer": 1, "why": "Dovednost se ověřuje jejím předvedením. Ostatní možnosti zkoušejí znalosti, které k cíli nevedou, nebo ověřují jen malou část třídy." },
+        { "q": "Kdy je problémová úloha špatná volba metody?", "pick": ["Když žáci nemají základní znalosti, ze kterých by řešení složili", "Když se mají žáci naučit rozhodovat mezi několika variantami řešení", "Když chcete rozvíjet hledání příčin závad na modelu zařízení", "Když mají žáci využít osvojené znalosti v nové situaci"], "answer": 0, "why": "Problémová úloha staví na tom, co žáci už umějí. Bez základu žák nemá z čeho řešení skládat a jen se zasekne." },
+        { "q": "Které údaje patří mezi zdroje informací o efektivitě jednotky?", "pick": ["Výsledky žáků vůči cíli", "Zápis skutečných minut vedle plánu", "Pozorování při obcházení třídy", "Počet slov v písemné přípravě", "Zpětná vazba žáků (například lístek na konci)"], "answer": [0, 1, 2, 4], "why": "Efektivitu ukazuje, zda žáci splnili cíl, jak proběhl čas a co si všimli učitel i žáci. Délka přípravy o kvalitě jednotky nic neříká." },
+        { "q": "Žáci byli z jednotky nadšení, takže se prokazatelně naučili, co měli.", "tf": true, "ok": false, "why": "Spokojenost a učení nejsou totéž. O učení vypovídá výsledek vůči cíli (kritérium, kontrolní list, závěrečná úloha)." },
+        { "q": "Skupinová práce se nejméně hodí pro:", "pick": ["nácvik dovednosti, kterou musí zvládnout každý sám (např. svařování)", "srovnání různých pohledů při rozboru případové studie ve třídě", "hledání příčin závady na modelu zařízení v malých týmech", "plánování větší práce s rozdělenými rolemi mezi členy skupiny"], "answer": 0, "why": "Ve skupině by dovednost nacvičili ti nejaktivnější. Každý žák musí vlastní rukou zvládnout nácvik s kontrolou." },
+        { "q": "Kromě šesti kompetencí ze starších materiálů uvádí RVP pro střední odborné vzdělávání (stav ověřený při přípravě kurzu, ověřte v aktuálním znění) i:", "pick": ["matematické kompetence", "kompetence využívat ICT a pracovat s informacemi", "kompetence k tvořivosti", "kompetence k sportovnímu výkonu"], "answer": [0, 1], "why": "RVP SOV uvádí osm klíčových kompetencí. Ke starším šesti přibývají matematické kompetence a kompetence využívat ICT a pracovat s informacemi. Znění si ověřte v RVP svého oboru." },
+        { "q": "Didaktická hra proběhla a žáci byli nadšení. Co ještě k jednotce patří?", "pick": ["Rozbor aktivity a ověření, že cíle dosáhli všichni žáci", "Nic dalšího, hra proběhla a cíl je tím splněn", "Další soutěž na stejné téma, aby si to žáci užili", "Známka za nadšení jako motivace pro příště"], "answer": 0, "why": "Hra bez rozboru je jen zábava. Poučení vzniká až při rozboru a ověření cíle." },
+        { "q": "Kdy v plánu jednotky s rizikovou činností zapisujete bezpečnost?", "pick": ["Jen obecnou větou na začátku plánu, pro celou jednotku najednou", "U činnosti, ve které riziko vzniká, a poučení proběhne před jejím zahájením", "Až po skončení činnosti, když se ukáže, jaká rizika se projevila", "Nezapisujete ji, protože žáci ji znají z předchozího ročníku"], "answer": 1, "why": "Riziko vzniká u konkrétní činnosti a poučení musí předcházet její zahájení. Obecný odkaz a poučení dávno minulé nestačí." },
+        { "q": "Práh úspěchu jednotky (například „aspoň 9 z 12 žáků“) je norma daná předpisy.", "tf": true, "ok": false, "why": "Je to vaše rozhodnutí. Stanovíte ho před hodinou, aby ho nešlo po hodině přizpůsobit tomu, co vyšlo." }
+      ]
+    }
+    </script>
+  </div>
+
+  <h3>Kartičky k opakování</h3>
+  <p>Zkuste si odpověď říct nahlas a teprve potom kartičku otočte.</p>
+
+  <div class="ex" data-type="flashcards" data-id="karticky">
+    <script type="application/json">
+    {
+      "title": "Pojmy kapitoly",
+      "cards": [
+        { "q": "Z jakých šesti částí se skládá výuková jednotka?", "a": "Cíl, jádro učiva, aktivita žáků, ověření, čas a rizika (včetně plánu B)." },
+        { "q": "V jakém pořadí se jednotka vyvíjí?", "a": "Podmínky, cíl, jádro učiva, aktivita a metoda, ověření, časový plán, rizika a plán B." },
+        { "q": "Co je trojúhelník soulad?", "a": "Cíl, aktivita žáků a ověření se navzájem musí shodovat: aktivita vede k cíli a ověřuje se to, co žáci procvičovali." },
+        { "q": "Jaké typické chyby najdete v cizí jednotce?", "a": "Cíl a ověření se rozcházejí, chybí aktivita žáků, čas je nereálný, chybí bezpečnost a plán B, jádro učiva je přeplněné." },
+        { "q": "Kdy se didaktická hra vyplatí a kdy ne?", "a": "Vyplatí se při opakování a procvičení. Nehodí se při prvním seznámení se složitou látkou. Bez rozboru je z ní jen zábava." },
+        { "q": "Kdy se skupinová práce nehodí?", "a": "U dovednosti, kterou musí každý zvládnout vlastní rukou (svařování, měření). Ve skupině ji nacvičí jen ti aktivnější." },
+        { "q": "Jak psát do přípravy klíčové kompetence?", "a": "Uveďte jen jednu až dvě, které aktivita opravdu vyžaduje a které u žáků uvidíte. Názvy ověřte v RVP oboru a ve školním vzdělávacím programu." },
+        { "q": "Jaké jsou čtyři zdroje informací o efektivitě jednotky?", "a": "Výsledky žáků vůči cíli, pozorování, zpětná vazba žáků, čas (plán proti skutečnosti)." },
+        { "q": "Proč stanovit práh úspěchu předem?", "a": "Jinak ho po hodině přizpůsobíte tomu, co vyšlo. Práh je vaše rozhodnutí (např. aspoň 9 z 12 žáků), ne norma." },
+        { "q": "Co je plán B a jaký příklad uvedete?", "a": "Předem promyšlený postup pro výpadek vybavení nebo čas. Příklad: když vypadne stroj, žák měří kusy z minulého bloku; při zpoždění zkrátím rozbor, ne poučení a ne ověření." }
+      ]
+    }
+    </script>
+  </div>
+
+  <p class="src">Zdroje k tématu: MAŇÁK, J., ŠVEC, V. <em>Výukové metody</em>. Brno: Paido, 2003. LOVEČEK, A., ČADÍLEK, M. <em>Didaktika odborných předmětů</em>. Brno: CERM, 2005. KALHOUS, Z., OBST, O. a kol. <em>Školní didaktika</em>. Praha: Portál, 2002. BIGGS, J. Enhancing teaching through constructive alignment. <em>Higher Education</em>, 1996, 32, s. 347–364. Klíčové kompetence: Národní ústav odborného vzdělávání, <em>Koncepce klíčových kompetencí v RVP středního odborného vzdělávání</em> (nuov.cz/koncepce-kk) a rámcové vzdělávací programy pro střední odborné vzdělávání (edu.gov.cz, stav k 9/2026; ověřte aktuální znění RVP svého oboru).</p>
+</section>
+
+</article>
+<noscript><p style="padding:2rem;font-family:system-ui">Pro zobrazení výukových materiálů je potřeba zapnout JavaScript.</p></noscript>
+<script src="../../assets/js/boot.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* ==========================================================================
+   Komponenty obsahu: tlačítka, callouty, tabulky, rozbalovátka, dialogy…
+   ========================================================================== */
+
+/* ---------- tlačítka ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+  min-height: 42px; padding: 0 18px;
+  border-radius: 11px;
+  border: 1px solid var(--line-2);
+  background: var(--surface-2);
+  color: var(--tx);
+  font-weight: 600; font-size: 0.93rem; line-height: 1;
+  text-decoration: none; white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s, opacity 0.15s;
+}
+.btn:hover { background: var(--surface-3); border-color: var(--accent-line); text-decoration: none; }
+.btn:active { transform: translateY(1px); }
+.btn:disabled, .btn[aria-disabled="true"] { opacity: 0.45; pointer-events: none; }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.btn-primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); }
+.btn-ghost { background: transparent; }
+.btn-sm { min-height: 34px; padding: 0 12px; font-size: 0.85rem; border-radius: 9px; }
+.btn-ok { background: var(--ok-soft); border-color: var(--ok-line); color: var(--ok); }
+.btn-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
+/* ---------- štítky ---------- */
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 10px; border-radius: 999px;
+  font-size: 0.76rem; font-weight: 650; letter-spacing: 0.01em;
+  background: var(--surface-3); color: var(--tx-2);
+}
+.badge.ok { background: var(--ok-soft); color: var(--ok); }
+.badge.bad { background: var(--bad-soft); color: var(--bad); }
+.badge.warn { background: var(--warn-soft); color: var(--warn); }
+.badge.acc { background: var(--accent-soft); color: var(--accent-strong); }
+
+/* ---------- callouty ---------- */
+.callout {
+  --c: var(--info);
+  display: grid; grid-template-columns: 26px 1fr; gap: 14px;
+  padding: 16px 18px; margin: 1.4rem 0;
+  border-radius: var(--r);
+  background: color-mix(in srgb, var(--c) 9%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--c) 32%, var(--line));
+}
+.callout > svg { color: var(--c); margin-top: 3px; }
+.callout .cl-title { font-weight: 680; color: var(--tx); margin-bottom: 4px; font-size: 0.98rem; }
+.callout p:last-child, .callout ul:last-child, .callout ol:last-child { margin-bottom: 0; }
+.callout p, .callout li { color: var(--tx-2); font-size: 0.97rem; }
+.callout strong { color: var(--tx); }
+.callout--tip { --c: var(--ok); }
+.callout--warn { --c: var(--warn); }
+.callout--def { --c: var(--accent); }
+.callout--practice { --c: #ff9d6b; }
+.callout--rev { --c: #c08bff; }
+
+/* ---------- tabulky ---------- */
+.table-wrap { overflow-x: auto; margin: 1.3rem 0; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
+.table { width: 100%; border-collapse: collapse; font-size: 0.93rem; line-height: 1.5; }
+.table th, .table td { padding: 11px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.table th { font-size: 0.76rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--tx-3); font-weight: 650; background: var(--surface-2); white-space: nowrap; }
+.table tr:last-child td { border-bottom: 0; }
+.table td:first-child { font-weight: 600; color: var(--tx); }
+.table td { color: var(--tx-2); }
+
+/* ---------- rozbalovátka ---------- */
+details.acc {
+  margin: 0.9rem 0; border: 1px solid var(--line); border-radius: var(--r);
+  background: var(--surface); overflow: hidden;
+}
+details.acc > summary {
+  list-style: none; cursor: pointer;
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 18px; font-weight: 620;
+}
+details.acc > summary::-webkit-details-marker { display: none; }
+details.acc > summary::after {
+  content: ""; margin-left: auto; width: 9px; height: 9px;
+  border-right: 2px solid var(--tx-3); border-bottom: 2px solid var(--tx-3);
+  transform: rotate(45deg); transition: transform 0.2s var(--ease); flex: none;
+}
+details.acc[open] > summary::after { transform: rotate(-135deg); }
+details.acc > summary:hover { background: var(--surface-2); }
+details.acc > .acc-body { padding: 4px 18px 16px; color: var(--tx-2); }
+details.acc > .acc-body > :last-child { margin-bottom: 0; }
+
+/* ---------- dvousloupcové karty pojmů ---------- */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 1.3rem 0; }
+.cardx { padding: 16px 18px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); }
+.cardx h4 { margin: 0 0 6px; color: var(--tx); font-size: 1rem; }
+.cardx p { margin: 0; font-size: 0.92rem; color: var(--tx-2); line-height: 1.55; }
+.cardx .tag { display: inline-block; margin-bottom: 10px; }
+.cardx[data-c] { border-top: 3px solid var(--cc, var(--accent)); }
+
+.tag { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--cc, var(--accent-strong)); }
+
+/* ---------- citace / zdroj ---------- */
+.src { font-size: 0.84rem; color: var(--tx-3); }
+blockquote {
+  margin: 1.4rem 0; padding: 4px 0 4px 18px;
+  border-left: 3px solid var(--accent-line);
+  color: var(--tx-2); font-style: italic;
+}
+
+/* ---------- glosář (dl) ---------- */
+dl.glossary { display: grid; gap: 10px; margin: 1.2rem 0; }
+dl.glossary > div { padding: 12px 16px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); }
+dl.glossary dt { font-weight: 660; color: var(--tx); }
+dl.glossary dd { margin: 3px 0 0; color: var(--tx-2); font-size: 0.95rem; }
+
+/* ---------- kroky (číslované) ---------- */
+ol.steps { list-style: none; counter-reset: s; padding: 0; margin: 1.2rem 0; display: grid; gap: 10px; }
+ol.steps > li {
+  counter-increment: s; position: relative;
+  padding: 14px 16px 14px 58px; margin: 0;
+  border-radius: var(--r); background: var(--surface); border: 1px solid var(--line);
+}
+ol.steps > li::before {
+  content: counter(s); position: absolute; left: 14px; top: 13px;
+  width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center;
+  font-weight: 700; background: var(--accent-soft); color: var(--accent-strong);
+}
+ol.steps > li b { color: var(--tx); }
+ol.steps > li p { margin: 2px 0 0; color: var(--tx-2); font-size: 0.94rem; }
+
+/* ---------- profilové bloky ---------- */
+.by-profile { position: relative; }
+.by-profile > .bp-tag {
+  display: inline-flex; align-items: center; gap: 6px; margin-bottom: 8px;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-strong);
+}
+
+/* ---------- dialog ---------- */
+dialog.dlg {
+  border: 1px solid var(--line-2); border-radius: var(--r-lg);
+  background: var(--surface); color: var(--tx);
+  padding: 0; width: min(560px, calc(100vw - 28px)); box-shadow: var(--shadow-2);
+}
+dialog.dlg::backdrop { background: rgba(3, 6, 12, 0.72); backdrop-filter: blur(3px); }
+.dlg-in { padding: 26px; }
+.dlg h2 { font-size: 1.35rem; margin-bottom: 6px; }
+.dlg p.sub { color: var(--tx-2); margin-bottom: 18px; }
+.dlg-list { display: grid; gap: 8px; margin-bottom: 18px; }
+.dlg-opt {
+  display: grid; grid-template-columns: 30px 1fr; gap: 12px; align-items: center; text-align: left;
+  padding: 12px 14px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--line);
+}
+.dlg-opt:hover { border-color: var(--accent-line); }
+.dlg-opt[aria-checked="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.dlg-opt .n { font-weight: 640; }
+.dlg-opt .d { color: var(--tx-3); font-size: 0.83rem; line-height: 1.35; }
+.dlg-opt svg { color: var(--accent); }
+
+/* ---------- toast ---------- */
+.toast {
+  position: fixed; left: 50%; bottom: calc(var(--pager-h) + 20px); transform: translate(-50%, 20px);
+  z-index: 100; padding: 11px 18px; border-radius: 12px;
+  background: var(--surface-3); border: 1px solid var(--line-2); box-shadow: var(--shadow-2);
+  opacity: 0; transition: opacity 0.2s, transform 0.25s var(--ease); pointer-events: none; font-size: 0.92rem;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* ---------- dokončení kapitoly ---------- */
+.finish {
+  display: grid; gap: 14px; margin-top: 2.5rem; padding: 22px 24px;
+  border-radius: var(--r-lg);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 12%, var(--surface)), var(--surface));
+  border: 1px solid var(--accent-line);
+}
+.finish h3 { margin: 0; font-size: 1.15rem; }
+.finish p { margin: 0; color: var(--tx-2); }
+.finish.is-done { border-color: var(--ok-line); background: linear-gradient(135deg, var(--ok-soft), var(--surface)); }

@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="cs" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Didaktická analýza a transformace učiva · Didaktika odborných předmětů</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237aa2ff'/%3E%3Cpath d='M5 13l11-5 11 5-11 5z' fill='%2308101f'/%3E%3Cpath d='M9 16v5c0 1.5 3.5 3 7 3s7-1.5 7-3v-5l-7 3z' fill='%2308101f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>try{var t=JSON.parse(localStorage.getItem('dps.v1')).theme;if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="chapter" data-course="didaktika-odbornych-predmetu" data-chapter="02-didakticka-analyza-uciva">
+<article id="chapter">
+
+<!-- ============ 1 ============ -->
+<section id="odbornik-vs-zak">
+  <h2>Odborník mluví a žák nerozumí</h2>
+  <p>Vy jste odborník. Pojmy svého oboru znáte tak dobře, že je už neslyšíte. Právě proto se vám může stát, že vysvětlíte věc správně a žák z ní nepochopí nic. Přečtěte si krátký výklad, jaký by mohl zaznít při první hodině s novým tématem. Označte místa, kde by začátečník „vypadl“. Některé věty jsou v pořádku a označení navíc se odečítá.</p>
+
+  <div class="ex" data-type="annotate" data-id="odbornik-vyklad">
+    <script type="application/json">
+    {
+      "title": "Kde žák ve výkladu vypadne?",
+      "pass": 0.7,
+      "intro": "<p>Vaše zaměření: <b data-profile-name></b>. Vyberte kategorii a klepejte na úseky textu, které do ní patří. Věty bez problému nechte neoznačené.</p>",
+      "categories": [
+        { "id": "zarg", "name": "Žargon bez vysvětlení" },
+        { "id": "skip", "name": "Přeskočený krok" },
+        { "id": "prece", "name": "„To přece víte“" },
+        { "id": "moc", "name": "Moc najednou" },
+        { "id": "bezpr", "name": "Chybí příklad" }
+      ],
+      "byProfile": {
+        "ov": { "parts": [
+          "Učitel odborného výcviku stojí u stolu s baterií, žárovkou a multimetrem a začíná: ",
+          { "t": "„Dnes zjistíme, jestli žárovka dostává napětí. K tomu použijeme multimetr.“", "cat": null, "why": "V pořádku. Výklad začíná konkrétním účelem: žák ví, co bude zjišťovat a čím." },
+          " ",
+          { "t": "„Voltmetr má velký vstupní odpor, takže zátěž měřeného obvodu zanedbáme.“", "cat": "zarg", "why": "Pojmy vstupní odpor a zátěž obvodu žák nezná a nikdo mu je nevysvětlil. Věta je správná, ale pro něj nesrozumitelná." },
+          "\n\n",
+          { "t": "„Přepnete na V, přiložíte hroty a odečtete hodnotu.“", "cat": "skip", "why": "Chybí kroky, na kterých začátečník chybuje: do kterých zdířek zapojit šňůry, jaký zvolit rozsah a k jakým místům obvodu přiložit hroty." },
+          " ",
+          { "t": "„Že se napětí měří vedle spotřebiče a proud v sérii, to už přece znáte z fyziky.“", "cat": "prece", "why": "Učitel předpokládá znalost, kterou neověřil. Kdo ji zapomněl, zůstane bez opory a nezeptá se." },
+          "\n\n",
+          { "t": "„A když už tu jsme, ukážu vám ještě měření proudu, odporu, kontinuity a diodový test a k tomu čtyři druhy pojistek v přístroji.“", "cat": "moc", "why": "Přibylo pět nových věcí najednou. Začátečník udrží jen málo novinek a zbytek se mu ztratí." },
+          " ",
+          { "t": "„Obecně platí, že se přístroj zapojuje podle druhu měřené veličiny.“", "cat": "bezpr", "why": "Abstraktní pravidlo bez ukázky. Žák nevidí, jak takové zapojení vypadá v obvodu s baterií a žárovkou." },
+          "\n\nNa závěr učitel ukáže číslo na displeji a zeptá se: ",
+          { "t": "„Co ukáže displej, když hroty prohodím?“", "cat": null, "why": "V pořádku. Otázka nutí žáka předvídat a ověří porozumění lépe než „Rozumíte?“." }
+        ] },
+        "inf": { "parts": [
+          "Učitel informatiky ve 2. ročníku promítá dvě tabulky, Zákazníci a Objednávky, a začíná: ",
+          { "t": "„Dnes zjistíme, jak z dat vyčíst, kdo co objednal.“", "cat": null, "why": "V pořádku. Výklad začíná konkrétním úkolem, který dává smysl i začátečníkovi." },
+          " ",
+          { "t": "„Tabulky spojíme přes cizí klíč, jinak vznikne kartézský součin.“", "cat": "zarg", "why": "Cizí klíč a kartézský součin nejsou vysvětleny. Žák slyší dvě neznámá slova v jedné větě." },
+          "\n\n",
+          { "t": "„Napíšete SELECT, doplníte FROM a JOIN a spustíte dotaz.“", "cat": "skip", "why": "Chybí podmínka spojení (ON), tedy krok, na kterém celý JOIN stojí. Bez ní dotaz buď selže, nebo vrátí nesmyslný výsledek." },
+          " ",
+          { "t": "„Relační model a primární klíče jste přece jistě probírali.“", "cat": "prece", "why": "Učitel předpokládá znalost, kterou neověřil. Kdo ji zapomněl, zůstane bez opory a nezeptá se." },
+          "\n\n",
+          { "t": "„A když už jsme u toho, ukážu INNER, LEFT, RIGHT a FULL JOIN, agregace a poddotazy.“", "cat": "moc", "why": "Přibylo šest nových věcí najednou. Začátečník udrží jen málo novinek a zbytek se mu ztratí." },
+          " ",
+          { "t": "„Obecně platí, že JOIN vytvoří ty dvojice řádků obou tabulek, které splňují podmínku spojení.“", "cat": "bezpr", "why": "Správná, ale abstraktní věta bez jediného řádku dat. Žák nevidí, které řádky se spojí a proč." },
+          "\n\nNakonec zadá: ",
+          { "t": "„Vypište jméno zákazníka a datum jeho objednávky.“", "cat": null, "why": "V pořádku. Krátká samostatná úloha ověří, co žák skutečně zvládne." }
+        ] },
+        "_": { "parts": [
+          "Učitel ekonomiky ve 3. ročníku začíná příběhem: ",
+          { "t": "„Pekárna platí měsíčně 30 000 Kč nájmu. Kolik rohlíků musí prodat, aby nebyla ve ztrátě?“", "cat": null, "why": "V pořádku. Výklad začíná konkrétní otázkou, kterou žák chápe i bez odborných pojmů." },
+          " ",
+          { "t": "„Zjistíme bod zvratu z jednotkové marže a poměru fixních a variabilních nákladů.“", "cat": "zarg", "why": "Jednotková marže, fixní a variabilní náklady nejsou vysvětleny. Žák slyší několik neznámých pojmů v jedné větě." },
+          "\n\n",
+          { "t": "„Fixní náklady vydělíte marží a víte, kolik kusů prodat.“", "cat": "skip", "why": "Chybí krok, jak se marže na kus spočítá (cena minus variabilní náklad na kus). Bez něj žák nemá co do vzorce dosadit." },
+          " ",
+          { "t": "„Rozdíl mezi fixními a variabilními náklady přece znáte z minulé hodiny.“", "cat": "prece", "why": "Učitel předpokládá znalost, kterou neověřil. Kdo minulou hodinu chyběl nebo pojem zapomněl, zůstane bez opory." },
+          "\n\n",
+          { "t": "„A když už jsme u toho, přidáme daň z příjmů, odpisy a citlivostní analýzu.“", "cat": "moc", "why": "Přibyly tři nové věci dřív, než žák pochopil první. Začátečník udrží jen málo novinek a zbytek se mu ztratí." },
+          " ",
+          { "t": "„Obecně platí, že bod zvratu nastává tam, kde se celkové výnosy rovnají celkovým nákladům.“", "cat": "bezpr", "why": "Správná, ale abstraktní věta bez jediného čísla. Žák nevidí, jak se to spočítá u pekárny." },
+          "\n\nNakonec zadá: ",
+          { "t": "„Spočítejte, kolik rohlíků musí pekárna prodat při ceně 4 Kč a variabilních nákladech 2 Kč na kus.“", "cat": null, "why": "V pořádku. Konkrétní úloha s čísly ověří, zda žák postup zvládne sám." }
+        ] }
+      }
+    }
+    </script>
+  </div>
+
+  <h3>Proč se to odborníkům stává</h3>
+  <p>Všechny pasti mají stejný původ: odborník už si nepamatuje, jaké je nevědět. Věty jsou správné, ale postavené pro člověka, který obor zná. Někdy se tomu říká <i>kletba znalosti</i>. Nepomůže dobrá vůle, pomůže <b>postup</b>. V celé kapitole jej držíme ve třech krocích a v tomto pořadí:</p>
+
+  <ol class="steps">
+    <li><b>Analýza: CO učit.</b><p>Z oboru vyberete jádro, které žák pro cíl nutně potřebuje, a rozhodnete o pořadí.</p></li>
+    <li><b>Transformace: JAK to žákům přeložit.</b><p>Vybrané učivo převedete do řeči, kterou žák chápe: kroky, příklad, obrázek, postupně zavedené odborné slovo.</p></li>
+    <li><b>Metody a plán: JAK to učit a jak ověřím výsledek.</b><p>Zvolíte metody, rozvrhnete čas a připravíte, čím zjistíte, že žák cíl splnil.</p></li>
+  </ol>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="analyza-uciva">
+  <h2>Didaktická analýza: co z toho je opravdu potřeba</h2>
+  <p>Každý obor má tisíc pojmů a do jedné hodiny se vejde jen pár. <b>Didaktická analýza učiva</b> je rozhodnutí, které to jsou, jak spolu souvisejí a v jakém pořadí přijdou. Odpovídá na otázku <i>co</i> žák potřebuje. Učivo třídíte do tří vrstev:</p>
+
+  <div class="cards">
+    <div class="cardx" data-c style="--cc:#43d9a0"><span class="tag">Jádro</span><h4>Bez toho cíl nesplní</h4><p>Musí to zvládnout všichni žáci. Věnujete tomu nejvíc času a ověříte to.</p></div>
+    <div class="cardx" data-c style="--cc:#ffcb6b"><span class="tag">Doplněk</span><h4>Pomáhá, ale cíl to nezmění</h4><p>Zařadíte, když zbyde čas, nebo z toho uděláte úlohy pro rychlejší žáky.</p></div>
+    <div class="cardx" data-c style="--cc:#8492aa"><span class="tag">Nice to know</span><h4>Zajímavé, ale teď zbytečné</h4><p>Odložíte na jindy nebo vynecháte. Jinak vytlačí jádro.</p></div>
+  </div>
+
+  <p>Kam informaci zařadit, rozhodují čtyři kritéria:</p>
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th>Kritérium</th><th>Otázka, kterou si kladete</th></tr></thead>
+    <tbody>
+      <tr><td>Cíl hodiny</td><td>Potřebuje to žák k tomu, aby cíl splnil?</td></tr>
+      <tr><td>Čas</td><td>Vejde se to i s procvičením a ověřením?</td></tr>
+      <tr><td>Předchozí znalosti</td><td>Umí to už žák, nebo to musím nejdřív doplnit?</td></tr>
+      <tr><td>Dopad na praxi</td><td>Co se stane, když to žák neumí: nebezpečí, zmetek, chyba u zákazníka?</td></tr>
+    </tbody>
+  </table></div>
+  <p>Hranice závisí na cíli. Stejná informace je v jedné hodině jádro a v jiné „nice to know“. Vnitřní odpor voltmetru je pro elektrotechnika ve třetím ročníku jádro, ale pro žáka, který se teprve učí odečítat napětí z baterie, je to zbytečná zátěž. Vyzkoušejte to na cíli, který je zadaný.</p>
+
+  <div class="ex" data-type="classify" data-id="jadro-doplnek">
+    <script type="application/json">
+    {
+      "title": "Jádro, doplněk, nebo nice to know?",
+      "instant": true,
+      "bins": [
+        { "id": "jadro", "name": "Jádro", "hint": "bez toho cíl nesplní" },
+        { "id": "dopl", "name": "Doplněk", "hint": "pomůže, ale nutné to není" },
+        { "id": "nice", "name": "Nice to know", "hint": "pro tento cíl zbytečné" }
+      ],
+      "byProfile": {
+        "ov": {
+          "intro": "<p><b>Cíl:</b> Žák změří multimetrem stejnosměrné napětí baterie a žárovky v jednoduchém obvodu a přístroj přitom zapojí bezpečně. <b>Třída:</b> 1. ročník, začátečníci, 45 minut.</p>",
+          "cards": [
+            { "t": "Volba veličiny (V DC), rozsahu a zdířek na přístroji", "bin": "jadro", "why": "Bez správného nastavení žák nic nezměří a právě tady začátečníci nejčastěji chybují." },
+            { "t": "Napětí se měří paralelně: hroty patří ke dvěma místům obvodu", "bin": "jadro", "why": "Je to základ zapojení voltmetru. Bez něj žák cíl nesplní." },
+            { "t": "Odečtení hodnoty z displeje a zápis s jednotkou", "bin": "jadro", "why": "Změřit znamená také výsledek správně přečíst a zapsat. Cíl to vyžaduje." },
+            { "t": "V hodině se měří jen na bateriovém obvodu, ne v síti 230 V", "bin": "jadro", "why": "Bezpečnost je součástí cíle (žák zapojí přístroj bezpečně). Začátečník nesmí měřit na síťovém napětí." },
+            { "t": "Proč displej při prohozených hrotech ukáže znaménko minus", "bin": "dopl", "why": "Pomáhá pochopit polaritu a zbavuje strachu z „rozbití“ přístroje, ale cíl žák splní i bez toho." },
+            { "t": "Porovnání naměřeného napětí se štítkem na baterii", "bin": "dopl", "why": "Pěkné využití („je baterie v pořádku?“), které zařadíte, když zbyde čas. Cíl ale žák splní bez něj." },
+            { "t": "Vnitřní odpor voltmetru a jeho vliv na přesnost měření", "bin": "nice", "why": "Pro začátečníka je to předčasné. Patří do vyššího ročníku, kde se měří přesněji." },
+            { "t": "Měření proudu: přerušení obvodu a zapojení do série", "bin": "nice", "why": "Je to jiný postup s jinými riziky (pojistka přístroje). Patří do další hodiny s vlastním cílem." },
+            { "t": "Historie měřicích přístrojů od ručkových po digitální", "bin": "nice", "why": "Zajímavé, ale k cíli nic nepřidá a zabralo by čas, který potřebuje jádro." }
+          ]
+        },
+        "inf": {
+          "intro": "<p><b>Cíl:</b> Žák napíše dotaz s INNER JOIN, který spojí tabulky Zákazníci a Objednávky přes cizí klíč, a ověří výsledek na zadaných datech. <b>Třída:</b> 2. ročník, žáci umějí SELECT a WHERE, 45 minut.</p>",
+          "cards": [
+            { "t": "Cizí klíč jako údaj, podle kterého se řádky obou tabulek párují", "bin": "jadro", "why": "Bez pochopení, co se s čím páruje, žák JOIN nenapíše ani nezkontroluje." },
+            { "t": "Zápis INNER JOIN … ON a podmínka spojení", "bin": "jadro", "why": "Je to přímo dovednost z cíle." },
+            { "t": "Označení sloupce názvem tabulky, například zakaznici.id", "bin": "jadro", "why": "Obě tabulky mají sloupec id, bez označení dotaz selže. Je to nejčastější chyba začátečníků." },
+            { "t": "Kontrola výsledku: kolik řádků má dotaz vrátit", "bin": "jadro", "why": "Cíl výslovně říká, že žák výsledek ověří." },
+            { "t": "Aliasy tabulek pro kratší zápis dotazu", "bin": "dopl", "why": "Zkrátí zápis, ale dotaz jde napsat i bez nich. Zařadíte je, až žák zvládne základ." },
+            { "t": "Seřazení výsledku podle data objednávky", "bin": "dopl", "why": "Užitečné, ale s cílem spojit tabulky to nesouvisí. Dotaz jde napsat i bez řazení." },
+            { "t": "LEFT, RIGHT a FULL JOIN a rozdíly mezi nimi", "bin": "nice", "why": "Další varianty patří do navazující hodiny. Teď by odvedly pozornost od základního spojení." },
+            { "t": "Kartézský součin a zápis pomocí CROSS JOIN", "bin": "nice", "why": "Pro cíl zbytečné. Stačí říct, že bez podmínky spojení výsledek nedává smysl." },
+            { "t": "Indexy a plán vykonání dotazu v databázi", "bin": "nice", "why": "Optimalizace je pro začátečníka předčasná." }
+          ]
+        },
+        "_": {
+          "intro": "<p><b>Cíl:</b> Žák spočítá bod zvratu pekárny z ceny, variabilních nákladů na kus a fixních nákladů a vysvětlí, co výsledek znamená. <b>Třída:</b> 3. ročník, žáci znají pojmy náklady a výnosy, 45 minut.</p>",
+          "cards": [
+            { "t": "Rozdíl mezi fixními a variabilními náklady", "bin": "jadro", "why": "Bez rozlišení dvou druhů nákladů žák do vzorce nemá co dosadit." },
+            { "t": "Jednotková marže: cena minus variabilní náklad na kus", "bin": "jadro", "why": "Je to mezikrok, který žáci nejčastěji přeskočí a pak nevědí, kam co dosadit." },
+            { "t": "Vzorec: bod zvratu = fixní náklady děleno marže na kus", "bin": "jadro", "why": "Je to přímo dovednost z cíle." },
+            { "t": "Výklad výsledku: pod bodem zvratu ztráta, nad ním zisk", "bin": "jadro", "why": "Cíl výslovně žádá vysvětlit, co výsledek znamená. Samotné číslo nestačí." },
+            { "t": "Nakreslení grafu nákladů a výnosů s bodem zvratu", "bin": "dopl", "why": "Obrázek pomáhá porozumění, ale cíl žák splní i výpočtem." },
+            { "t": "Jak se bod zvratu posune, když vzroste nájem", "bin": "dopl", "why": "Pěkné využití pro rychlé žáky a další úkol. Cíl to nevyžaduje." },
+            { "t": "Bod zvratu u firmy s několika výrobky najednou", "bin": "nice", "why": "Je to složitější výpočet, který by ubral čas základnímu případu." },
+            { "t": "Vliv daně z příjmů a odpisů na výpočet", "bin": "nice", "why": "Zavádí další pojmy dřív, než žák zvládne základ." },
+            { "t": "Historie ekonomických teorií nákladů", "bin": "nice", "why": "K cíli nic nepřidá." }
+          ]
+        }
+      }
+    }
+    </script>
+  </div>
+
+  <h3>Co musí žák znát dřív</h3>
+  <p>Součástí analýzy je zjistit <b>předpoklady</b>: co musí žák umět dřív, než pochopí nové. Pojmy na sebe navazují jako cihly. Když chybí spodní, celý výklad se zhroutí a žák tomu nerozumí, přestože jste to vysvětlili dobře. Řetězec pojmů si proto sestavte předem a zkontrolujte si, kde by mohla být mezera.</p>
+
+  <div class="callout callout--tip"><div><div class="cl-title">Jak předpoklady zjistit</div><p>Krátký vstupní úkol na začátku (dvě tři otázky nebo malá úloha) řekne víc než dotaz „Pamatujete si to?“. Diagnostickému hodnocení se věnuje kapitola Hodnocení ve výuce.</p></div></div>
+
+  <div class="ex" data-type="order" data-id="predpoklady-retezec">
+    <script type="application/json">
+    {
+      "title": "Seřaďte pojmy tak, aby každý stavěl na předchozím",
+      "byProfile": {
+        "ov": {
+          "intro": "<p>Cesta k cíli „změřit multimetrem napětí baterie“. Seřaďte pojmy tak, aby žák vždy znal to, na čem další stojí.</p>",
+          "items": [
+            { "t": "Uzavřený obvod: zdroj, spotřebič a vodiče tvoří jednu smyčku", "why": "Bez obvodu nemá napětí kde vzniknout. Všechno další se na něm ukazuje." },
+            { "t": "Napětí: rozdíl mezi dvěma místy obvodu, měří se vždy mezi dvěma body", "why": "Žák musí vědět, že napětí je „mezi“, jinak nepochopí, kam přiložit hroty." },
+            { "t": "Paralelní zapojení: součástky připojené ke stejným dvěma bodům", "why": "Staví na představě dvou bodů z předchozího kroku." },
+            { "t": "Voltmetr měří mezi dvěma body, proto se připojuje paralelně ke spotřebiči", "why": "Spojuje předchozí dva pojmy: co měříme a jak se to zapojí." },
+            { "t": "Nastavení multimetru: veličina V DC, rozsah, zdířky, odečet hodnoty", "why": "Praktické nastavení dává smysl, až když žák ví, co a kam bude připojovat." },
+            { "t": "Posouzení výsledku: baterie 4,5 V ukazuje 2,8 V, tedy je vybitá", "why": "Vyžaduje umět změřit i vědět, co je správná hodnota." }
+          ]
+        },
+        "inf": {
+          "intro": "<p>Cesta k cíli „napsat dotaz s INNER JOIN“. Seřaďte pojmy tak, aby žák vždy znal to, na čem další stojí.</p>",
+          "items": [
+            { "t": "Tabulka, řádek a sloupec: data jsou uložena v řádcích tabulky", "why": "Základ, bez kterého nemá smysl mluvit o klíčích." },
+            { "t": "Primární klíč: hodnota, která jednoznačně určuje řádek tabulky", "why": "Staví na pojmu řádku." },
+            { "t": "Cizí klíč: sloupec, který odkazuje na primární klíč jiné tabulky", "why": "Bez pojmu primárního klíče není na co odkazovat." },
+            { "t": "Podmínka spojení ON: cizí klíč se rovná primárnímu klíči", "why": "Používá oba klíče z předchozích kroků." },
+            { "t": "INNER JOIN: spojí jen ty řádky, u kterých podmínka platí", "why": "Zápis dotazu je až výsledkem předchozího řetězce." },
+            { "t": "Kontrola výsledku: počet řádků odpovídá počtu objednávek", "why": "Ověřit lze až hotový dotaz." }
+          ]
+        },
+        "_": {
+          "intro": "<p>Cesta k cíli „spočítat bod zvratu“. Seřaďte pojmy tak, aby žák vždy znal to, na čem další stojí.</p>",
+          "items": [
+            { "t": "Náklady a výnosy: co firma platí a co inkasuje", "why": "Základní pojmy, na kterých stojí všechno další." },
+            { "t": "Fixní a variabilní náklady: platí se stále, nebo rostou s počtem kusů", "why": "Rozdělení nákladů předpokládá, že žák ví, co jsou náklady." },
+            { "t": "Jednotková marže: cena minus variabilní náklad na kus", "why": "Používá variabilní náklad z předchozího kroku." },
+            { "t": "Bod zvratu: fixní náklady děleno jednotkovou marží", "why": "Vzorec spojuje fixní náklady a marži." },
+            { "t": "Výklad výsledku: pod bodem zvratu ztráta, nad ním zisk", "why": "Interpretovat lze až spočítané číslo." },
+            { "t": "Rozhodnutí: co se změní, když vzroste nájem nebo změním cenu", "why": "Využívá vzorec i jeho výklad." }
+          ]
+        }
+      },
+      "after": "Kdyby žák neznal první pojem, celý řetězec se zhroutí. Proto se předpoklady zjišťují na začátku a doplňují se dřív, než přijde nové učivo."
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="transformace">
+  <h2>Didaktická transformace: přeložit odborné do řeči žáka</h2>
+  <p>Víte, <i>co</i> budete učit. Druhý krok odpovídá na otázku <i>jak to žákům přeložit</i>. <b>Didaktická transformace</b> je převod vybraného odborného obsahu do podoby, které žák porozumí. Zjednodušit neznamená říct nepravdu: věta musí zůstat pravdivá, jen nese méně podrobností.</p>
+
+  <figure class="fig">
+    <svg viewBox="0 0 360 462" style="max-width:440px" role="img" aria-label="Schéma postupu. Odborný obsah vede přes tři kroky: 1 analýza (co učit), 2 transformace (jak přeložit) a 3 metody a plán (jak učit) k žákovi, který porozumí. Cíl hodiny a znalosti žáků řídí všechny tři kroky. Ověření vrací postup zpět k úpravě.">
+      <defs>
+        <marker id="dop2-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--tx-3)"/></marker>
+      </defs>
+      <rect x="10" y="4" width="340" height="48" rx="12" style="fill:var(--surface);stroke:var(--accent)" stroke-dasharray="6 4"/>
+      <text x="180" y="25" text-anchor="middle" font-size="14" font-weight="700" style="fill:var(--accent)">Cíl hodiny a znalosti žáků</text>
+      <text x="180" y="43" text-anchor="middle" font-size="13" style="fill:var(--tx-2)">řídí všechny tři kroky</text>
+      <line x1="348" y1="52" x2="348" y2="356" style="stroke:var(--accent)" stroke-width="2"/>
+      <line x1="334" y1="160" x2="348" y2="160" style="stroke:var(--accent)" stroke-width="2"/>
+      <line x1="334" y1="258" x2="348" y2="258" style="stroke:var(--accent)" stroke-width="2"/>
+      <line x1="334" y1="356" x2="348" y2="356" style="stroke:var(--accent)" stroke-width="2"/>
+
+      <rect x="34" y="64" width="300" height="36" rx="18" style="fill:var(--surface-3);stroke:var(--line-2)"/>
+      <text x="184" y="87" text-anchor="middle" font-size="14" style="fill:currentColor">Odborný obsah (obor, učebnice, praxe)</text>
+      <line x1="184" y1="100" x2="184" y2="120" style="stroke:var(--tx-3)" stroke-width="2" marker-end="url(#dop2-ar)"/>
+
+      <rect x="34" y="122" width="300" height="76" rx="12" style="fill:var(--surface-2);stroke:var(--line-2)"/>
+      <circle cx="58" cy="160" r="14" style="fill:var(--accent)"/>
+      <text x="58" y="166" text-anchor="middle" font-size="15" font-weight="700" style="fill:var(--on-accent)">1</text>
+      <text x="82" y="148" font-size="15" font-weight="700" style="fill:currentColor">ANALÝZA: CO učit</text>
+      <text x="82" y="170" font-size="13" style="fill:var(--tx-2)">jádro, doplněk, nice to know</text>
+      <text x="82" y="188" font-size="13" style="fill:var(--tx-2)">předpoklady a pořadí</text>
+      <line x1="184" y1="198" x2="184" y2="218" style="stroke:var(--tx-3)" stroke-width="2" marker-end="url(#dop2-ar)"/>
+
+      <rect x="34" y="220" width="300" height="76" rx="12" style="fill:var(--surface-2);stroke:var(--line-2)"/>
+      <circle cx="58" cy="258" r="14" style="fill:var(--accent)"/>
+      <text x="58" y="264" text-anchor="middle" font-size="15" font-weight="700" style="fill:var(--on-accent)">2</text>
+      <text x="82" y="246" font-size="15" font-weight="700" style="fill:currentColor">TRANSFORMACE: JAK přeložit</text>
+      <text x="82" y="268" font-size="13" style="fill:var(--tx-2)">kroky, příklad, analogie, obrázek,</text>
+      <text x="82" y="286" font-size="13" style="fill:var(--tx-2)">odborné slovo až postupně</text>
+      <line x1="184" y1="296" x2="184" y2="316" style="stroke:var(--tx-3)" stroke-width="2" marker-end="url(#dop2-ar)"/>
+
+      <rect x="34" y="318" width="300" height="76" rx="12" style="fill:var(--surface-2);stroke:var(--line-2)"/>
+      <circle cx="58" cy="356" r="14" style="fill:var(--accent)"/>
+      <text x="58" y="362" text-anchor="middle" font-size="15" font-weight="700" style="fill:var(--on-accent)">3</text>
+      <text x="82" y="344" font-size="15" font-weight="700" style="fill:currentColor">METODY A PLÁN: JAK učit</text>
+      <text x="82" y="366" font-size="13" style="fill:var(--tx-2)">metoda a forma, časový plán,</text>
+      <text x="82" y="384" font-size="13" style="fill:var(--tx-2)">ověření cíle, BOZP, rezerva</text>
+      <line x1="184" y1="394" x2="184" y2="414" style="stroke:var(--tx-3)" stroke-width="2" marker-end="url(#dop2-ar)"/>
+
+      <rect x="34" y="416" width="300" height="36" rx="18" style="fill:var(--surface-3);stroke:var(--line-2)"/>
+      <text x="184" y="439" text-anchor="middle" font-size="14" style="fill:currentColor">Žák porozumí a něco umí (ověříme)</text>
+
+      <path d="M34 434 H22 V160 H32" fill="none" style="stroke:var(--tx-3)" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#dop2-ar)"/>
+      <text transform="translate(11 297) rotate(-90)" text-anchor="middle" font-size="12" style="fill:var(--tx-3)">ověření a úprava</text>
+    </svg>
+    <figcaption>Jeden postup pro přípravu: nejdřív rozhodnu, co učit, potom to přeložím, potom zvolím, jak to budu učit. Výsledek ověřím a podle něj upravím.</figcaption>
+  </figure>
+
+  <div class="callout callout--def"><div><div class="cl-title">Proč je analýza první</div><p>Definice transformace mluví o převodu <i>vybraného</i> obsahu (např. Möhlenbrock, podle Knechta, 2007). Překládat má smysl jen to, co jste do hodiny vybrali. Ve starších materiálech najdete schéma i opačně, kde slovo transformace označuje celou cestu od oboru k učivu včetně výběru. My tyto dvě věci oddělujeme, protože se tak lépe plánují: nejdřív <b>co</b>, potom <b>jak přeložit</b>, pak <b>jak učit</b>.</p></div></div>
+
+  <h3>Šest technik překladu</h3>
+  <p>K překladu se hodí několik osvědčených technik. Nemusíte je použít všechny, ale u každého těžkého pojmu byste měli vědět, kterou z nich zkusíte.</p>
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th>Technika</th><th>Co uděláte</th><th>Příklad</th></tr></thead>
+    <tbody>
+      <tr><td>Rozdělit na kroky</td><td>Pohyb, který odborník udělá jedním tahem, rozepíšete a předvedete po krocích.</td><td>Měření: zvolit veličinu, rozsah, zapojit šňůry, přiložit hroty, odečíst.</td></tr>
+      <tr><td>Od konkrétního k abstraktnímu</td><td>Nejdřív předmět, případ nebo číslo, teprve potom pravidlo.</td><td>Spočítat jednu zakázku, potom zapsat obecný vzorec.</td></tr>
+      <tr><td>Analogie z žákova světa</td><td>Nový pojem přirovnáte k věci, kterou žák zná.</td><td>Cizí klíč jako číslo lístku v šatně: samo o hostovi nic neříká, ale podle něj ho najdu.</td></tr>
+      <tr><td>Příklad a protipříklad</td><td>Ukážete, jak věc vypadá správně, a hned špatně, aby žák viděl rozdíl.</td><td>Dobrý spoj a studený spoj vedle sebe.</td></tr>
+      <tr><td>Vizualizace</td><td>Nakreslíte, ukážete schéma, fotku, časovou osu.</td><td>Schéma toku dokladu nebo zapojení obvodu.</td></tr>
+      <tr><td>Žargon postupně</td><td>Nejdřív říkáte obyčejným slovem, později zavedete odborný název a už ho používáte.</td><td>„Lístek z šatny“, po druhém opakování „cizí klíč“.</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout callout--warn"><div><div class="cl-title">Analogie má hranice</div><p>Přirovnání pomůže pochopit jednu vlastnost, ale nikdy nepokrývá všechny. Řekněte žákům nahlas, kde přestává platit („s lístkem z šatny si nejde vyzvednout dva kabáty, s klíčem v databázi ano“). Jinak si z ní odnesou omyl.</p></div></div>
+
+  <p>Teď to vyzkoušejte. Vraťte se k odbornému výkladu z prvního cvičení a přepište jeho jádro tak, aby ho žák mohl použít. Kontrola hledá typické znaky dobrého překladu, ne jediné správné znění.</p>
+
+  <div class="ex" data-type="rewrite" data-id="prepis-vykladu">
+    <script type="application/json">
+    {
+      "title": "Přeložte odborný výklad pro začátečníka",
+      "need": 0.7,
+      "byProfile": {
+        "ov": { "items": [ {
+          "title": "Měření napětí multimetrem",
+          "situation": "Žák 1. ročníku drží multimetr poprvé. Neví, co je rozsah, ani kam přiložit hroty.",
+          "bad": "Přepněte na V DC, zvolte vhodný rozsah a připojte přístroj paralelně ke spotřebiči, přičemž respektujte vysokou vstupní impedanci voltmetru. Odečtěte hodnotu.",
+          "task": "Přepište výklad pro tohoto žáka. Rozdělte postup na kroky, vysvětlete běžnými slovy jeden odborný pojem, doplňte konkrétní příklad a nakonec zadejte krátký úkol nebo otázku. Věty držte krátké.",
+          "checks": [
+            { "label": "Postup je rozdělený na kroky", "all": ["(nejprve|nejdriv|1[.)]|prvni)", "(potom|pak |dale|2[.)]|nasledne|druhy)"], "hint": "Rozepište postup na kroky a očíslujte je nebo použijte slova nejdřív, potom, nakonec." },
+            { "label": "Vysvětluje jeden odborný pojem běžnými slovy", "any": ["znamena", "to je ", "to jsou ", "to jest", "tj\\.", "neboli", "coz je", "jinymi slovy", "odborne (se )?(mu )?(rika|nazyva)", "je jako", "predstavte si"], "hint": "Řekněte, co znamená například rozsah nebo paralelně, obyčejnými slovy." },
+            { "label": "Obsahuje konkrétní příklad", "any": ["napr(iklad|\\.)", "priklad", "baterie", "zarovk", "\\d+([,.]\\d+)? ?v\\b"], "hint": "Použijte konkrétní situaci: baterie, žárovka, číslo, které žák uvidí na displeji." },
+            { "label": "Věty jsou krátké (žádná nad zhruba 200 znaků)", "all": ["^(?!.*[^.!?;:)0-9]{200,})"], "hint": "Rozdělte dlouhé souvětí na dvě až tři věty." },
+            { "label": "Končí otázkou nebo úkolem pro žáka", "any": ["\\?", "zkuste", "vyzkousejte", "zopakujte", "ukazte", "reknete"], "hint": "Zadejte žákovi krátký úkol, ze kterého uvidíte, že postupu rozumí." }
+          ],
+          "model": "Multimetr je přístroj na měření napětí, proudu a odporu. Dnes budeme měřit napětí baterie, tedy kolik voltů zdroj „dává“ do obvodu. Postup má čtyři kroky.<br>1. Otočte přepínač na značku V s rovnou čárou (stejnosměrné napětí) a nastavte například rozsah 20 V. Rozsah znamená nejvyšší napětí, které přístroj v této poloze změří. Baterie 4,5 V se do něj vejde.<br>2. Zapojte černou šňůru do zdířky COM a červenou do zdířky označené V.<br>3. Přiložte hroty k oběma pólům baterie: černý k minusu a červený k plusu.<br>4. Odečtěte číslo na displeji a připište jednotku V.<br>Zkuste to na baterii u svého stolu. Co ukáže displej, když hroty prohodíte?",
+          "minLen": 120 } ] },
+        "inf": { "items": [ {
+          "title": "Spojení tabulek příkazem JOIN",
+          "situation": "Žák 2. ročníku umí SELECT a WHERE. Neví, co je cizí klíč, ani proč se tabulky spojují.",
+          "bad": "JOIN vytvoří relaci z řádků dvou tabulek, které splňují predikát spojení, nejčastěji rovnost cizího a primárního klíče.",
+          "task": "Přepište výklad pro tohoto žáka. Rozdělte postup na kroky, vysvětlete běžnými slovy jeden odborný pojem, doplňte konkrétní příklad a nakonec zadejte krátký úkol nebo otázku. Věty držte krátké.",
+          "checks": [
+            { "label": "Postup je rozdělený na kroky", "all": ["(nejprve|nejdriv|1[.)]|prvni)", "(potom|pak |dale|2[.)]|nasledne|druhy)"], "hint": "Rozepište postup na kroky a očíslujte je nebo použijte slova nejdřív, potom, nakonec." },
+            { "label": "Vysvětluje jeden odborný pojem běžnými slovy", "any": ["znamena", "to je ", "to jsou ", "to jest", "tj\\.", "neboli", "coz je", "jinymi slovy", "odborne (se )?(mu )?(rika|nazyva)", "je jako", "predstavte si"], "hint": "Řekněte, co znamená například cizí klíč, obyčejnými slovy nebo přirovnáním." },
+            { "label": "Obsahuje konkrétní příklad", "any": ["napr(iklad|\\.)", "priklad", "zakazni", "objednavk"], "hint": "Použijte konkrétní tabulky, například Zákazníci a Objednávky, a jeden řádek dat." },
+            { "label": "Věty jsou krátké (žádná nad zhruba 200 znaků)", "all": ["^(?!.*[^.!?;:)0-9]{200,})"], "hint": "Rozdělte dlouhé souvětí na dvě až tři věty." },
+            { "label": "Končí otázkou nebo úkolem pro žáka", "any": ["\\?", "zkuste", "vyzkousejte", "zopakujte", "ukazte", "reknete"], "hint": "Zadejte žákovi krátký úkol, ze kterého uvidíte, že postupu rozumí." }
+          ],
+          "model": "JOIN spojí dvě tabulky do jedné, aby bylo vidět, co k čemu patří. Vezměme například tabulku Zákazníci se sloupcem id a tabulku Objednávky se sloupcem zakaznik_id. Číslo zakaznik_id je jako číslo lístku v šatně: samo o hostovi nic neříká, ale podle něj ho najdeme. Odborně se mu říká cizí klíč. Postup má tři kroky.<br>1. Napište, které sloupce chcete vidět (SELECT).<br>2. Uveďte první tabulku (FROM) a druhou (JOIN).<br>3. Řekněte, čím se řádky párují: ON zakaznici.id = objednavky.zakaznik_id.<br>Zkuste dotaz spustit a spočítat, kolik řádků vrátil. Kolik jich má být?",
+          "minLen": 120 } ] },
+        "_": { "items": [ {
+          "title": "Bod zvratu pro začátečníka",
+          "situation": "Žák 3. ročníku zná pojmy náklady a výnosy. Neví, co je bod zvratu, a nechápe, proč se dělí nájem.",
+          "bad": "Bod zvratu je objem produkce, při kterém se celkové výnosy rovnají celkovým nákladům. Určí se jako podíl fixních nákladů a jednotkové marže.",
+          "task": "Přepište výklad pro tohoto žáka. Rozdělte postup na kroky, vysvětlete běžnými slovy jeden odborný pojem, doplňte konkrétní příklad a nakonec zadejte krátký úkol nebo otázku. Věty držte krátké.",
+          "checks": [
+            { "label": "Postup je rozdělený na kroky", "all": ["(nejprve|nejdriv|1[.)]|prvni)", "(potom|pak |dale|2[.)]|nasledne|druhy)"], "hint": "Rozepište postup na kroky a očíslujte je nebo použijte slova nejdřív, potom, nakonec." },
+            { "label": "Vysvětluje jeden odborný pojem běžnými slovy", "any": ["znamena", "to je ", "to jsou ", "to jest", "tj\\.", "neboli", "coz je", "jinymi slovy", "odborne (se )?(mu )?(rika|nazyva)", "je jako", "predstavte si"], "hint": "Řekněte, co znamená například bod zvratu nebo fixní náklady, obyčejnými slovy." },
+            { "label": "Obsahuje konkrétní příklad s čísly", "any": ["napr(iklad|\\.)", "priklad", "pekarn", "rohlik", "kavarn", "\\d+ ?(kc|korun)"], "hint": "Použijte konkrétní podnik a konkrétní čísla, například pekárnu a nájem v korunách." },
+            { "label": "Věty jsou krátké (žádná nad zhruba 200 znaků)", "all": ["^(?!.*[^.!?;:)0-9]{200,})"], "hint": "Rozdělte dlouhé souvětí na dvě až tři věty." },
+            { "label": "Končí otázkou nebo úkolem pro žáka", "any": ["\\?", "zkuste", "vyzkousejte", "zopakujte", "ukazte", "reknete"], "hint": "Zadejte žákovi krátký úkol, ze kterého uvidíte, že postupu rozumí." }
+          ],
+          "model": "Bod zvratu znamená počet prodaných kusů, od kterého firma přestane být ve ztrátě. Zkuste to na příkladu pekárny: nájem 30 000 Kč měsíčně platí, i když nic neprodá. To jsou fixní náklady. Rohlík stojí na mouku a energii 2 Kč a prodává se za 4 Kč. Postup má dva kroky.<br>1. Spočítejte, kolik zbyde z jednoho rohlíku na nájem: 4 − 2 = 2 Kč.<br>2. Vydělte nájem touto částkou: 30 000 : 2 = 15 000 rohlíků.<br>Od 15 000 rohlíků měsíčně pekárna nevydělává na ztrátě. Kolik by to bylo, kdyby rohlík stál 5 Kč?",
+          "minLen": 120 } ] }
+      }
+    }
+    </script>
+  </div>
+
+  <details class="acc"><summary>Chci vědět víc: jak se s pojmem pracovalo</summary><div class="acc-body">
+    <p>V české literatuře se používá slovo <i>transformace</i>, v německy psané didaktice starší <i>didaktické zjednodušení</i> a <i>redukce</i>. Novější přístup, <i>didaktická rekonstrukce</i>, chce, aby učitel před výběrem a překladem zjistil, jak žáci o tématu skutečně přemýšlejí, včetně jejich mylných představ. Přehled podává Knecht (2007). Praktický závěr je stejný, jaký jste právě použili: ptát se na žáka, ne jen na obor.</p>
+  </div></details>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="poradi-uciva">
+  <h2>Pořadí učiva: logika oboru, nebo cesta žáka</h2>
+  <p>Poslední rozhodnutí analýzy je pořadí učiva. Upřesníte ho, až víte, co učit a jak to přeložit. Učivo se dá řadit dvěma způsoby. <b>Logická struktura</b> vychází z oboru: definice, rozdělení, zákony, výjimky, tak jak je uspořádán v učebnici. <b>Psychologická struktura</b> vychází ze žáka: od toho, co zná a co ho zajímá, k tomu, co potřebuje umět.</p>
+
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th></th><th>Logická (podle oboru)</th><th>Psychologická (podle žáka)</th></tr></thead>
+    <tbody>
+      <tr><td>Začíná</td><td>systémem, definicí, obecným pravidlem</td><td>situací, problémem, zkušeností žáka</td></tr>
+      <tr><td>Výhoda</td><td>přehlednost, úplnost, návaznost v oboru</td><td>motivace a porozumění</td></tr>
+      <tr><td>Riziko</td><td>žák nevidí, k čemu mu to je</td><td>mezery v systému, chybí celkový přehled</td></tr>
+      <tr><td>Hodí se</td><td>pro pokročilé, pro opakování a shrnutí</td><td>pro začátečníky a nové téma</td></tr>
+    </tbody>
+  </table></div>
+
+  <div data-only="ov">
+    <div class="callout callout--practice"><div><div class="cl-title">Příklad: měření napětí</div><p><b>Logicky:</b> elektrický náboj, proud, napětí, odpor, Ohmův zákon, měřicí přístroje. <b>Psychologicky:</b> žárovka nesvítí, tak zjistíme, jestli k ní teče napětí, naučíme se voltmetr a teprve potom si pojmy zobecníme.</p></div></div>
+  </div>
+  <div data-only="inf">
+    <div class="callout callout--practice"><div><div class="cl-title">Příklad: spojení tabulek</div><p><b>Logicky:</b> relační model, klíče, normální formy, relační algebra, JOIN. <b>Psychologicky:</b> potřebuji vypsat, kdo co objednal, tak spojím dvě tabulky a klíče pojmenuji, až když je potřebuji.</p></div></div>
+  </div>
+  <div data-not="ov,inf">
+    <div class="callout callout--practice"><div><div class="cl-title">Příklad: bod zvratu</div><p><b>Logicky:</b> náklady, členění nákladů, kalkulační vzorec, bod zvratu. <b>Psychologicky:</b> pekárna nevydělává, tak zjistíme, kolik musí prodat, a pojmy fixní a variabilní náklady zavedeme, když je k tomu potřebujeme.</p></div></div>
+  </div>
+
+  <p>V praxi obě cesty kombinujete: začnete psychologicky (problém, příklad) a na konci celku shrnete logicky (přehled a souvislosti). Uvnitř psychologického řazení se opíráte o tři osvědčené zásady: <b>od jednoduchého ke složitému</b> (rostou počet kroků a obtížnost), <b>od známého k neznámému</b> (nové navazuje na to, co žák umí) a <b>od konkrétního k abstraktnímu</b> (nejdřív případ, potom pravidlo). Poznáte, která z nich je právě použita?</p>
+
+  <div class="ex" data-type="match" data-id="zasady-razeni">
+    <script type="application/json">
+    {
+      "title": "Podle čeho učitel učivo řadí?",
+      "leftTitle": "Situace v hodině",
+      "rightTitle": "Zásada řazení",
+      "pairs": [
+        { "l": "Úlohy jdou za sebou podle počtu kroků: jedna operace, potom dvě, nakonec celý postup se čtyřmi kroky.", "r": "Od jednoduchého ke složitému" },
+        { "l": "Učitel začne tím, co žáci zvládli minule, a nové téma na to výslovně naváže.", "r": "Od známého k neznámému" },
+        { "l": "Žáci nejdřív pracují s hotovým vzorkem nebo s jedním číslem, teprve potom učitel zapíše obecný vzorec.", "r": "Od konkrétního k abstraktnímu" },
+        { "l": "Osnova hodiny kopíruje učebnici: definice, rozdělení, zákony, výjimky. Žáci zatím netuší, k čemu to bude.", "r": "Logická struktura oboru" }
+      ],
+      "extra": [
+        "Od celku k částem: nejdřív hotový výrobek, potom rozbor jeho součástí",
+        "Řazení podle toho, co se učiteli hodí do rozvrhu"
+      ],
+      "after": "Logická struktura sama o sobě není chyba. Hodí se pro shrnutí a pro pokročilé. Potíž nastává, když jí začínáte se začátečníky."
+    }
+    </script>
+  </div>
+
+  <details class="acc"><summary>Chci vědět víc: Bruner a „spirála“</summary><div class="acc-body">
+    <p>Psycholog Jerome Bruner popsal tři způsoby, jak si člověk pojem představuje: činem (nejdřív si věc vyzkouší), obrazem (schéma, náčrt) a symbolem (slovo, vzorec). Doporučoval také vracet se k tématu opakovaně na vyšší úrovni, takzvaná spirála. Pro vás z toho plyne praktické pravidlo: nový pojem nejdřív ukažte a vyzkoušejte, potom nakreslete a teprve nakonec pojmenujte a zapište.</p>
+  </div></details>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="metody-formy">
+  <h2>Výběr metod a forem: jak žáka k cíli dovést</h2>
+  <p>Víte, co učit a jak to přeložit. Zbývá třetí krok: <b>jak</b> žáky k cíli dovedete. <b>Metoda</b> je cesta k cíli (předvedení, rozhovor, řešení úlohy). <b>Forma</b> je uspořádání práce: celá třída, skupiny, dvojice, samostatná práce nebo práce na pracovišti. Přehled metod a jejich členění se podrobně učí v kurzu Úvod do obecné pedagogiky a didaktiky. Tady je potřebujete jen správně <b>vybrat</b>.</p>
+  <p>Metodu nevolte podle oblíbenosti, ale podle cíle. Sloveso v cíli říká, co má žák dělat, a metoda mu to musí umožnit. V kapitole Základy didaktiky a výukového procesu jste přiřazovali k cíli činnost. Teď přidáte situaci a pojmenujete konkrétní metodu.</p>
+
+  <div class="ex" data-type="match" data-id="metoda-situace">
+    <script type="application/json">
+    {
+      "title": "Cíl a situace: jakou metodu zvolíte?",
+      "leftTitle": "Cíl a situace",
+      "rightTitle": "Metoda",
+      "extra": [ "Souvislý výklad učitele" ],
+      "byProfile": {
+        "ov": {
+          "intro": "<p>Vaše zaměření: <b data-profile-name></b>. Ke každé situaci přiřaďte metodu, která k cíli vede nejpříměji. V praxi metody kombinujete, ale v každé situaci převažuje jeden rys.</p>",
+          "pairs": [
+            { "l": "Žák nikdy nedržel multimetr a má správně změřit napětí baterie.", "r": "Předvedení a nácvik" },
+            { "l": "Žáci oba přístroje už vyzkoušeli a mají zdůvodnit, proč se voltmetr připojuje paralelně.", "r": "Řízený rozhovor" },
+            { "l": "Žák má z katalogového listu určit největší dovolený proud součástky. Dokument má k dispozici.", "r": "Práce s návodem" },
+            { "l": "Žárovka v obvodu nesvítí. Žák měření zná, ale postup mu nikdo neřekne.", "r": "Problémová úloha" },
+            { "l": "Čtveřice žáků společně zapojí rozvod pro model bytu, každý odpovídá za jednu část.", "r": "Skupinová práce" },
+            { "l": "Žák má nacvičit první pomoc při úrazu elektrickým proudem. Naostro to zkoušet nejde.", "r": "Simulace" }
+          ]
+        },
+        "inf": {
+          "intro": "<p>Vaše zaměření: <b data-profile-name></b>. Ke každé situaci přiřaďte metodu, která k cíli vede nejpříměji. V praxi metody kombinujete, ale v každé situaci převažuje jeden rys.</p>",
+          "pairs": [
+            { "l": "Žák poprvé instaluje vývojové prostředí a má uložit první program.", "r": "Předvedení a nácvik" },
+            { "l": "Žáci napsali dva zápisy téhož úkolu a mají zdůvodnit, proč je cyklus lepší než opsané příkazy.", "r": "Řízený rozhovor" },
+            { "l": "Žák má z dokumentace zjistit, jak funguje neznámá funkce, a použít ji. Dokumentace je k dispozici.", "r": "Práce s návodem" },
+            { "l": "Program vypisuje špatný výsledek. Žák umí ladit, ale chybu mu učitel nenapoví.", "r": "Problémová úloha" },
+            { "l": "Čtveřice žáků společně navrhne strukturu webu, každý dělá jinou stránku a musí se domluvit na vzhledu.", "r": "Skupinová práce" },
+            { "l": "Žák se má rozhodnout, co dělat s podezřelým e-mailem s výzvou k přihlášení. Naostro to zkoušet nejde.", "r": "Simulace" }
+          ]
+        },
+        "_": {
+          "intro": "<p>Vaše zaměření: <b data-profile-name></b>. Ke každé situaci přiřaďte metodu, která k cíli vede nejpříměji. V praxi metody kombinujete, ale v každé situaci převažuje jeden rys.</p>",
+          "pairs": [
+            { "l": "Žák poprvé vystavuje fakturu v programu a má ji vystavit správně.", "r": "Předvedení a nácvik" },
+            { "l": "Žáci počítali dva příklady a mají zdůvodnit, proč se před dělením odečítá variabilní náklad.", "r": "Řízený rozhovor" },
+            { "l": "Žák má podle oficiálních pokynů k formuláři vyplnit žádost. Pokyny má k dispozici.", "r": "Práce s návodem" },
+            { "l": "Firma má rostoucí tržby, a přesto je ve ztrátě. Žák má zjistit proč a postup mu nikdo neřekne.", "r": "Problémová úloha" },
+            { "l": "Čtveřice žáků společně připraví nabídku akce, každý řeší jednu část a nabídku pak spojí.", "r": "Skupinová práce" },
+            { "l": "Žák má zvládnout hovor s rozzlobeným zákazníkem. Na skutečném zákazníkovi to zkoušet nejde.", "r": "Simulace" }
+          ]
+        }
+      },
+      "after": "Všimněte si, že metodu určovalo sloveso a situace: dovednost potřebuje předvedení a nácvik, zdůvodnění rozhovor, hledání příčiny problémovou úlohu. Souvislý výklad k žádnému z těchto cílů nevede přímo. Kombinujte: nácvik začíná předvedením a problémovou úlohu žáci často řeší ve dvojicích."
+    }
+    </script>
+  </div>
+
+  <h3>Tři otázky při volbě</h3>
+  <ol class="steps">
+    <li><b>Co má žák udělat?</b><p>Podle slovesa v cíli: provést, zdůvodnit, najít příčinu, rozhodnout se.</p></li>
+    <li><b>Kdo je to a co máme k dispozici?</b><p>Co už umí, kolik je žáků, kolik je přístrojů, pracovišť nebo počítačů a kolik máte času.</p></li>
+    <li><b>Co se může pokazit?</b><p>Kde hrozí úraz, zmetek nebo poškození přístroje, tam nezačínejte samostatnou prací. Nejdřív předvedení a vedený nácvik.</p></li>
+  </ol>
+
+  <h3>Cíle a klíčové kompetence podle RVP</h3>
+  <p>Cíl hodiny je nejmenší cíl. Nad ním stojí cíle celého vzdělávání v oboru. Podle školského zákona jsou kurikulární dokumenty na dvou úrovních: státní (<b>RVP</b>, rámcový vzdělávací program) a školní (<b>ŠVP</b>, školní vzdělávací program). RVP je pro školy závazný a škola ho ve svém ŠVP rozpracuje do předmětů a témat. Vaše hodina tedy vychází z ŠVP a ten z RVP. V RVP oboru najdete profil absolventa s klíčovými kompetencemi a s odbornými kompetencemi oboru. Klíčové kompetence se nevážou na jeden předmět, rozvíjejí se v teorii i v odborném výcviku.</p>
+
+  <div class="callout callout--rev"><div><div class="cl-title">Ověřte si názvy v RVP a ŠVP</div><p>V RVP středního odborného vzdělávání jsou klíčové kompetence pojmenovány například takto: k učení, k řešení problémů, komunikativní, personální a sociální, občanské a kulturní povědomí, k pracovnímu uplatnění a podnikatelským aktivitám, matematické a v novějších verzích také digitální. Názvy i počet se ale liší podle verze RVP (aktualizace RVP SOV o ICT byla vydána k 1. 9. 2023) a starší prezentace uvádějí kompetence jen šest. NPI od září 2025 navíc připravuje podklady k revizi RVP SOV. Stav k 9/2026: před psaním přípravy otevřete RVP svého oboru (rvp.cz, edu.gov.cz) a ŠVP své školy a použijte názvy odtud.</p></div></div>
+
+  <div class="ex" data-type="match" data-id="cinnost-kompetence">
+    <script type="application/json">
+    {
+      "title": "Jakou klíčovou kompetenci činnost rozvíjí?",
+      "leftTitle": "Činnost žáka",
+      "rightTitle": "Klíčová kompetence",
+      "intro": "<p>Názvy jsou z RVP středního odborného vzdělávání. Ve vašem oboru se mohou mírně lišit, princip je stejný.</p>",
+      "pairs": [
+        { "l": "K neznámému přístroji či programu si žák sám najde v návodu, co potřebuje, a za chvíli s ním pracuje.", "r": "Kompetence k učení" },
+        { "l": "Přístroj nebo program přestane fungovat. Žák zvažuje možné příčiny, zkouší je a navrhne opravu.", "r": "Kompetence k řešení problémů" },
+        { "l": "Žák předá kolegovi srozumitelný písemný záznam o závadě a vysvětlí mu, co udělal.", "r": "Komunikativní kompetence" },
+        { "l": "Ve dvojici si žáci rozdělí role, domluví se na postupu a při neshodě si poradí.", "r": "Personální a sociální kompetence" },
+        { "l": "Žák připraví životopis a žádost o práci na pozici v oboru.", "r": "Kompetence k pracovnímu uplatnění a podnikatelským aktivitám" }
+      ],
+      "after": "Jedna činnost často rozvíjí víc kompetencí najednou. Ve ŠVP je vždy uvedeno, které z nich rozvíjí váš předmět, a do přípravy je zapíšete."
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="priprava-hodiny-scenar">
+  <h2>Příprava hodiny a výukový scénář</h2>
+  <p>Analýza, překlad i volba metod se sejdou v písemné <b>přípravě</b>, tedy plánu jedné vyučovací jednotky. Její nejpodrobnější část je <b>výukový scénář</b>: hodina krok za krokem s časem, činností učitele a činností žáků. Začátečník píše přípravu celou, zkušený učitel si zapíše jen body. Promyslet musí všechny složky.</p>
+
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th>Složka přípravy</th><th>Kontrolní otázka</th></tr></thead>
+    <tbody>
+      <tr><td>1. Téma a třída</td><td>Koho učím, kolik je žáků, kolik mám času?</td></tr>
+      <tr><td>2. Předchozí znalosti</td><td>Co už umějí a jak to zjistím?</td></tr>
+      <tr><td>3. Cíl (ABCD)</td><td>Co žák udělá, za jakých podmínek a jak dobře?</td></tr>
+      <tr><td>4. Jádro a klíčové pojmy</td><td>Co je jádro a co vynechám? (analýza)</td></tr>
+      <tr><td>5. Překlad</td><td>Který příklad, analogii nebo obrázek použiji? (transformace)</td></tr>
+      <tr><td>6. Metody a formy</td><td>Odpovídají slovesu v cíli?</td></tr>
+      <tr><td>7. Pomůcky</td><td>Jsou připravené a vyzkoušené předem?</td></tr>
+      <tr><td>8. Časový plán</td><td>Sečte se na délku hodiny? Co dělá učitel a co žáci?</td></tr>
+      <tr><td>9. Ověření cíle</td><td>Jakou úlohou poznám, že cíl splnili?</td></tr>
+      <tr><td>10. BOZP</td><td>Jaká jsou rizika a kdy práci zastavím? (u praktických činností)</td></tr>
+      <tr><td>11. Rezerva</td><td>Co vynechám, když nestíhám, a co zadám, když zbyde čas?</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout callout--tip"><div><div class="cl-title">Pořadí přípravy je pořadí kapitoly</div><p>Řádky 1 až 3 jsou vstup, který řídí všechny kroky. Řádek 4 je analýza, řádek 5 transformace a řádky 6 až 11 metody a plán. Rezervu a BOZP si nechte na konec, ale nevynechejte je.</p></div></div>
+
+  <p>Hotovou přípravu si nejdřív přečtěte cizíma očima. Tady je jedna napsaná s pěti chybami. Označte místa, která nesedí nebo chybí. Některé části jsou v pořádku.</p>
+
+  <div class="ex" data-type="spot" data-id="priprava-chyby">
+    <script type="application/json">
+    {
+      "title": "Najděte chyby v přípravě hodiny",
+      "needed": 0.7,
+      "byProfile": {
+        "ov": {
+          "intro": "<p>Vaše zaměření: <b data-profile-name></b>. Klepejte na úseky, které jsou v přípravě špatně. Pět z nich je chybných.</p>",
+          "parts": [
+            "Příprava učitele odborného výcviku. Téma: pájení vývodových součástek na univerzální desce. Třída: 1. ročník, 12 žáků, dílna, blok 90 minut.\n\n",
+            { "t": "Cíl hodiny: seznámit žáky s pájením.", "bad": true, "why": "Cíl popisuje činnost učitele („seznámit“) a nedá se ověřit. Má začínat žákem a pozorovatelnou činností, například: Žák zapájí pět součástek tak, aby spoje byly lesklé a bez studeného spoje." },
+            " ",
+            { "t": "Předchozí znalosti: žáci pájet už umějí, takže to nebudu ověřovat.", "bad": true, "why": "Předpoklad bez ověření. Někteří žáci mohli pájet naposledy na základní škole, jiní vůbec. Zjistěte to krátkou zkouškou (jeden spoj) a podle výsledku plánujte." },
+            "\n\n",
+            { "t": "Jádro: teplota a čistota hrotu, pořadí kroků (ohřát spojovaný bod, přidat cín, odtáhnout cín, potom hrot) a vzhled dobrého spoje. Pojem „studený spoj“ zavedu až po první ukázce.", "bad": false, "why": "V pořádku. Jádro je úzké a zaměřené na cíl a odborný pojem se zavádí postupně." },
+            " ",
+            { "t": "Metoda: předvedení u pracoviště, potom nácvik ve dvojicích, hotový spoj porovnám se vzorkem.", "bad": false, "why": "V pořádku. Nová dovednost začíná předvedením a vedeným nácvikem a výsledek se poměřuje s kritériem." },
+            "\n\n",
+            { "t": "Časový plán: úvod 10 min, předvedení 15 min, nácvik 45 min, ověření 15 min, úklid 10 min.", "bad": true, "why": "Součet je 95 minut, ale blok má jen 90. Plán se musí sečíst na délku hodiny a ještě nechat prostor pro rezervu." },
+            " ",
+            { "t": "BOZP: poučení není potřeba, žáci jsou v dílně od září a pravidla znají.", "bad": true, "why": "Rizika pájení jsou jiná než u jiných prací (popáleniny, horký cín, výpary z tavidla). Poučení se váže na činnost a obecné poučení ze září ho nenahradí. Přesné požadavky určuje řád dílny a předpisy školy." },
+            "\n\n",
+            { "t": "Ověření: na konci se zeptám, jestli všichni rozumějí.", "bad": true, "why": "Otázka „Rozumíte?“ nic neověří: žáci přikývnou nebo mlčí. Ověření má odpovídat cíli. Žák zapájí spoj a vy ho porovnáte s kritériem." },
+            " ",
+            { "t": "Rezerva: když nestihnu ověřit všechny, dokončím to na začátku dalšího bloku. Když zbude čas, zadám rychlejším žákům spoj na hustší desce.", "bad": false, "why": "V pořádku. Učitel ví, co vynechá i co přidá." }
+          ]
+        },
+        "inf": {
+          "intro": "<p>Vaše zaměření: <b data-profile-name></b>. Klepejte na úseky, které jsou v přípravě špatně. Pět z nich je chybných.</p>",
+          "parts": [
+            "Příprava učitele informatiky. Téma: cyklus for v Pythonu. Třída: 2. ročník, 16 žáků, počítačová učebna, 45 minut.\n\n",
+            { "t": "Cíl hodiny: probrat cyklus for.", "bad": true, "why": "Cíl popisuje činnost učitele („probrat“) a nedá se ověřit. Má začínat žákem, například: Žák napíše cyklus for, který vypíše čísla 1 až 10." },
+            " ",
+            { "t": "Předchozí znalosti: proměnné a podmínky všichni zvládají, nebudu to ověřovat.", "bad": true, "why": "Předpoklad bez ověření. Kdo neumí proměnné, cyklu nerozumí. Stačí dvě krátké úlohy na začátku." },
+            "\n\n",
+            { "t": "Jádro: cyklus for s range, proměnná cyklu a výpis tabulky násobilky. Cyklus while a vnořené cykly odložím na další hodinu.", "bad": false, "why": "V pořádku. Jádro je úzké a učitel vědomě odložil další varianty." },
+            " ",
+            { "t": "Metoda: krátká ukázka na projektoru, potom samostatné úlohy na počítačích s průběžnou kontrolou.", "bad": false, "why": "V pořádku. Nová dovednost začíná ukázkou a pokračuje vedeným nácvikem." },
+            "\n\n",
+            { "t": "Časový plán: úvod 5 min, ukázka 15 min, samostatná práce 25 min, ověření 10 min.", "bad": true, "why": "Součet je 55 minut, ale hodina má 45. Plán se musí sečíst na délku hodiny a nechat rezervu." },
+            " ",
+            { "t": "Pomůcky: zda je Python nainstalovaný na všech počítačích, zjistím až v hodině.", "bad": true, "why": "Technickou stranu je nutné vyzkoušet předem. Jinak se stane, že prvních deset minut ztratíte instalací a plán se rozpadne." },
+            "\n\n",
+            { "t": "Ověření: na konci se zeptám, jestli všichni cyklu rozumějí.", "bad": true, "why": "Otázka „Rozumíte?“ nic neověří. Ověření má odpovídat cíli: žák napíše cyklus a vy ho spustíte." },
+            " ",
+            { "t": "BOZP: bez zvláštních rizik, připomenu pravidla práce v učebně a s elektrickými zásuvkami.", "bad": false, "why": "V pořádku. Rizika jsou malá a učitel je přesto neopomíjí." }
+          ]
+        },
+        "_": {
+          "intro": "<p>Vaše zaměření: <b data-profile-name></b>. Klepejte na úseky, které jsou v přípravě špatně. Pět z nich je chybných.</p>",
+          "parts": [
+            "Příprava učitele ekonomiky. Téma: bod zvratu. Třída: 3. ročník, 20 žáků, učebna, 45 minut.\n\n",
+            { "t": "Cíl hodiny: vysvětlit žákům bod zvratu.", "bad": true, "why": "Cíl popisuje činnost učitele („vysvětlit“) a nedá se ověřit. Má začínat žákem, například: Žák spočítá bod zvratu pekárny a vysvětlí, co výsledek znamená." },
+            " ",
+            { "t": "Předchozí znalosti: rozdíl mezi fixními a variabilními náklady všichni znají z minulého roku, nebudu to ověřovat.", "bad": true, "why": "Předpoklad bez ověření. Kdo rozdíl zapomněl, do vzorce nemá co dosadit. Stačí dvě krátké úlohy na začátku." },
+            "\n\n",
+            { "t": "Jádro: jednotková marže, vzorec bodu zvratu a výklad výsledku. Daň, odpisy a víc výrobků najednou vynechám.", "bad": false, "why": "V pořádku. Jádro je úzké a učitel vědomě odložil složitější případy." },
+            " ",
+            { "t": "Metoda: společný příklad pekárny na tabuli, potom samostatné počítání ve dvojicích s kontrolou výsledku.", "bad": false, "why": "V pořádku. Nejdřív společný postup, potom samostatná práce s kontrolou." },
+            "\n\n",
+            { "t": "Časový plán: úvod 5 min, společný příklad 15 min, samostatná práce 20 min, ověření 10 min.", "bad": true, "why": "Součet je 50 minut, ale hodina má 45. Plán se musí sečíst na délku hodiny a nechat rezervu." },
+            " ",
+            { "t": "Rezerva: nepotřebuji ji, plán je přesný na minutu.", "bad": true, "why": "Každá hodina se v něčem zdrží: dotaz, technický problém, pomalejší žák. Bez rezervy se ověření obětuje jako první." },
+            "\n\n",
+            { "t": "Ověření: na konci se zeptám, jestli všichni rozumějí.", "bad": true, "why": "Otázka „Rozumíte?“ nic neověří. Ověření má odpovídat cíli: žák spočítá druhý příklad a vy zkontrolujete výsledek." }
+          ]
+        }
+      }
+    }
+    </script>
+  </div>
+
+  <h3>Vaše příprava</h3>
+  <p>Vyberte téma, které opravdu budete učit, a projděte všechny složky. Zápis se ukládá ve vašem prohlížeči, můžete ho stáhnout nebo zkopírovat do své přípravy. Využijete ho i v závěrečném portfoliu.</p>
+
+  <div class="ex" data-type="reflect" data-id="priprava-hodiny">
+    <script type="application/json">
+    {
+      "title": "Příprava hodiny na vlastní téma",
+      "file": "dop-kapitola-2-priprava-hodiny",
+      "header": "Didaktika odborných předmětů – kapitola 2: příprava hodiny",
+      "min": 30,
+      "prompts": [
+        { "id": "tema", "q": "Téma a třída (ročník, obor, počet žáků, délka hodiny)", "ph": "Např. Pájení vývodových součástek, 1. ročník, 12 žáků, blok 90 minut" },
+        { "id": "znalosti", "q": "Předchozí znalosti: co žáci už umějí a jak to na začátku zjistím?", "ph": "Umějí… Zjistím to tím, že…" },
+        { "id": "cil", "q": "Cíl hodiny ve struktuře ABCD (začíná žákem, pozorovatelné sloveso, podmínky, kritérium)", "ph": "Žák podle … a s použitím … udělá … tak, aby …" },
+        { "id": "jadro", "q": "Jádro učiva a klíčové pojmy (3 až 5 v pořadí). Co záměrně vynechám?", "ph": "Jádro: … Vynechám: …" },
+        { "id": "preklad", "q": "Překlad: jak vysvětlím nejtěžší pojem (krok, příklad, analogie, obrázek)?", "ph": "Nejtěžší pojem je … Vysvětlím ho tak, že …" },
+        { "id": "metody", "q": "Metody a formy. Proč odpovídají slovesu v cíli?", "ph": "Zvolím … a formu …, protože cíl vyžaduje …" },
+        { "id": "pomucky", "q": "Pomůcky a příprava prostoru: co připravím a vyzkouším předem?", "ph": "Připravím … Vyzkouším …" },
+        { "id": "plan", "q": "Časový plán (čas, činnost učitele, činnost žáků). Součet musí odpovídat délce hodiny.", "ph": "0–5 min: … učitel … žáci …" },
+        { "id": "overeni", "q": "Ověření: jakou úlohou a podle jakého kritéria poznám, že cíl splnili?", "ph": "Žák udělá … Za splněné budu považovat…" },
+        { "id": "bozp", "q": "BOZP a rizika: čeho se to týká, jak žáky poučím a kdy činnost zastavím? (Bez rizik napište, proč nejsou.)", "ph": "Rizika: … Poučení: … Zastavím, když…" },
+        { "id": "rezerva", "q": "Rezerva: co vynechám, když nestíhám, a co zadám, když zbyde čas?", "ph": "Když nestíhám… Když zbyde čas…" }
+      ]
+    }
+    </script>
+  </div>
+
+  <div class="ex" data-type="checklist" data-id="kontrola-pripravy">
+    <script type="application/json">
+    {
+      "title": "Jak jsem na tom s přípravou hodiny",
+      "file": "dop-kapitola-2-kontrola-pripravy",
+      "header": "Didaktika odborných předmětů – kapitola 2: kontrola přípravy",
+      "intro": "<p>Ohodnoťte svou přípravu z předchozího zápisu. Kde je jednička nebo dvojka, tam ji ještě dopracujte.</p>",
+      "scale": ["1 – chybí", "2 – rozpracováno", "3 – hotovo"],
+      "items": [
+        { "t": "Cíl začíná žákem a je ověřitelný (Adresát, Chování, Podmínky, Kritérium).", "group": "Cíl a žáci" },
+        { "t": "Vím, co žáci už umějí, a mám způsob, jak to na začátku ověřit.", "group": "Cíl a žáci" },
+        { "t": "Jádro učiva je vybráno a oddělené od doplňku a od nice to know.", "group": "Analýza a překlad" },
+        { "t": "Nejtěžší pojem mám převedený do řeči žáka (kroky, příklad, obrázek).", "group": "Analýza a překlad" },
+        { "t": "Metoda a forma odpovídají slovesu v cíli.", "group": "Metody a plán" },
+        { "t": "Časový plán se sečte na délku hodiny a obsahuje rezervu.", "group": "Metody a plán" },
+        { "t": "Ověření cíle odpovídá tomu, co cíl slibuje (dovednost se ověřuje předvedením).", "group": "Metody a plán" },
+        { "t": "Pomůcky a prostor jsou připravené a vyzkoušené předem.", "group": "Metody a plán" },
+        { "t": "Rizika jsou promyšlená a poučení o BOZP mám zapsané (u praktických činností).", "group": "Bezpečnost a rámec" },
+        { "t": "Vím, které klíčové kompetence hodina rozvíjí, a názvy mám převzaté z ŠVP.", "group": "Bezpečnost a rámec" }
+      ]
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="zaver-kapitoly">
+  <h2>Ověřte si, co víte</h2>
+  <div class="ex" data-type="quiz" data-id="zaver-kviz">
+    <script type="application/json">
+    {
+      "title": "Závěrečný kvíz kapitoly",
+      "pass": 0.7,
+      "shuffleItems": true,
+      "items": [
+        { "q": "Který postup přípravy odpovídá této kapitole?", "pick": [
+            "Analýza (co učit), transformace (jak přeložit), metody a plán (jak učit)",
+            "Transformace (jak přeložit), analýza (co učit), metody a plán (jak učit)",
+            "Metody a plán (jak učit), analýza (co učit), transformace (jak přeložit)",
+            "Plán (jak učit), transformace (jak přeložit), analýza (co učit)" ],
+          "answer": 0, "why": "Překládat má smysl jen to, co jste vybrali, a metody i plán se volí až pro přeložený obsah. Cíl hodiny a znalosti žáků řídí všechny tři kroky." },
+        { "q": "Stejná informace může být v jedné hodině jádro učiva a v jiné „nice to know“.", "tf": true, "ok": true, "why": "Zařazení závisí na cíli. Vnitřní odpor voltmetru je jádro pro pokročilé měření a zbytečná zátěž pro žáka, který se učí odečíst napětí baterie." },
+        { "q": "Zjednodušit výklad pro začátečníka znamená říct mu zjednodušenou nepravdu.", "tf": true, "ok": false, "why": "Transformace přenáší vybraný obsah do srozumitelné podoby, ale věta musí zůstat pravdivá. Zjednodušení znamená méně podrobností, ne nepravdy." },
+        { "q": "Použili jste analogii (například lístek z šatny). Co je nutné udělat, aby žáky nemátla?", "pick": [
+            "Říct nahlas, kde přestává platit",
+            "Používat ji pořád místo odborného názvu",
+            "Zeptat se jen nejlepšího žáka, jestli jí rozumí",
+            "Odborný název už nikdy nezavádět" ],
+          "answer": 0, "why": "Analogie vysvětlí jednu vlastnost, ne všechny. Kde přestává platit, musíte říct, jinak si žák odnese omyl. Odborný název se zavádí postupně." },
+        { "q": "Žák má zapojit přístroj, který nikdy neviděl, a chybné zapojení by přístroj poškodilo. Čím začnete?", "pick": [
+            "Předvedením po krocích a vedeným nácvikem",
+            "Souvislým výkladem o principu přístroje",
+            "Samostatnou prací podle návodu, ať si poradí",
+            "Diskusí o tom, jak by přístroj zapojili" ],
+          "answer": 0, "why": "Nová dovednost s rizikem chyby se učí činností pod vedením. Výklad principu ani samostatná práce s návodem nejsou první krok. Diskuse předpokládá, že žák už něco umí." },
+        { "q": "Kde najdete závazné znění klíčových kompetencí pro obor, který učíte?", "pick": [
+            "V RVP oboru, jejich rozpracování do předmětů je ve ŠVP školy",
+            "Ve staré prezentaci z tohoto kurzu",
+            "V rozvrhu hodin a v ročním plánu školy",
+            "V provozním řádu učebny nebo dílny" ],
+          "answer": 0, "why": "RVP je státní závazný rámec a škola ho rozpracuje ve svém ŠVP. Názvy i počet kompetencí se v různých verzích RVP liší, proto se berou z dokumentu oboru, ne ze starších materiálů." },
+        { "q": "Plán, který se sečte přesně na délku hodiny a nemá rezervu, je ideální.", "tf": true, "ok": false, "why": "Každá hodina se v něčem zdrží: dotaz, technický problém, pomalejší žák. Bez rezervy se jako první obětuje ověření cíle." },
+        { "q": "Poučení o BOZP na začátku školního roku stačí i pro novou činnost s novým rizikem.", "tf": true, "ok": false, "why": "Poučení se váže na konkrétní činnost a její rizika. U nové činnosti (pájení, nové nářadí) je potřeba konkrétní poučení a řídit se řádem dílny a předpisy školy." },
+        { "q": "Cíl zní: „Žák zdůvodní zvolený postup.“ Co ho ověří nejlépe?", "pick": [
+            "Každý žák napíše dvě věty, proč zvolil svůj postup",
+            "Učitel se zeptá, jestli všichni rozumějí",
+            "Žáci opíšou postup z tabule do sešitu",
+            "Učitel zadá domácí úkol na příště" ],
+          "answer": 0, "why": "Ověření musí odpovídat slovesu v cíli. Zdůvodnění se ověří tím, že ho žák napíše nebo řekne. Otázka „Rozumíte?“ ani opis nic neověří." },
+        { "q": "Vyberte všechny složky, které v přípravě praktické činnosti nesmí chybět.", "pick": [
+            "Poučení o rizicích a bezpečnostní podmínky",
+            "Způsob ověření, že cíl žáci splnili",
+            "Časová rezerva",
+            "Životopis učitele",
+            "Seznam všech pojmů z oboru" ],
+          "answer": [0, 1, 2], "why": "BOZP, ověření cíle i rezerva patří do přípravy. Životopis učitele ani úplný seznam pojmů oboru ne, protože analýza vybírá jen jádro." }
+      ]
+    }
+    </script>
+  </div>
+
+  <p>Svou přípravu hodiny máte v předchozí sekci (zápis <i>Příprava hodiny na vlastní téma</i> a sebehodnocení). Pojmy z kapitoly si projděte na kartičkách a odpověď zkuste říct nahlas dřív, než kartičku otočíte.</p>
+
+  <div class="ex" data-type="flashcards" data-id="karticky">
+    <script type="application/json">
+    {
+      "title": "Pojmy kapitoly",
+      "cards": [
+        { "q": "Tři kroky přípravy a jejich pořadí?", "a": "1. Analýza (co učit), 2. transformace (jak přeložit), 3. metody a plán (jak učit a jak ověřit). Cíl hodiny a znalosti žáků řídí všechny tři." },
+        { "q": "Tři vrstvy učiva při analýze?", "a": "Jádro (bez toho cíl nesplní), doplněk (pomáhá, ale cíl to nezmění), nice to know (zajímavé, teď zbytečné)." },
+        { "q": "Čtyři kritéria, podle kterých učivo zařazujete?", "a": "Cíl hodiny, čas, předchozí znalosti žáků a dopad na praxi (nebezpečí, zmetek, chyba u zákazníka)." },
+        { "q": "Co je didaktická transformace?", "a": "Převod vybraného odborného obsahu do podoby, které žák porozumí. Věta zůstává pravdivá, nese jen méně podrobností." },
+        { "q": "Šest technik překladu?", "a": "Rozdělit na kroky, od konkrétního k abstraktnímu, analogie z žákova světa, příklad a protipříklad, vizualizace, žargon postupně." },
+        { "q": "Logická a psychologická struktura učiva?", "a": "Logická vychází z oboru (definice, rozdělení, zákony), psychologická ze žáka (situace, problém, zkušenost). Začínejte psychologicky, na konci celku shrňte logicky." },
+        { "q": "Tři zásady řazení učiva?", "a": "Od jednoduchého ke složitému, od známého k neznámému, od konkrétního k abstraktnímu." },
+        { "q": "Tři otázky při volbě metody?", "a": "Co má žák udělat (sloveso v cíli)? Kdo je to a co máme k dispozici? Co se může pokazit (bezpečnost, zmetek)?" },
+        { "q": "Které metody jste vybírali podle cíle a situace?", "a": "Předvedení a nácvik (dovednost), řízený rozhovor (zdůvodnění), práce s návodem, problémová úloha (hledání příčiny), skupinová práce, simulace (co nejde zkoušet naostro)." },
+        { "q": "Jak spolu souvisí RVP a ŠVP a kde najdu klíčové kompetence?", "a": "RVP je státní závazný rámec oboru, ŠVP je školní program, který RVP rozpracuje do předmětů. Klíčové kompetence jsou v RVP oboru a jejich rozpracování ve ŠVP. Názvy si vždy ověřte v aktuálním znění." },
+        { "q": "Složky přípravy hodiny?", "a": "Téma a třída, předchozí znalosti, cíl (ABCD), jádro a pojmy, překlad, metody a formy, pomůcky, časový plán, ověření cíle, BOZP (u praktických činností), rezerva." }
+      ]
+    }
+    </script>
+  </div>
+
+  <p class="src">Zdroje k tématu: KNECHT, P. Didaktická transformace aneb od „didaktického zjednodušení“ k „didaktické rekonstrukci“. <em>Orbis scholae</em>, 2007, roč. 1, č. 1, s. 67–81. Zákon č. 561/2004 Sb., o předškolním, základním, středním, vyšším odborném a jiném vzdělávání (školský zákon). Rámcové vzdělávací programy pro střední odborné vzdělávání (kapitola Klíčové kompetence a Funkce RVP), dostupné na <em>edu.gov.cz</em> a <em>rvp.cz</em>; stav revize RVP SOV na <em>revize.rvp.cz</em>. Národní ústav odborného vzdělávání: Koncepce klíčových kompetencí v RVP středního odborného vzdělávání (<em>nuov.cz</em>). BRUNER, J. S. <em>The Process of Education</em>. Cambridge: Harvard University Press, 1960.</p>
+</section>
+
+</article>
+<noscript><p style="padding:2rem;font-family:system-ui">Pro zobrazení výukových materiálů je potřeba zapnout JavaScript.</p></noscript>
+<script src="../../assets/js/boot.js"></script>
+</body>
+</html>

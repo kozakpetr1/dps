@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="cs" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Komunikační dovednosti učitele · Didaktika odborných předmětů</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237aa2ff'/%3E%3Cpath d='M5 13l11-5 11 5-11 5z' fill='%2308101f'/%3E%3Cpath d='M9 16v5c0 1.5 3.5 3 7 3s7-1.5 7-3v-5l-7 3z' fill='%2308101f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>try{var t=JSON.parse(localStorage.getItem('dps.v1')).theme;if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="chapter" data-course="didaktika-odbornych-predmetu" data-chapter="06-komunikacni-dovednosti-ucitele">
+<article id="chapter">
+
+<!-- ============ 1 ============ -->
+<section id="dve-zadani">
+  <h2>Dva učitelé, jedno zadání</h2>
+  <p>Dva učitelé zadají třídě stejnou práci. První řekne: „Tak to teď udělejte.“ a jde k oknu. Druhý řekne, co má být výsledkem, čím a jak dlouho se bude pracovat a podle čeho se pozná, že je hotovo. Po pěti minutách u prvního učitele polovina žáků čeká, další se ptají souseda a zbytek dělá něco jiného. Nemůže za to třída ani talent učitele, ale zadání.</p>
+
+  <div data-only="ov">
+    <div class="chat">
+      <div class="msg bad"><b>Učitel A</b>„Tak to teď udělejte.“</div>
+      <div class="msg good"><b>Učitel B</b>„Vyrobíte kostku 30 × 30 mm z ocelového polotovaru. Použijte pilník, svěrák a posuvné měřidlo, postupujte podle výkresu. Máte 40 minut, v 9.30 se sejdeme u stolu. Hotovo je, když rozměry sedí na ±0,3 mm a hrany jsou bez otřepů. Anno, co uděláš jako první?“</div>
+    </div>
+  </div>
+  <div data-not="ov">
+    <div class="chat">
+      <div class="msg bad"><b>Učitel A</b>„Tak to teď udělejte.“</div>
+      <div class="msg good"><b>Učitel B</b>„Ve dvojicích vyřešíte úlohy 1 až 4 z pracovního listu. Můžete používat poznámky a kalkulačku. Máte 15 minut, v 10.20 porovnáme výsledky. Hotovo je, když má každá úloha postup i výsledek s jednotkou. Anno, co uděláš jako první?“</div>
+    </div>
+  </div>
+
+  <p>Dobré zadání odpovídá na čtyři otázky: <b>co je výsledkem, jak a čím ho udělám, za jak dlouho a podle čeho poznám, že je hotovo.</b> Vyzkoušejte to na mlhavém zadání.</p>
+
+  <div class="ex" data-type="rewrite" data-id="zadani-prepis">
+    <script type="application/json">
+    {
+      "title": "Přepište mlhavé zadání",
+      "need": 0.75,
+      "byProfile": {
+        "ov": { "items": [ {
+          "title": "Zadání práce v dílně",
+          "situation": "Skupina žáků 1. ročníku má v dílně z ocelového polotovaru vyrobit kostku 30 × 30 mm. K dispozici je pilník, svěrák, posuvné měřidlo a výkres. Učitel řekl:",
+          "bad": "Tak to teď udělejte.",
+          "task": "Přepište zadání tak, aby obsahovalo výsledek, postup nebo pomůcky, čas a kritérium hotovosti. Bezpečnost práce řešíme v další sekci, teď ji do zadání psát nemusíte.",
+          "checks": [
+            { "label": "Říká, co je výsledkem", "any": ["\\bvyrob", "\\bzhotov", "\\bopil", "\\bvytvor", "\\bkostk", "vysledek", "vysledkem"], "hint": "Napište, co žák na konci předloží (např. „vyrobíte kostku 30 × 30 mm“)." },
+            { "label": "Uvádí postup nebo pomůcky", "any": ["pilnik", "posuvn", "svera", "pomuck", "nastroj", "pouzij", "pomoci", "postup"], "hint": "Řekněte, čím a jak mají pracovat." },
+            { "label": "Určuje čas", "any": ["\\d+ ?(min|hod)", "do \\d{1,2}[.:]\\d{2}", "do \\d{1,2} ?(h|hod)"], "hint": "Uveďte konkrétní čas: „máte 40 minut“ nebo „do 9.30“. „Dostatek času“ nestačí." },
+            { "label": "Říká, podle čeho poznají, že je hotovo", "any": ["tolerance", "odchylk", "nejvyse", "aspon", "alespon", "\\d+ ?(%|mm|bod|chyb)", "kontrol", "kriteri", "poznate", "poznam", "musi (byt|mit)", "projde", "sedi"], "hint": "Kritérium má být měřitelné: rozměr, tolerance, počet chyb, kontrola podle listu." }
+          ],
+          "model": "Vyrobíte kostku 30 × 30 mm z ocelového polotovaru. Použijte pilník, svěrák a posuvné měřidlo a postupujte podle výkresu. Máte 40 minut, v 9.30 se sejdeme u stolu. Hotovo je, když rozměry sedí na toleranci ±0,3 mm a hrany jsou zbavené otřepů; to si zkontrolujete sami posuvným měřidlem.",
+          "minLen": 90 } ] },
+        "inf": { "items": [ {
+          "title": "Zadání práce na učebně",
+          "situation": "Žáci 1. ročníku mají v učebně napsat program, který vypíše násobilku čísla 7. Každý má počítač s vývojovým prostředím. Učitel řekl:",
+          "bad": "Tak to teď udělejte.",
+          "task": "Přepište zadání tak, aby obsahovalo výsledek, postup nebo pomůcky, čas a kritérium hotovosti.",
+          "checks": [
+            { "label": "Říká, co je výsledkem", "any": ["vypis", "\\bnapis", "vysledek", "vystup", "funkc", "\\d+ radk"], "hint": "Napište, co program dělá a co se má objevit na výstupu." },
+            { "label": "Uvádí postup nebo pomůcky", "any": ["vyvojov", "prostred", "python", "editor", "napoved", "dokumentac", "cyklus", "poznamk", "pouzij", "pomoci"], "hint": "Řekněte, v čem a s čím mají pracovat." },
+            { "label": "Určuje čas", "any": ["\\d+ ?(min|hod)", "do \\d{1,2}[.:]\\d{2}", "do \\d{1,2} ?(h|hod)"], "hint": "Uveďte konkrétní čas: „máte 15 minut“ nebo „do 10.15“." },
+            { "label": "Říká, podle čeho poznají, že je hotovo", "any": ["test", "projde", "\\d+ ?(radk|vypis|chyb)", "presne", "kriteri", "poznate", "poznam", "nejvyse", "aspon", "alespon"], "hint": "Kritérium má být ověřitelné: počet řádků výstupu, testy, počet chyb." }
+          ],
+          "model": "Napíšete program, který vypíše násobilku čísla 7 od 1 do 10, každý výsledek na samostatný řádek. Použijte cyklus for ve vývojovém prostředí, nápovědu smíte používat. Máte 15 minut, v 10.15 programy společně spustíme. Hotovo je, když program vypíše všech 10 řádků správně a projde třemi testy, které vám dám.",
+          "minLen": 90 } ] },
+        "_": { "items": [ {
+          "title": "Zadání práce ve třídě",
+          "situation": "Žáci mají ve dvojicích vyřešit čtyři úlohy z pracovního listu. Každá dvojice má poznámky a kalkulačku. Učitel řekl:",
+          "bad": "Tak to teď udělejte.",
+          "task": "Přepište zadání tak, aby obsahovalo výsledek, postup nebo pomůcky, čas a kritérium hotovosti.",
+          "checks": [
+            { "label": "Říká, co je výsledkem", "any": ["\\bvyres", "\\bvypocit", "\\bzpracuj", "\\bvyrob", "\\bvypln", "\\bnavrhn", "\\bulohy? ?[1-9]", "\\d ulo", "\\d priklad", "vysledek", "vysledky"], "hint": "Napište, co dvojice na konci předloží (např. „vyřešíte úlohy 1 až 4“)." },
+            { "label": "Uvádí postup nebo pomůcky", "any": ["kalkulack", "poznamk", "pracovni list", "tabulk", "pomuck", "pomoci", "pouzij", "pouzivat", "krok", "postup"], "hint": "Řekněte, s čím a jak mají pracovat." },
+            { "label": "Určuje čas", "any": ["\\d+ ?(min|hod)", "do \\d{1,2}[.:]\\d{2}", "do \\d{1,2} ?(h|hod)"], "hint": "Uveďte konkrétní čas: „máte 15 minut“ nebo „do 10.20“." },
+            { "label": "Říká, podle čeho poznají, že je hotovo", "any": ["jednotk", "postup i", "kontrol", "nejvyse", "aspon", "alespon", "\\d+ ?(%|bod|chyb)", "kriteri", "poznate", "poznam", "musi (byt|mit)"], "hint": "Kritérium má být ověřitelné: postup i výsledek s jednotkou, vzájemná kontrola, počet chyb." }
+          ],
+          "model": "Ve dvojicích vyřešíte úlohy 1 až 4 z pracovního listu. Můžete používat poznámky a kalkulačku, postupujte krok za krokem. Máte 15 minut, v 10.20 porovnáme výsledky. Hotovo je, když má každá úloha zapsaný postup i výsledek s jednotkou a dvojice si výsledky navzájem zkontrolovala.",
+          "minLen": 90 } ] }
+      }
+    }
+    </script>
+  </div>
+
+  <div class="callout callout--def">
+    <div>
+      <div class="cl-title">Kde je obecný model komunikace</div>
+      <p>Obecný model komunikace (odesílatel, sdělení, příjemce, šum, zpětná vazba) se probírá v kurzu Úvod do obecné pedagogiky a didaktiky. Tady je to naopak: <b>konkrétní věty a chování učitele při řízení výuky</b>, které si můžete zítra vyzkoušet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="zadavani-ukolu">
+  <h2>Instrukce, které žáci opravdu splní</h2>
+  <p>Dobře napsané zadání se ztratí tím, jak ho řeknete. V praxi se osvědčují čtyři pravidla.</p>
+  <ul>
+    <li><b>Nejdřív pozornost, potom instrukce.</b> Počkejte, až je klid a žáci se dívají na vás. Pokyn, který zazní přes hluk, platí jen pro první řady.</li>
+    <li><b>Jedna instrukce najednou a krátce.</b> Pět kroků za sebou si žák nezapamatuje. Rozdělte je, napište je na tabuli či pracovní list, postup předveďte.</li>
+    <li><b>Porozumění ověřte tím, že žák instrukci zopakuje vlastními slovy.</b> Otázka „Rozumíte?“ ověří jen ochotu říct „ano“. Nikdo nechce před třídou přiznat, že nechápe. Zeptejte se: „Petře, co uděláš jako první?“</li>
+    <li><b>V dílně nejdřív to, co může ublížit.</b> Pravidla bezpečnosti, ochranné pomůcky a rizikový krok patří na začátek zadání, ne na jeho konec. Škola podle školského zákona zajišťuje bezpečnost a ochranu zdraví žáků; jak se poučení provádí a zapisuje, určují předpisy vaší školy a pracoviště.</li>
+  </ul>
+
+  <div class="ex" data-type="order" data-id="zadani-poradi">
+    <script type="application/json">
+    {
+      "title": "Seřaďte zadání práce do správného pořadí",
+      "items": [
+        { "t": "Získat pozornost celé skupiny", "why": "Bez klidu a očního kontaktu instrukci uslyší jen část třídy a zbytek se ptá sousedů." },
+        { "t": "Říct výsledek, čas a kritérium hotovosti", "why": "Žáci nejdřív potřebují vědět, kam mají dojít. Kroky pak dávají smysl." },
+        { "t": "Předvést nebo ukázat postup po krocích (v dílně začněte rizikovým krokem a ochrannými pomůckami)", "why": "Krátce a po krocích. Co může ublížit, řekněte jako první, ne až po první chybě." },
+        { "t": "Nechat jednoho či dva žáky zopakovat instrukci vlastními slovy", "why": "Teprve to ukáže, co žáci skutečně slyšeli. Chybu odhalíte, dokud stojí jen mluva, ne hotový zmetek." },
+        { "t": "Dát pokyn k zahájení práce a začít obcházet pracoviště", "why": "Zahájení je až poslední krok. Obcházení hned na začátku zachytí žáky, kteří se přesto ztratili." }
+      ],
+      "after": "Nejčastěji se přeskakuje čtvrtý krok. Bez něj zjistíte, že žáci nerozuměli, až když je práce hotová špatně."
+    }
+    </script>
+  </div>
+
+  <p>Ještě jedno rozlišení: ne každá věta, kterou učitelé po zadání říkají, něco ověří.</p>
+
+  <div class="ex" data-type="classify" data-id="overeni-porozumeni">
+    <script type="application/json">
+    {
+      "title": "Co skutečně ověří porozumění?",
+      "instant": true,
+      "bins": [
+        { "id": "ok", "name": "Skutečně ověří", "hint": "žák musí něco říct nebo ukázat" },
+        { "id": "no", "name": "Vyvolá jen „ano“", "hint": "odpovědět lze bez porozumění" }
+      ],
+      "cards": [
+        { "t": "„Rozumíte všichni?“", "bin": "no", "why": "Zkouška ochoty přiznat neznalost před třídou. Kývnou i ti, kteří nechápou." },
+        { "t": "„Marku, řekni vlastními slovy, co uděláš jako první.“", "bin": "ok", "why": "Žák musí instrukci znovu složit z vlastních slov. Pokud ji zkomolí, hned to uvidíte." },
+        { "t": "„Máte nějaké otázky?“", "bin": "no", "why": "Mlčení znamená spíš nechuť ptát se než porozumění." },
+        { "t": "„Ukažte mi na pracovním listu, kde začnete.“", "bin": "ok", "why": "Ukázání je pozorovatelná činnost. Chybu poznáte podle prstu, ne podle „ano“." },
+        { "t": "„Je to jasné?“", "bin": "no", "why": "Uzavřená otázka, na kterou se snadno odpoví „ano“, i když jasné není." },
+        { "t": "„Ve dvojici si řekněte první krok, potom se zeptám jednoho z vás.“", "bin": "ok", "why": "Každý žák musí instrukci vyslovit a nikdo neví, kdo bude vyvolán." },
+        { "t": "„Tak si to ještě jednou zopakujeme: nejdřív zapsat, pak zkontrolovat.“", "bin": "no", "why": "Opakuje učitel, ne žák. Zpětná vazba o porozumění tak nevznikne." },
+        { "t": "„Tak jdeme na to, ne?“", "bin": "no", "why": "Řečnická otázka. Nikdo nemusí ukázat, co pochopil." }
+      ]
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="otazky">
+  <h2>Otázky, které nutí přemýšlet</h2>
+  <p>Otázky jsou nejlevnější nástroj řízení výuky: nestojí nic a hned ukážou, co žáci vědí. Rozlišují se ve dvou směrech, které se často pletou.</p>
+  <ul>
+    <li><b>Podle tvaru odpovědi.</b> <i>Uzavřená</i> otázka má krátkou odpověď (ano, ne, číslo, název). <i>Otevřená</i> otázka vyžaduje, aby žák odpověď sám sestavil, a správných formulací je víc.</li>
+    <li><b>Podle náročnosti myšlení.</b> <i>Reprodukční</i> otázka chce vybavit naučené (v Bloomově taxonomii z <a href="01-zaklady-didaktiky.html">první kapitoly</a> zapamatovat a porozumět). <i>Produktivní, problémová</i> otázka chce použít znalost v nové situaci, rozebrat, posoudit či navrhnout.</li>
+  </ul>
+  <p>Uzavřená otázka není chyba: „Je stroj odpojený od proudu?“ má být uzavřená. Chyba je ptát se <b>jen</b> uzavřeně. Pak zjistíte, kdo tipuje, ale ne kdo chápe.</p>
+
+  <div class="ex" data-type="classify" data-id="otazky-trideni">
+    <script type="application/json">
+    {
+      "title": "Jaký typ otázky je to?",
+      "intro": "<p>Rozhoduje, jakou odpověď otázka žádá, ne to, jak zní. Příklady odpovídají vašemu zaměření (<b data-profile-name></b>).</p>",
+      "instant": true,
+      "bins": [
+        { "id": "uz", "name": "Uzavřená otázka", "hint": "krátká odpověď, jedna správná" },
+        { "id": "or", "name": "Otevřená reprodukční", "hint": "odpověď je v učivu, žák ji sestaví" },
+        { "id": "op", "name": "Otevřená problémová", "hint": "žák musí uvažovat, řešení je víc" }
+      ],
+      "byProfile": {
+        "ov": { "cards": [
+          { "t": "Musí se před zapnutím stroje zkontrolovat kryt?", "bin": "uz", "why": "Odpověď je ano nebo ne. Pro kontrolu bezpečnosti je uzavřená otázka správná." },
+          { "t": "Kolik dílků má nonius na tomto posuvném měřidle?", "bin": "uz", "why": "Žádá jedno číslo." },
+          { "t": "Je posuvné měřidlo přesnější než ocelové pravítko?", "bin": "uz", "why": "Ano nebo ne. Neodhalí, zda žák ví proč." },
+          { "t": "Popište, jak upnete obrobek do sklíčidla.", "bin": "or", "why": "Žák sestaví naučený postup vlastními slovy, řešení je dané." },
+          { "t": "Jakými znaky se pozná otupený nástroj?", "bin": "or", "why": "Odpověď je v učivu, žák ji musí vlastními slovy vybavit." },
+          { "t": "Součást vyšla o 0,3 mm menší. Co všechno mohlo být příčinou a jak to zjistíte?", "bin": "op", "why": "Nový případ, víc možných příčin, žák musí analyzovat." },
+          { "t": "Máte dvě možnosti upnutí této součásti. Kterou zvolíte a proč?", "bin": "op", "why": "Žák musí posoudit varianty a zdůvodnit volbu." },
+          { "t": "Zákazník chce stejný díl z jiného materiálu. Co se změní ve vašem postupu a proč?", "bin": "op", "why": "Žák přenáší znalost do nové situace." }
+        ] },
+        "inf": { "cards": [
+          { "t": "Kolik bitů má jeden bajt?", "bin": "uz", "why": "Krátká odpověď, jedno číslo." },
+          { "t": "Je protokol HTTPS šifrovaný?", "bin": "uz", "why": "Ano nebo ne." },
+          { "t": "Patří adresa 192.168.1.10 mezi soukromé adresy?", "bin": "uz", "why": "Ano nebo ne. Neukáže, zda žák chápe, proč tomu tak je." },
+          { "t": "Popište, jak funguje cyklus for.", "bin": "or", "why": "Naučený princip, který žák sestaví vlastními slovy." },
+          { "t": "Jak probíhá odeslání dat z formuláře na server?", "bin": "or", "why": "Odpověď je v učivu, žák ji musí sestavit." },
+          { "t": "Program vypíše chybu IndexError. Jak zjistíte příčinu a jak ji odstraníte?", "bin": "op", "why": "Nový případ, víc cest, žák musí analyzovat." },
+          { "t": "Máte dvě řešení: kratší, nebo rychlejší. Které odevzdáte a proč?", "bin": "op", "why": "Žák musí posoudit a zdůvodnit volbu." },
+          { "t": "Zákazník si stěžuje, že je aplikace pomalá. Co prověříte a v jakém pořadí?", "bin": "op", "why": "Žák plánuje řešení neznámého problému." }
+        ] },
+        "_": { "cards": [
+          { "t": "Je termín podání do konce měsíce?", "bin": "uz", "why": "Ano nebo ne." },
+          { "t": "Kolik hostů je v rezervaci na sobotu?", "bin": "uz", "why": "Krátká odpověď, jedno číslo." },
+          { "t": "Je tato objednávka už potvrzená zákazníkem?", "bin": "uz", "why": "Ano nebo ne. Neukáže, zda žák ví, co potvrzení znamená." },
+          { "t": "Jak postupujete při přijetí reklamace?", "bin": "or", "why": "Žák vybavuje naučený postup a formuluje ho." },
+          { "t": "Popište, z čeho se skládá nabídka pro klienta.", "bin": "or", "why": "Odpověď je v učivu, žák ji sestaví vlastními slovy." },
+          { "t": "Klient chce nabídku o čtvrtinu levnější. Co všechno můžete upravit a co to změní?", "bin": "op", "why": "Víc možností a důsledků, žák musí uvažovat." },
+          { "t": "Máte dvě varianty vyřízení žádosti: rychlejší a důkladnější. Kterou zvolíte a proč?", "bin": "op", "why": "Žák posuzuje varianty a zdůvodňuje volbu." },
+          { "t": "Návrh se klientovi nelíbí. Jak zjistíte, co mu vadí, a co navrhnete?", "bin": "op", "why": "Nový problém bez hotového postupu." }
+        ] }
+      }
+    }
+    </script>
+  </div>
+
+  <h3>Kolik ticha unesete</h3>
+  <p>Zeptat se dobře je polovina práce, druhá polovina je počkat. Mary Budd Rowe ve své přehledové stati (1986) shrnula, že učitelé po otázce čekají na začátek odpovědi obvykle sekundu nebo méně. Když se čekání prodloužilo na tři sekundy a víc, žákovské odpovědi byly delší a promyšlenější, méně žáků neodpovědělo a zapojili se i ti, kteří se jinak hlásí málo. Tři sekundy ticha jsou dlouhé. Odpočítejte si je v duchu a nedoplňujte odpověď sami.</p>
+
+  <div class="callout callout--tip">
+    <div>
+      <div class="cl-title">Když žák odpoví špatně</div>
+      <p>Nejdřív najděte v odpovědi, co je správně. Zeptejte se, jak k ní došel. Nechte ho opravit se sám, případně mu nabídněte nápovědu nebo pomoc spolužáka. Neironizujte: žák, který se před třídou zesměšní, se příště nepřihlásí.</p>
+    </div>
+  </div>
+
+  <p>Uzavřenou otázku umíte proměnit v otevřenou skoro vždy. Vyzkoušejte.</p>
+
+  <div class="ex" data-type="rewrite" data-id="otazka-prepis">
+    <script type="application/json">
+    {
+      "title": "Přepište uzavřenou otázku na otevřenou",
+      "need": 0.75,
+      "items": [
+        {
+          "title": "Kontrola výsledku",
+          "situation": "Skupina právě dokončila úlohu a vy chcete zjistit, jak k výsledku došli.",
+          "bad": "Je to správně?",
+          "task": "Přepište otázku tak, aby žáci museli popsat postup nebo zdůvodnit výsledek a nedalo se odpovědět „ano“ ani „ne“.",
+          "checks": [
+            { "label": "Nedá se odpovědět ano nebo ne", "all": ["^(?!\\s*(je|jsou|ma|maji|mate|muze|muzete|muzes|lze|da|dela|rozumi|rozumite|chapete|souhlasite|byl|byla|bylo|budete|bude|jste|jsi|znate|umite|zvladli|zvladnete|mohli|mohl)\\b)"], "hint": "Nezačínejte otázku slovesem, na které se dá odpovědět „ano“ (je, máte, můžete…). Začněte slovy jak, proč, podle čeho." },
+            { "label": "Ptá se na postup nebo důvod", "any": ["proc", "jak ", "podle ceho", "z ceho", "co vedlo", "vysvetl", "popis", "zduvodn", "v cem"], "hint": "Zeptejte se na postup („Jak jste došli…“) nebo důvod („Proč…“)." },
+            { "label": "Je formulována jako otázka nebo výzva", "any": ["\\?", "vysvetlete", "popiste", "zduvodnete", "reknete"], "hint": "Ukončete ji otazníkem nebo výzvou „popište…“." }
+          ],
+          "model": "Jak jste došli k tomuto výsledku a podle čeho jste poznali, že je správný?",
+          "minLen": 20
+        },
+        {
+          "title": "Kontrola postupu",
+          "situation": "Před zahájením práce chcete, aby žáci pochopili, proč se postup provádí právě tak.",
+          "bad": "Je správné, že se výsledek musí zkontrolovat ještě druhým způsobem?",
+          "task": "Přepište otázku tak, aby žák musel vysvětlit důvod, ne jen souhlasit.",
+          "checks": [
+            { "label": "Nedá se odpovědět ano nebo ne", "all": ["^(?!\\s*(je|jsou|ma|maji|mate|muze|muzete|muzes|lze|da|dela|rozumi|rozumite|chapete|souhlasite|byl|byla|bylo|budete|bude|jste|jsi|znate|umite|zvladli|zvladnete|mohli|mohl)\\b)"], "hint": "Začněte slovy proč, jak, co by se stalo." },
+            { "label": "Ptá se na důvod nebo důsledek", "any": ["proc", "co by se stalo", "co se stane", "jak by", "z jakeho duvodu", "zduvodn", "vysvetl", "k cemu"], "hint": "Zeptejte se na důvod („Proč…“) nebo důsledek („Co by se stalo, kdyby…“)." },
+            { "label": "Je formulována jako otázka nebo výzva", "any": ["\\?", "vysvetlete", "popiste", "zduvodnete", "reknete"], "hint": "Ukončete ji otazníkem nebo výzvou „vysvětlete…“." }
+          ],
+          "model": "Proč se výsledek kontroluje ještě druhým způsobem a co by se stalo, kdybychom to vynechali?",
+          "minLen": 20
+        }
+      ]
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="vysvetlovani">
+  <h2>Vysvětlování: srozumitelně, ne zjednodušeně</h2>
+  <p>Vysvětlování je chvíle, kdy říkáte to, co jste si připravili při didaktické transformaci učiva (viz kapitola o <a href="02-didakticka-analyza-uciva.html">didaktické analýze a transformaci</a>): rozhodli jste, co je jádro, a teď to musíte žákům předat. Dobré vysvětlení nemusí být dlouhé a má čtyři části: <b>cíl</b> (o čem to bude a k čemu to žák potřebuje), <b>vazbu na známé</b> (na co navazujete), <b>jádro s příkladem nebo analogií</b> a <b>kontrolní otázku</b>.</p>
+  <p>Odborný žargon zavádějte, ale ne první větou. Nejdřív příklad, potom slovo, potom slovo vlastními slovy. Odborník řekne „intenzifikace odvodu tepla“, žák pochopí až „ochladí to“. Analogie pomáhá, ale vždy někde kulhá, proto řekněte, kde přestává platit. A pozor na tempo: co je pro vás samozřejmost, je pro žáka novinka.</p>
+
+  <div class="ex" data-type="annotate" data-id="vysvetleni-anotace">
+    <script type="application/json">
+    {
+      "title": "Označte v přepisu, co je co",
+      "intro": "<p>Vyberte kategorii a klepněte na úseky přepisu, které do ní patří. Kategorie „Vázne“ označuje místa, kde vysvětlení kulhá. Jeden úsek nepatří do žádné kategorie, ten nechte neoznačený.</p>",
+      "pass": 0.7,
+      "categories": [
+        { "id": "cil", "name": "Cíl a smysl" },
+        { "id": "vazba", "name": "Vazba na známé" },
+        { "id": "priklad", "name": "Příklad nebo analogie" },
+        { "id": "kontrola", "name": "Kontrolní otázka" },
+        { "id": "vazne", "name": "Vázne (žargon, spěch)" }
+      ],
+      "byProfile": {
+        "ov": { "parts": [
+          "Učitel odborného výcviku vysvětluje u soustruhu:\n\n",
+          { "t": "Za chvíli budete umět vysvětlit, proč se při soustružení oceli lije na nůž řezná kapalina, a rozhodnout, kdy ji zapnout.", "cat": "cil", "why": "Sděluje, co žáci budou umět, a k čemu to potřebují." },
+          " ",
+          { "t": "Pamatujete, jak se minule zahřálo vrtání bez chlazení? Je to stejný jev.", "cat": "vazba", "why": "Navazuje na zkušenost, kterou žáci už mají." },
+          " ",
+          { "t": "Kapalina zajišťuje intenzifikaci odvodu tepla z oblasti tvorby třísky a redukci koeficientu tření na čele nástroje.", "cat": "vazne", "why": "Věta plná odborných výrazů bez vysvětlení. Žák si z ní nic neodnese, dokud ji nepřeloží do běžné řeči." },
+          " ",
+          { "t": "Zkuste si to představit takhle: suché ruce si třením zahřejete víc než ruce namydlené. Kapalina dělá totéž, snižuje tření a odvádí teplo.", "cat": "priklad", "why": "Analogie z běžné zkušenosti. Jen je potřeba dodat, že u nože kapalina navíc odplavuje třísky." },
+          " ",
+          { "t": "Než budeme pokračovat: Petře, co se stane s nožem, když kapalina uprostřed řezu dojde?", "cat": "kontrola", "why": "Otevřená otázka na důsledek. Žák musí použít to, co právě slyšel." },
+          " ",
+          { "t": "No a takhle to prostě je, ještě tam je pár věcí, ale ty si dohledáte v tabulkách, hlavně že víte, že se to zapíná.", "cat": "vazne", "why": "Učitel spěchá a vysvětlení nedokončí. Žáci zůstanou u pravidla bez porozumění a bez kritéria, kdy ji zapnout." },
+          "\n\n",
+          { "t": "Ti vzadu, přisuňte se blíž, ať všichni vidíte.", "cat": null, "why": "Organizační pokyn. Do struktury vysvětlení nepatří, ale je v pořádku." }
+        ] },
+        "inf": { "parts": [
+          "Učitel informatiky vysvětluje u tabule:\n\n",
+          { "t": "Dnes se naučíte psát cyklus, který za vás zopakuje stejný příkaz stokrát, a poznáte, kdy se vyplatí.", "cat": "cil", "why": "Sděluje, co žáci budou umět, a k čemu to potřebují." },
+          " ",
+          { "t": "Minule jste kreslili čtverec pomocí čtyř stejných příkazů za sebou. To zkusíme zkrátit.", "cat": "vazba", "why": "Navazuje na úlohu, kterou žáci už znají." },
+          " ",
+          { "t": "For iteruje přes iterabilní objekt a v každé iteraci přiřazuje proměnné aktuální prvek.", "cat": "vazne", "why": "Věta plná termínů bez vysvětlení. Začátečník jí nerozumí, dokud neuvidí příklad." },
+          " ",
+          { "t": "Je to jako rozdávání pracovních listů: u každé lavice uděláte totéž, jen list je jiný.", "cat": "priklad", "why": "Analogie z prostředí třídy, která ukazuje opakování téhož kroku s jinou hodnotou." },
+          " ",
+          { "t": "Než to zkusíte: kolikrát se vypíše slovo ahoj, když napíšu for i in range(3)?", "cat": "kontrola", "why": "Konkrétní otázka, na kterou žák odpoví jen tehdy, když princip pochopil." },
+          " ",
+          { "t": "Zbytek jsou detaily, které se dozvíte časem, prostě to opište z tabule a uvidíte.", "cat": "vazne", "why": "Vysvětlení skončí spěchem. Opisování bez porozumění je opak cíle." },
+          "\n\n",
+          { "t": "Vpředu svítí projektor, nezakrývejte ho.", "cat": null, "why": "Organizační pokyn. Do struktury vysvětlení nepatří, ale je v pořádku." }
+        ] },
+        "_": { "parts": [
+          "Učitel vysvětluje ve třídě, proč z hrubé mzdy nedostane zaměstnanec celou částku:\n\n",
+          { "t": "Po této části poznáte, proč vám z hrubé mzdy přijde na účet méně peněz, a sami si to odhadnete.", "cat": "cil", "why": "Sděluje, co žáci budou umět, a proč je to zajímá." },
+          " ",
+          { "t": "Minule jsme si prohlédli výplatní pásku. Dnes vysvětlíme první řádky.", "cat": "vazba", "why": "Navazuje na materiál, který žáci už viděli." },
+          " ",
+          { "t": "Zaměstnavatel provádí srážky: pojistné na sociální a zdravotní pojištění a zálohu na daň z příjmů ze závislé činnosti.", "cat": "vazne", "why": "Odborné pojmy (srážky, závislá činnost) bez vysvětlení. Žák nerozumí ani jedné z nich, a proto větě." },
+          " ",
+          { "t": "Představte si, že vám kamarád slíbí tisíc korun, ale tři sta si strhne na společnou kasu. Peníze nezmizely, jen šly do společných kas.", "cat": "priklad", "why": "Analogie s čísly, která ukazuje rozdíl slíbené a vyplacené částky. Kulhá v tom, že zaměstnanec za odvody dostává pojištění a služby." },
+          " ",
+          { "t": "Než půjdeme dál: proč se hrubá mzda liší od částky, která vám přijde na účet?", "cat": "kontrola", "why": "Otevřená otázka na vysvětlení. Žák musí princip formulovat vlastními slovy." },
+          " ",
+          { "t": "A tak dále, ostatní položky si dohledáte, dneska to nestihneme, snad je to jasné.", "cat": "vazne", "why": "Spěch a řečnická otázka na závěr. Nevíte, co si žáci odnesli." },
+          "\n\n",
+          { "t": "Zavřete prosím okna, ať tu není hluk z ulice.", "cat": null, "why": "Organizační pokyn. Do struktury vysvětlení nepatří, ale je v pořádku." }
+        ] }
+      }
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="zpetna-vazba-kazen">
+  <h2>Zpětná vazba a kázeň bez konfliktu</h2>
+  <p>Většina kázeňských problémů nezačíná scénou, ale větou, která žáka uráží. „Ty ses zase flákal“ říká žákovi, jaký je, a on se brání. Věta, která popíše, co vidíte, a řekne, co potřebujete, mu dává na výběr, jak se zachovat.</p>
+  <p>Thomas Gordon, autor programu Teacher Effectiveness Training, popsal takzvaný <b>JÁ-výrok</b>: sdělení o sobě místo obvinění druhého. Podle Gordona má tři části: stručný popis chování bez hodnocení, konkrétní dopad, který má na vás, a váš pocit. Ve školní praxi se pocit často nahrazuje větou, co potřebujete a proč, a přidává se volba. Právě tuto zkrácenou podobu si tady procvičíte. Kromě ní se osvědčuje několik dalších zásad.</p>
+  <ul>
+    <li><b>Popis chování místo nálepky.</b> „Za dvacet minut vidím jednu hotovou úlohu ze čtyř“ místo „flákáš se“. S popisem lze souhlasit, s nálepkou jen bojovat.</li>
+    <li><b>Klidný tón.</b> Zvýšený hlas žáci snadno čtou jako ztrátu kontroly. Ztišit hlas a chvíli počkat obvykle zabere víc než křik.</li>
+    <li><b>Volba místo příkazu.</b> „Můžeš dokončit teď, nebo o přestávce. Co si vybereš?“ Žák se rozhodne sám a nemusí před třídou ustoupit.</li>
+    <li><b>Dohoda a důslednost.</b> Co jste řekli, platí. Následky jsou předem známé, přiměřené a stejné pro všechny.</li>
+    <li><b>Kritika co nejdiskrétněji.</b> Vedle lavice nebo u pracoviště, ne před třídou.</li>
+  </ul>
+  <p>Stejně funguje i pochvala. Hattie a Timperley (2007) ve svém přehledu rozlišují zpětnou vazbu k úkolu, k postupu, k sebeřízení žáka a k osobě žáka. Právě zpětná vazba zaměřená na osobu („Jsi šikovný“) je podle nich málokdy účinná, protože o úkolu nic neříká. Užitečnější je vazba k úkolu a postupu („Postup máš zapsaný přehledně a výsledek sedí“).</p>
+
+  <div class="chat">
+    <div class="msg bad"><b>Učitel</b>„Ty ses zase flákal! Furt jen čumíš do mobilu. Takhle dopadneš.“</div>
+    <div class="msg"><b>Žák</b>„Já nic nedělal!“</div>
+    <div class="msg bad"><b>Učitel</b>„Nevykládej mi to! Zítra to budeš dělat o přestávce.“</div>
+  </div>
+  <div class="chat">
+    <div class="msg good"><b>Učitel</b>„Petře, za dvacet minut vidím dvě hotové úlohy ze čtyř a telefon na lavici. Potřebuju mít všechny čtyři hotové do konce hodiny, protože je hodnotím. Můžeš telefon dát do tašky, nebo úlohy dokončit o přestávce. Co si vybereš?“</div>
+    <div class="msg"><b>Žák</b>„Dám ho pryč.“</div>
+    <div class="msg good"><b>Učitel</b>„Dobře. Za deset minut se přijdu podívat, jak jsi daleko.“</div>
+  </div>
+
+  <div class="ex" data-type="rewrite" data-id="vycitka-prepis">
+    <script type="application/json">
+    {
+      "title": "Přepište výčitku na popis a očekávání",
+      "need": 0.8,
+      "items": [
+        {
+          "title": "Žák nepracuje",
+          "situation": "Za polovinu hodiny udělal žák jednu úlohu ze čtyř a na lavici mu leží telefon. Chcete, aby práci dokončil do konce hodiny.",
+          "bad": "Ty ses zase flákal.",
+          "task": "Přepište větu tak, aby obsahovala popis toho, co vidíte, co potřebujete a proč, a nabídla žákovi volbu. Bez nálepek a slov typu „zase“, „nikdy“, „vždy“.",
+          "checks": [
+            { "label": "Popisuje konkrétně, co učitel vidí", "any": ["\\d", "jednu ulohu", "dve ulohy", "telefon", "mobil", "vidim", "vsiml"], "hint": "Popište pozorovatelné chování: kolik úloh je hotových, co leží na lavici." },
+            { "label": "Neobsahuje nálepku ani „zase“, „vždy“, „nikdy“", "all": ["^(?![\\s\\S]*\\b(flak|len[oiy]|lin[yi]|nikdy|vzdy|vzdycky|furt|zase|nezajimas)\\w*)"], "hint": "Nálepky (flákáš se, jsi líný) a slova „zase“, „vždy“, „nikdy“ vyvolávají obranu. Zůstaňte u popisu." },
+            { "label": "Říká, co učitel potřebuje nebo očekává", "any": ["potrebuj", "ocekavam", "chci", "chtel bych", "aby ", "je potreba", "musi byt"], "hint": "Řekněte, co potřebujete: „Potřebuju, aby…“" },
+            { "label": "Uvádí důvod nebo důsledek", "any": ["protoze", "jinak", "nemuzu", "nemuzeme", "nestihn", "kvuli", "hodnotim", "hodnotit", "zbyva"], "hint": "Vysvětlete proč (např. „protože je hodnotím“)." },
+            { "label": "Nabízí volbu nebo se ptá", "any": ["\\?", "muzes .* nebo", "vyber", "bud .* nebo"], "hint": "Nabídněte aspoň dvě možnosti nebo se zeptejte, co žák potřebuje." }
+          ],
+          "model": "Petře, za dvacet minut vidím hotové dvě úlohy ze čtyř a telefon ti leží na lavici. Potřebuju mít všechny čtyři hotové do konce hodiny, protože je hodnotím. Můžeš telefon dát do tašky, nebo úlohy dokončit o přestávce. Co si vybereš?",
+          "minLen": 60
+        },
+        {
+          "title": "Žák ruší",
+          "situation": "Žák už potřetí za dvacet minut odešel od svého místa a povídá si se sousedem. Ostatní se kvůli tomu nemohou soustředit.",
+          "bad": "Kolikrát ti to mám ještě opakovat? Jsi nemožný.",
+          "task": "Přepište reakci tak, aby popisovala chování, řekla, co potřebujete a proč, a nabídla žákovi volbu.",
+          "checks": [
+            { "label": "Popisuje konkrétně, co učitel vidí", "any": ["\\d", "potreti", "trikrat", "dvakrat", "odesel", "vstal", "povida", "mluvis", "bavis", "vidim", "vsiml"], "hint": "Popište pozorovatelné chování: kolikrát a co žák dělá." },
+            { "label": "Neobsahuje nálepku ani „zase“, „vždy“, „nikdy“", "all": ["^(?![\\s\\S]*\\b(flak|len[oiy]|lin[yi]|nikdy|vzdy|vzdycky|furt|zase|nemozn)\\w*)"], "hint": "Vynechte nálepky („jsi nemožný“) a slova „zase“, „vždy“, „nikdy“." },
+            { "label": "Říká, co učitel potřebuje nebo očekává", "any": ["potrebuj", "ocekavam", "chci", "chtel bych", "aby ", "je potreba", "musi byt"], "hint": "Řekněte, co potřebujete: „Potřebuju, aby…“" },
+            { "label": "Uvádí důvod nebo důsledek", "any": ["protoze", "jinak", "nemuzu", "nemuzeme", "nestihn", "kvuli", "nemohou", "nemuzou", "soustred"], "hint": "Vysvětlete proč: co to způsobuje ostatním nebo vám." },
+            { "label": "Nabízí volbu nebo se ptá", "any": ["\\?", "muzes .* nebo", "vyber", "bud .* nebo"], "hint": "Nabídněte aspoň dvě možnosti nebo se zeptejte, co žák potřebuje." }
+          ],
+          "model": "Adame, potřetí za dvacet minut jsi odešel z místa a povídáš si se sousedem. Ostatní se kvůli tomu nemohou soustředit a já potřebuju, aby každý pracoval na svém místě. Můžeš zůstat sedět, nebo si přesednout k oknu, kde tě nikdo nebude rušit. Co ti vyhovuje?",
+          "minLen": 60
+        }
+      ]
+    }
+    </script>
+  </div>
+
+  <h3>Co říká vaše tělo</h3>
+  <p>Žáci čtou i vaši polohu v prostoru, oční kontakt, hlas, postoj a gesta. Když se slova a projev rozcházejí („klidně se ptejte“ se založenýma rukama), sdělení působí nevěrohodně a žáci se řídí spíš tím, co vidí a slyší v hlase, než tím, co říkáte. Nejde o čtení myšlenek: totéž gesto může znamenat různé věci a vy nevíte jistě, co žák vyčte. Je ale dobré vědět, co jeho zprávou <i>může</i> být.</p>
+
+  <div class="callout callout--warn">
+    <div>
+      <div class="cl-title">Pozor na číslo „7–38–55“</div>
+      <p>Často se cituje, že sdělení tvoří 7 % slova, 38 % hlas a 55 % mimika. Čísla pocházejí z Mehrabianových pokusů z roku 1967 o rozporných signálech při vyjadřování <b>pocitů a postojů</b>. Podle autora neplatí pro sdělování obecně, takže o výkladu učiva nebo zadání úkolu nic neříkají.</p>
+    </div>
+  </div>
+
+  <div class="ex" data-type="match" data-id="nonverbalni-projev">
+    <script type="application/json">
+    {
+      "title": "Co si žáci mohou z vašeho projevu vyčíst",
+      "leftTitle": "Váš nonverbální projev",
+      "rightTitle": "Co z něj žáci mohou číst",
+      "pairs": [
+        { "l": "Při výkladu chodíte mezi lavicemi a zastavíte se u nepozorných žáků.", "r": "Učitel má přehled o celé třídě, rušit se nevyplatí." },
+        { "l": "Při kritice mluvíte stále hlasitěji a rychleji.", "r": "Učitel ztrácí kontrolu nad situací." },
+        { "l": "Když žák odpovídá, díváte se do papírů a říkáte „mhm“.", "r": "Odpověď učitele nezajímá, nemá smysl se snažit." },
+        { "l": "Před důležitým pokynem ztišíte hlas a počkáte na klid.", "r": "Teď zazní něco podstatného, je třeba poslouchat." },
+        { "l": "U rozčileného žáka se skloníte do jeho výšky a mluvíte ztlumeně.", "r": "Učitel nechce konflikt, chce si promluvit." },
+        { "l": "Zadáváte úkol se založenýma rukama a říkáte „klidně se ptejte“.", "r": "Slova a projev si odporují, ptát se se nevyplatí." }
+      ],
+      "extra": [ "Učitel si hodinu připravil do posledního detailu." ],
+      "after": "Nic z toho nemusí být pravda o vás. Jde o to, co žáci ze signálů mohou vyčíst a jak se k nim zachovají."
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="narocne-situace">
+  <h2>Náročné situace: rozhodněte se</h2>
+  <p>Situace níže se opírají o pravidla, která vás provázejí celou kapitolou. Navíc platí dvě zásady. <b>Bezpečnost je vždy na prvním místě:</b> když někomu hrozí újma, zasahujete okamžitě, stručně a nahlas a vysvětlujete až potom. <b>Vážné či opakované případy</b> neřešíte sami, informujete třídního učitele nebo vedení podle školního řádu a interních předpisů, které si ověřte ve své škole.</p>
+
+  <div class="ex" data-type="scenario" data-id="scenar-odmitnuti">
+    <script type="application/json">
+    {
+      "title": "Žák odmítne pracovat",
+      "start": "n1",
+      "byProfile": {
+        "ov": {
+          "nodes": {
+            "n1": {
+              "who": "Dílna, 1. ročník",
+              "text": "Po zadání práce zůstane žák Tomáš stát u svěráku se založenýma rukama. „Tohle dělat nebudu, je to blbost.“ Ostatní vyčkávají, co uděláte.",
+              "choices": [
+                { "t": "Nahlas před všemi: „Buď to uděláš, nebo jdeš k řediteli!“", "to": "e1", "pts": 0, "fb": "Ultimátum před třídou. Žák nemá možnost ustoupit, aniž by ztratil tvář." },
+                { "t": "Klidně k němu přistoupím a tiše řeknu, co vidím: „Nezačínáš. Co ti na tom nejde?“", "to": "n2", "pts": 2, "fb": "Popis místo obvinění, v soukromí a s otázkou na příčinu." },
+                { "t": "Zatím si ho nevšímám a věnuji se ostatním. Třeba si to rozmyslí.", "to": "n3", "pts": 0, "fb": "Čekání nechává napětí růst a ostatní se dívají. Problém tím sám nezmizí." }
+              ]
+            },
+            "n2": {
+              "text": "Tomáš po chvíli tiše řekne: „Nevím, jak to mám nastavit. A nechci vypadat blbě.“",
+              "choices": [
+                { "t": "„Ukážu ti první krok, druhý zkusíš sám. Za pět minut se vrátím.“", "to": "e3", "pts": 2, "fb": "Pomoc s konkrétním krokem, postupné předání samostatnosti a domluvený návrat." },
+                { "t": "„Tak to je ostuda. Měl jsi poslouchat výklad.“", "to": "e1", "pts": 0, "fb": "Nálepka a výtka, důvod strachu zůstal a zesílil." },
+                { "t": "„Zkus to, přijdu se podívat.“ A odejdu k jinému žákovi.", "to": "e2", "pts": 1, "fb": "Povzbuzení bez pomoci. Žák může začít, ale s nejistotou." }
+              ]
+            },
+            "n3": {
+              "text": "Po pěti minutách Tomáš pořád stojí. Jeden spolužák se pobaveně ohlíží a další začínají zpomalovat.",
+              "choices": [
+                { "t": "Přistoupím k němu a tiše řeknu: „Nezačal jsi. Potřebuju vědět, co ti brání.“", "to": "n2", "pts": 1, "fb": "Vrátil jste se k diskrétnímu rozhovoru. Ztratil jste čas, ale problém se dá ještě řešit." },
+                { "t": "Před všemi: „Tomáši, už dost, pracuj!“", "to": "e1", "pts": 0, "fb": "Veřejný příkaz po pěti minutách ticha vypadá jako reakce na pobavení třídy." }
+              ]
+            },
+            "e1": { "end": true, "title": "Eskalace", "text": "Žák se zatvrdil, třída sleduje střet a vy jste ztratili čas i důvěru. Práci nezačal.", "lesson": "Ultimáta a nálepky před třídou konflikt zesilují. Nejdřív zjistěte příčinu, nejlépe v soukromí." },
+            "e2": { "end": true, "title": "Práce začala, ale nejistě", "text": "Tomáš začal, ale první pokus vyšel špatně a vaši pomoc už nehledal.", "lesson": "Za odmítáním se často skrývá strach z neúspěchu. Jeden ukázaný krok a domluvený návrat pomáhají víc než povzbuzení bez pomoci." },
+            "e3": { "end": true, "title": "Žák pracuje", "text": "Tomáš zvládl první krok, druhý zkusil sám a po pěti minutách jste ho pochválili za konkrétní zlepšení. Ostatní pracovali dál.", "lesson": "Popis, otázka na příčinu a konkrétní pomoc vyřešily problém i bez konfliktu." }
+          }
+        },
+        "_": {
+          "nodes": {
+            "n1": {
+              "who": "Učebna, 2. ročník",
+              "text": "Po zadání skupinové práce žák Tomáš odsune židli a řekne: „Tohle dělat nebudu, je to nesmysl.“ Ostatní vyčkávají, co uděláte.",
+              "choices": [
+                { "t": "Nahlas před všemi: „Buď to uděláš, nebo jdeš k řediteli!“", "to": "e1", "pts": 0, "fb": "Ultimátum před třídou. Žák nemá možnost ustoupit, aniž by ztratil tvář." },
+                { "t": "Klidně k němu přistoupím a tiše řeknu, co vidím: „Nezačínáš. Co ti na tom nejde?“", "to": "n2", "pts": 2, "fb": "Popis místo obvinění, v soukromí a s otázkou na příčinu." },
+                { "t": "Zatím si ho nevšímám a věnuji se ostatním. Třeba si to rozmyslí.", "to": "n3", "pts": 0, "fb": "Čekání nechává napětí růst a ostatní se dívají. Problém tím sám nezmizí." }
+              ]
+            },
+            "n2": {
+              "text": "Tomáš po chvíli tiše řekne: „Nevím, kde mám začít. A nechci vypadat blbě.“",
+              "choices": [
+                { "t": "„Pojď, první krok uděláme spolu, druhý zkusíš sám. Za pět minut se vrátím.“", "to": "e3", "pts": 2, "fb": "Pomoc s konkrétním krokem, postupné předání samostatnosti a domluvený návrat." },
+                { "t": "„Tak to je ostuda. Měl jsi poslouchat výklad.“", "to": "e1", "pts": 0, "fb": "Nálepka a výtka, důvod strachu zůstal a zesílil." },
+                { "t": "„Zkus to, přijdu se podívat.“ A odejdu k jiné skupině.", "to": "e2", "pts": 1, "fb": "Povzbuzení bez pomoci. Žák může začít, ale s nejistotou." }
+              ]
+            },
+            "n3": {
+              "text": "Po pěti minutách Tomáš pořád sedí bokem. Jeden spolužák se pobaveně ohlíží a skupina přestává pracovat.",
+              "choices": [
+                { "t": "Přistoupím k němu a tiše řeknu: „Nezačal jsi. Potřebuju vědět, co ti brání.“", "to": "n2", "pts": 1, "fb": "Vrátil jste se k diskrétnímu rozhovoru. Ztratil jste čas, ale problém se dá ještě řešit." },
+                { "t": "Před všemi: „Tomáši, už dost, pracuj!“", "to": "e1", "pts": 0, "fb": "Veřejný příkaz po pěti minutách ticha vypadá jako reakce na pobavení třídy." }
+              ]
+            },
+            "e1": { "end": true, "title": "Eskalace", "text": "Žák se zatvrdil, třída sleduje střet a vy jste ztratili čas i důvěru. Práci nezačal.", "lesson": "Ultimáta a nálepky před třídou konflikt zesilují. Nejdřív zjistěte příčinu, nejlépe v soukromí." },
+            "e2": { "end": true, "title": "Práce začala, ale nejistě", "text": "Tomáš začal, ale první pokus vyšel špatně a vaši pomoc už nehledal.", "lesson": "Za odmítáním se často skrývá strach z neúspěchu. Jeden ukázaný krok a domluvený návrat pomáhají víc než povzbuzení bez pomoci." },
+            "e3": { "end": true, "title": "Žák pracuje", "text": "Tomáš zvládl první krok, druhý zkusil sám a po pěti minutách jste ho pochválili za konkrétní zlepšení. Skupina pracovala dál.", "lesson": "Popis, otázka na příčinu a konkrétní pomoc vyřešily problém i bez konfliktu." }
+          }
+        }
+      }
+    }
+    </script>
+  </div>
+
+  <p>Druhá situace je jiná. Když jde o zdraví, nemáte čas na rozhovor.</p>
+
+  <div class="ex" data-type="scenario" data-id="scenar-nebezpeci">
+    <script type="application/json">
+    {
+      "title": "Nebezpečné chování: zasáhnout hned",
+      "start": "n1",
+      "byProfile": {
+        "ov": {
+          "nodes": {
+            "n1": {
+              "who": "Dílna",
+              "text": "Žák Adam v legraci zapne vrtačku, u které si spolužák právě upíná obrobek. Spolužák uskočí, ruka byla kousek od otáčejícího se vřetene. Vrtačka běží.",
+              "choices": [
+                { "t": "Okamžitě hlasitě zavelím „Stůj!“, stroj vypnu (nouzově, je-li třeba) a ověřím, že nikdo není zraněn.", "to": "n2", "pts": 2, "fb": "Nejdřív odstranit nebezpečí a zkontrolovat zdraví. Vysvětlování počká." },
+                { "t": "Nejdřív Adama vynadám, ať si uvědomí, co provedl.", "to": "e1", "pts": 0, "fb": "Než domluvíte, stroj běží dál a nebezpečí trvá." },
+                { "t": "Klidným hlasem řeknu Adamovi: „Vypni to, prosím, a pojď sem.“ Ostatní pracují dál.", "to": "n2", "pts": 1, "fb": "Klid je dobrý a stroj se nakonec vypne. Když ale běží vřeteno u ruky žáka, je třeba jasný a hlasitý pokyn a u stroje být první." }
+              ]
+            },
+            "n2": {
+              "text": "Stroj stojí a nikdo není zraněn. Třída mlčí. Adam se usmívá: „Vždyť se nic nestalo.“",
+              "choices": [
+                { "t": "Přeruším práci a krátce vysvětlím, co se mohlo stát, a připomenu pravidlo. S Adamem se sejdu zvlášť, incident zapíšu a informuji podle školního řádu.", "to": "e2", "pts": 2, "fb": "Pravidlo se obnoví před všemi, osobní rozhovor proběhne v klidu a vedení o události ví." },
+                { "t": "Řeknu „Příště opatrněji“ a jdeme dál, nechci dělat scény.", "to": "e3", "pts": 1, "fb": "Bez dalšího kroku se z nebezpečného žertu stane běžná věc." },
+                { "t": "Před všemi Adama vyhodím z dílny na celý týden.", "to": "e4", "pts": 0, "fb": "O sankcích rozhoduje škola podle školního řádu. Trest před třídou nahradil vysvětlení." }
+              ]
+            },
+            "e1": { "end": true, "title": "Nebezpečí trvalo", "text": "Vrtačka běžela dál a příště žák reaguje stejně. Riziko úrazu zůstalo.", "lesson": "Při hrozbě úrazu je první krok vždy zastavit nebezpečí, ne řešit vinu." },
+            "e2": { "end": true, "title": "Zvládnuté", "text": "Pravidlo bylo připomenuto, Adam se doslechl, co se mohlo stát, a vedení školy mělo záznam.", "lesson": "Bezpečnost hned, vysvětlení potom, sankce podle pravidel a informovat další osoby." },
+            "e3": { "end": true, "title": "Pravidlo se rozředilo", "text": "Nikdo se nezranil, ale žáci pochopili, že podobný žert nemá následky.", "lesson": "Bezpečnostní pravidlo, které se nevymáhá, žáci brzy přestanou brát vážně." },
+            "e4": { "end": true, "title": "Příliš tvrdá reakce", "text": "Adam se cítí ponížený, třída ho lituje. Pravidlo, které mělo zůstat, zaniklo v konfliktu s učitelem.", "lesson": "Sankce mají být přiměřené, předem známé a v pravomoci učitele podle řádu školy. Trest ze vzteku učí jen strach." }
+          }
+        },
+        "_": {
+          "nodes": {
+            "n1": {
+              "who": "Učebna",
+              "text": "Před hodinou se dva žáci pohádají. Jeden druhého strčí tak, že narazí do lavic, a druhý zvedá židli. Třída vstává a sleduje.",
+              "choices": [
+                { "t": "Hlasitě a stroze zavelím „Stůjte! Odlož židli!“, zůstanu na dosah, ale nestavím se mezi ně a ostatní žáky odsunu stranou. Kdyby to nestačilo, zavolám kolegu nebo vedení.", "to": "n2", "pts": 2, "fb": "Nejdřív zastavit nebezpečí jasným příkazem a bezpečně odsunout ostatní. Vyřešit spor potom." },
+                { "t": "Řeknu klidným hlasem: „Pojďme si to vysvětlit.“ a čekám, jestli se uklidní.", "to": "e1", "pts": 0, "fb": "Klid je dobrý, ale bez jasného příkazu nebezpečí trvá. Zvednutá židle vyžaduje okamžitý zásah." },
+                { "t": "Odejdu pro vedení a nechám je vyřešit to samotné.", "to": "e1", "pts": 0, "fb": "Odchod nechá třídu bez dohledu v okamžiku, kdy hrozí zranění." }
+              ]
+            },
+            "n2": {
+              "text": "Žáci odložili židli a stojí od sebe. Oba dýchají zrychleně a hádají se: „On začal!“ Nikdo není zraněný.",
+              "choices": [
+                { "t": "Každého zvlášť vyslechnu v klidu, zkontroluji zdraví, incident zapíšu a informuji třídního učitele podle řádu školy. Se třídou pokračuji.", "to": "e2", "pts": 2, "fb": "Vyslechnout každého zvlášť a předat informaci dál. Třída nemusí sledovat rozbor." },
+                { "t": "Řeknu: „Podejte si ruce a je to.“ a pokračuji ve výuce.", "to": "e3", "pts": 1, "fb": "Rychlé smíření bez rozboru nevyřeší příčinu a informace nepostoupí dál." },
+                { "t": "Před třídou rozhodnu, kdo za to může, a oba potrestám stejně.", "to": "e4", "pts": 0, "fb": "Rozhodování o vině před třídou a bez vyslechnutí končí pocitem nespravedlnosti." }
+              ]
+            },
+            "e1": { "end": true, "title": "Nebezpečí trvalo", "text": "Spor pokračoval, jeden žák zvedl židli výš a jen náhoda rozhodla, že nikdo nebyl zraněn.", "lesson": "Při hrozbě zranění je první krok vždy zastavit nebezpečí a zajistit bezpečí, ne mluvit." },
+            "e2": { "end": true, "title": "Zvládnuté", "text": "Žáci byli vyslechnuti zvlášť, škola dostala záznam a třídní učitel s nimi mohl dál pracovat.", "lesson": "Bezpečnost hned, vyslechnout každého zvlášť, předat informaci dál a nechat na škole rozhodnutí o následcích." },
+            "e3": { "end": true, "title": "Pravidlo se rozředilo", "text": "Spor utichl, ale nikdo se nedozvěděl příčinu a po dvou dnech propukl znovu.", "lesson": "Bez rozboru a předání informace se konflikt vrátí." },
+            "e4": { "end": true, "title": "Pocit nespravedlnosti", "text": "Žáci odešli uražení, jeden z nich se na hodiny přestal soustředit.", "lesson": "Vina se posuzuje až po vyslechnutí obou stran a mimo pozornost třídy. Sankce určuje řád školy." }
+          }
+        }
+      }
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="zaver-kapitoly">
+  <h2>Ověřte si, co víte</h2>
+  <div class="ex" data-type="quiz" data-id="zaver-kviz">
+    <script type="application/json">
+    {
+      "title": "Závěrečný kvíz kapitoly",
+      "pass": 0.7,
+      "shuffleItems": true,
+      "items": [
+        { "q": "Který pokyn nejlépe ověří, že žák zadání porozuměl?", "pick": ["„Rozumíte všichni, co po vás chci?“", "„Petře, řekni vlastními slovy, co uděláš jako první.“", "„Máte k zadání nějaké otázky, než začneme?“", "„Je to jasné, že? Tak můžeme začít.“"], "answer": 1, "why": "Jen u druhého pokynu musí žák sám instrukci vyslovit. Na ostatní lze odpovědět „ano“ nebo mlčením, i když nerozumíte." },
+        { "q": "Otázka „Proč se dvojice rozhodla pro toto řešení a jaké má nevýhody?“ je:", "pick": ["Uzavřená", "Otevřená reprodukční", "Otevřená produktivní (problémová)", "Řečnická"], "answer": 2, "why": "Žák musí řešení posoudit a zdůvodnit, což je vyšší úroveň než vybavení naučeného. Odpověď není jen ano nebo ne." },
+        { "q": "Po položení otázky je vhodné:", "pick": ["odpovědět sám, když se nikdo nepřihlásí hned", "počkat několik sekund, než někoho vyvoláte", "vyvolat hned žáka, který zná odpověď nejspolehlivěji", "zopakovat otázku třikrát po sobě, ať ji všichni slyší"], "answer": 1, "why": "Podle výzkumu M. B. Rowe učitelé čekají obvykle méně než sekundu. Delší pauza (zhruba tři sekundy) vede k promyšlenějším odpovědím a zapojí víc žáků." },
+        { "q": "Žák odpověděl špatně. Co uděláte nejdřív?", "pick": ["Řeknu správnou odpověď, ať neztrácíme čas.", "Najdu v odpovědi, co je správně, a zeptám se, jak k ní došel.", "Vyvolám jiného žáka, ať to řekne správně.", "Poznamenám, že tohle jsme už probírali."], "answer": 1, "why": "Ptaním se na postup zjistíte, kde je chyba, a žák se může opravit sám. Ostatní varianty žáka zahanbí, nebo mu neumožní pochopit." },
+        { "q": "Která věta je JÁ-výrok ve smyslu Gordonova pojetí?", "pick": ["„Ty mě vůbec neposloucháš.“", "„Jsi líný a nezodpovědný.“", "„Vidím, že práce nezačala. Potřebuju ji mít do konce hodiny, jinak ji nemůžu ohodnotit.“", "„Kolikrát to mám ještě opakovat?“"], "answer": 2, "why": "Obsahuje popis chování bez hodnocení, důsledek a to, co učitel potřebuje. Ostatní věty jsou obvinění či nálepka." },
+        { "q": "Když žák ohrozí sebe nebo spolužáka, nejdřív mu klidně vysvětlíte důsledky a teprve pak zasáhnete.", "tf": true, "ok": false, "why": "Při hrozbě újmy zasahujete okamžitě, stroze a nahlas. Vysvětlení, rozhovor i sankce přijdou až po odstranění nebezpečí." },
+        { "q": "Které části patří do dobrého vysvětlení?", "pick": ["Cíl a smysl (proč to žák potřebuje)", "Vazba na to, co žáci už znají", "Co nejvíc odborných termínů hned na začátku", "Příklad nebo analogie", "Kontrolní otázka"], "answer": [0, 1, 3, 4], "why": "Termíny je dobré zavádět, ale ne první větou. Nejdřív příklad, potom slovo. Ostatní čtyři části tvoří kostru vysvětlení." },
+        { "q": "Jakou zpětnou vazbu podle přehledu Hattieho a Timperley (2007) je užitečnější dávat?", "pick": ["„Jsi šikovný a hodný žák, tak to má být.“", "„Postup máš zapsaný přehledně a výsledek sedí.“", "„Výborně, jen tak dál, nemám co vytknout.“", "„Ostatní na to nepřišli, ty jsi nejchytřejší z třídy.“"], "answer": 1, "why": "Zpětná vazba k úkolu a postupu žákovi říká, co dělat dál. Hodnocení osoby („jsi šikovný“) je podle přehledu málokdy účinné, protože o úkolu nic neříká, a srovnávání se spolužáky žákovi nepomáhá zlepšit práci." },
+        { "q": "Podle často citovaného pravidla „7–38–55“ tvoří řeč těla vždy 55 % každého sdělení.", "tf": true, "ok": false, "why": "Čísla pocházejí z pokusů o vyjadřování pocitů a postojů při rozporných signálech a podle samotného autora (Mehrabiana) neplatí obecně. Při zadávání úkolu nebo výkladu se z nich nic vyvozovat nedá." }
+      ]
+    }
+    </script>
+  </div>
+
+  <h3>Váš komunikační plán</h3>
+  <p>Vyberte tři situace z vlastní praxe, které chcete zvládat lépe. U každé napište, jak to říkáte teď (doslova), a jak to řeknete jinak. Použijte, co jste si v kapitole vyzkoušeli: jasné zadání, otevřenou otázku, JÁ-výrok, volbu místo příkazu.</p>
+
+  <div class="ex" data-type="reflect" data-id="komunikacni-plan">
+    <script type="application/json">
+    {
+      "title": "Můj komunikační plán",
+      "file": "dop-kapitola-6-komunikacni-plan",
+      "header": "Didaktika odborných předmětů – kapitola 6: komunikační plán",
+      "min": 30,
+      "prompts": [
+        { "id": "situace1-ted", "q": "Situace 1: popište ji a napište, co a jak říkáte teď (doslova).", "ph": "Např. Žák nepracuje. Říkám: „Ty se zase flákáš.“" },
+        { "id": "situace1-jinak", "q": "Situace 1: jak to řeknete jinak? (popis chování, co potřebujete, volba)", "ph": "Vidím…, potřebuju…, můžeš… nebo…" },
+        { "id": "situace2-ted", "q": "Situace 2: popište ji a napište, co a jak říkáte teď.", "ph": "" },
+        { "id": "situace2-jinak", "q": "Situace 2: jak to řeknete jinak?", "ph": "" },
+        { "id": "situace3-ted", "q": "Situace 3: popište ji a napište, co a jak říkáte teď.", "ph": "" },
+        { "id": "situace3-jinak", "q": "Situace 3: jak to řeknete jinak?", "ph": "" },
+        { "id": "prvni-krok", "q": "Kterou změnu vyzkoušíte jako první a jak poznáte, že funguje?", "ph": "Poznám to podle toho, že…" }
+      ]
+    }
+    </script>
+  </div>
+
+  <h3>Kartičky k opakování</h3>
+  <div class="ex" data-type="flashcards" data-id="karticky">
+    <script type="application/json">
+    {
+      "title": "Pojmy kapitoly",
+      "cards": [
+        { "q": "Na jaké čtyři otázky odpovídá dobré zadání úkolu?", "a": "Co je výsledkem, jak a čím ho udělám, za jak dlouho, podle čeho poznám, že je hotovo. V dílně navíc: jak bezpečně." },
+        { "q": "Jak ověřit, že žák instrukci pochopil?", "a": "Žák ji zopakuje vlastními slovy nebo ukáže první krok. Otázka „Rozumíte?“ neověří nic." },
+        { "q": "Podle čeho se rozlišují otázky?", "a": "Podle tvaru odpovědi (uzavřená × otevřená) a podle náročnosti myšlení (reprodukční × produktivní či problémová)." },
+        { "q": "Co ukázala Mary Budd Rowe o čekací době po otázce?", "a": "Učitelé čekají obvykle méně než sekundu. Prodloužení na několik sekund (zhruba tři) zlepšuje kvalitu odpovědí a zapojení žáků." },
+        { "q": "Jak reagovat na chybnou odpověď?", "a": "Najít, co je správně, zeptat se na postup, nechat žáka opravit se nebo nabídnout nápovědu. Neironizovat." },
+        { "q": "Ze kterých čtyř částí se skládá dobré vysvětlení?", "a": "Cíl a smysl, vazba na známé, jádro s příkladem či analogií, kontrolní otázka." },
+        { "q": "Co je JÁ-výrok (Gordon)?", "a": "Sdělení o sobě místo obvinění. Podle Gordona: popis chování bez hodnocení, jeho konkrétní dopad na mě a můj pocit. Ve školní praxi se pocit často nahrazuje větou, co potřebuji a proč, a přidává se volba." },
+        { "q": "Proč nabízet žákovi volbu místo příkazu?", "a": "Žák se rozhodne sám a nemusí před třídou ustoupit. Dohodě se lépe dodržuje a učitel nemusí sahat po vyhrožování." },
+        { "q": "Co dělat při nebezpečném chování?", "a": "Okamžitě zasáhnout stroze a nahlas, odstranit nebezpečí a zkontrolovat zdraví. Vysvětlovat a řešit sankce až potom, podle řádu školy. Informovat další osoby." },
+        { "q": "Proč je důležitá shoda slov a nonverbálního projevu a co je na pravidle „7–38–55“ špatně?", "a": "Když se slova a projev rozcházejí, sdělení působí nevěrohodně. Ale jde o možné čtení, ne jistotu. Čísla 7–38–55 pocházejí z pokusů o pocitech a postojích (Mehrabian, 1967) a neplatí obecně." }
+      ]
+    }
+    </script>
+  </div>
+
+  <p class="src">Zdroje k tématu: GORDON, T. <em>Teacher Effectiveness Training</em>. New York: Peter H. Wyden, 1974. Česky vyšla Gordonova praktická příručka <em>Škola bez poražených</em> (Malvern, 2015). MEHRABIAN, A. <em>Silent Messages</em>, 1971, a autorovo vyjasnění platnosti čísel „7–38–55“ na jeho webu. ROWE, M. B. Wait time: slowing down may be a way of speeding up! <em>Journal of Teacher Education</em>, 1986, 37(1), s. 43–50. HATTIE, J., TIMPERLEY, H. The power of feedback. <em>Review of Educational Research</em>, 2007, 77(1), s. 81–112. ANDERSON, L. W., KRATHWOHL, D. R. (eds.) <em>A Taxonomy for Learning, Teaching, and Assessing</em>, 2001. Zákon č. 561/2004 Sb., školský zákon (bezpečnost a ochrana zdraví žáků; ověřte si aktuální znění). Bezpečnostní a kázeňské postupy vždy podle školního řádu a vnitřních předpisů vaší školy.</p>
+</section>
+
+</article>
+<noscript><p style="padding:2rem;font-family:system-ui">Pro zobrazení výukových materiálů je potřeba zapnout JavaScript.</p></noscript>
+<script src="../../assets/js/boot.js"></script>
+</body>
+</html>

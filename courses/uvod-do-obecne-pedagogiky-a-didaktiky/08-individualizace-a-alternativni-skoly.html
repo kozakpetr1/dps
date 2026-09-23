@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="cs" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Individualizace a alternativní školské koncepce · Úvod do obecné pedagogiky a didaktiky</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237aa2ff'/%3E%3Cpath d='M5 13l11-5 11 5-11 5z' fill='%2308101f'/%3E%3Cpath d='M9 16v5c0 1.5 3.5 3 7 3s7-1.5 7-3v-5l-7 3z' fill='%2308101f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>try{var t=JSON.parse(localStorage.getItem('dps.v1')).theme;if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="chapter" data-course="uvod-do-obecne-pedagogiky-a-didaktiky" data-chapter="08-individualizace-a-alternativni-skoly">
+<article id="chapter">
+
+<!-- ============ 1 ============ -->
+<section id="ctyri-nebo-tri-opakovani">
+  <h2>Čtyřem to stačí říct jednou, pěti to musíte třikrát ukázat</h2>
+  <p>Máte skupinu prvního ročníku. Postup předvedete jednou a část žáků ho hned zvládne. Jiní potřebují postup vidět potřetí a stát chvíli vedle vás. Za deset minut mají všichni začít pracovat samostatně. Vyzkoušejte, jak byste se rozhodli.</p>
+
+  <div class="ex" data-type="scenario" data-id="scenar-ctyri-tri">
+    <script type="application/json">
+    {
+      "title": "Skupina, ve které si žáci nejsou rovni",
+      "intro": "<p>Vaše zaměření: <b data-profile-name></b>. Situace se přizpůsobuje – změnit ji můžete v nastavení vpravo nahoře.</p>",
+      "byProfile": {
+        "ov": {
+          "start": "n1",
+          "nodes": {
+            "n1": {
+              "text": "Ve třídě prvního ročníku učebního oboru máte 14 žáků. Čtyřem stačilo předvedení postupu jednou, hned ho zopakovali správně. Pěti žákům jste museli postup ukázat potřetí a nechat je stát vedle vás. Zbytek je někde mezi. Za deset minut mají všichni začít pracovat samostatně na cvičném kusu. Co uděláte?",
+              "choices": [
+                { "t": "Postup ukážu ještě jednou celé skupině stejně dlouho jako doteď a pak necháme všechny začít pracovat. Kdo si nebude jistý, ať se zeptá.", "to": "e1", "pts": 0, "fb": "Rychlejší žáci čekají navíc bez užitku a pomalejší se stejně nezeptají – nikdo se sám nepřihlásí, že postupu nerozumí." },
+                { "t": "Necháme začít celou skupinu. Během práce budu víc času věnovat těm, kdo potřebovali víc opakování, a rychlejším rovnou zadám náročnější variantu úkolu navíc.", "to": "n2", "pts": 2, "fb": "Práce začne pro všechny včas a rozdíly řešíte průběžně podle toho, co kdo skutečně potřebuje." },
+                { "t": "Hned rozdělím třídu na dvě skupiny (kdo postup zvládl a kdo ne) a každé dám jiné zadání i jiné místo v dílně.", "to": "n2", "pts": 1, "fb": "Funkční řešení (vnitřní diferenciace), ale připravit dvě samostatná zadání za deset minut je náročné." }
+              ]
+            },
+            "n2": {
+              "text": "Práce běží deset minut. Jeden ze slabších žáků pořád dělá stejnou chybu v jednom kroku, i po vašem vysvětlení. Jeden z rychlejších má cvičný kus hotový a nudí se. Co uděláte?",
+              "choices": [
+                { "t": "Slabšímu žákovi ukážu ten jeden krok znovu, pomalu, a nechám ho hned zopakovat po mně. Rychlejšímu dám kontrolní úlohu s vyšším nárokem na přesnost.", "to": "e2", "pts": 2, "fb": "Reagujete přesně na to, co každý potřebuje: krátkou opravu jednoho kroku a náročnější cíl pro toho, kdo je dál." },
+                { "t": "Požádám rychlejšího žáka, ať slabšímu pomůže – vysvětlí mu krok po svém.", "to": "e3", "pts": 1, "fb": "Vzájemná pomoc může fungovat, ale bez vašeho vedení riskujete, že si žák osvojí trochu jiný postup, než jaký učíte vy." },
+                { "t": "Řeknu slabšímu, ať zkouší dál sám. Na jeho chybu se podíváme souhrnně až při hodnocení na konci bloku.", "to": "e4", "pts": 0, "fb": "Chyba se do konce bloku ještě několikrát zopakuje a upevní se." }
+              ]
+            },
+            "e1": { "end": true, "title": "Ztracený čas na obou stranách", "text": "Rychlí čekali bez užitku, pomalí se nezeptali a práce se rozjela pomaleji, než musela.", "lesson": "Stejný postup pro všechny a stejně dlouho neřeší to, že žáci startují z různého místa. Rozdíly je potřeba řešit průběžně, ne jen na začátku." },
+            "e2": { "end": true, "title": "Individualizace za pochodu", "text": "Slabší žák chybu opravil hned po krátké ukázce, rychlejší měl smysluplnou práci navíc. Blok proběhl bez zbytečného čekání.", "lesson": "Individualizace nemusí znamenat velkou přípravu předem – stačí měnit tempo, míru podpory a náročnost úlohy podle toho, co právě vidíte." },
+            "e3": { "end": true, "title": "Pomoc, která může i uškodit", "text": "Slabší žák krok zopakoval, ale později se ukázalo, že mu spolužák vysvětlil postup trochu jinak, než jak jste ho učili vy.", "lesson": "Vzájemná pomoc žáků je cenná, ale u nové dovednosti si ověřte, že se žák naučil správný postup, ne jen nějaký postup." },
+            "e4": { "end": true, "title": "Chyba, která zůstala", "text": "Žák chybu opakoval po celý blok, protože ji nikdo neopravil hned, kdy vznikla.", "lesson": "Čím déle chyba trvá, tím hůř se odstraňuje. Na individuální potřebu je potřeba reagovat v okamžiku, kdy ji vidíte, ne až na konci." }
+          }
+        },
+        "inf": {
+          "start": "n1",
+          "nodes": {
+            "n1": {
+              "text": "Ve třídě prvního ročníku (informační technologie) máte 16 žáků. Čtyřem stačilo předvést zápis cyklu jednou, hned ho sami napsali správně. Pěti žákům jste museli princip cyklu ukázat potřetí, na tabuli i na počítači. Zbytek je někde mezi. Za deset minut mají všichni začít programovat cvičnou úlohu samostatně. Co uděláte?",
+              "choices": [
+                { "t": "Cyklus vysvětlím ještě jednou celé skupině stejně dlouho jako doteď a pak necháme všechny začít. Kdo si nebude jistý, ať se zeptá.", "to": "e1", "pts": 0, "fb": "Rychlejší žáci čekají navíc bez užitku a pomalejší se stejně nezeptají – nikdo se sám nepřihlásí, že látce nerozumí." },
+                { "t": "Necháme začít celou skupinu. Během práce budu víc času věnovat těm, kdo potřebovali víc opakování, a rychlejším rovnou zadám náročnější variantu úlohy navíc.", "to": "n2", "pts": 2, "fb": "Práce začne pro všechny včas a rozdíly řešíte průběžně podle toho, co kdo skutečně potřebuje." },
+                { "t": "Hned rozdělím třídu na dvě skupiny (kdo princip zvládl a kdo ne) a každé dám jiné zadání i jiné místo v učebně.", "to": "n2", "pts": 1, "fb": "Funkční řešení (vnitřní diferenciace), ale připravit dvě samostatná zadání za deset minut je náročné." }
+              ]
+            },
+            "n2": {
+              "text": "Práce běží deset minut. Jeden ze slabších žáků pořád dělá stejnou chybu v podmínce cyklu, i po vašem vysvětlení. Jeden z rychlejších má úlohu hotovou a nudí se. Co uděláte?",
+              "choices": [
+                { "t": "Slabšímu žákovi ukážu tu jednu podmínku znovu, pomalu, a nechám ho hned zopakovat po mně. Rychlejšímu dám úlohu s náročnější podmínkou ukončení.", "to": "e2", "pts": 2, "fb": "Reagujete přesně na to, co každý potřebuje: krátkou opravu jednoho místa v kódu a náročnější cíl pro toho, kdo je dál." },
+                { "t": "Požádám rychlejšího žáka, ať slabšímu pomůže – vysvětlí mu to po svém.", "to": "e3", "pts": 1, "fb": "Vzájemná pomoc může fungovat, ale bez vašeho vedení riskujete, že si žák osvojí trochu jiné vysvětlení, než jaké učíte vy." },
+                { "t": "Řeknu slabšímu, ať zkouší dál sám. Na jeho chybu se podíváme souhrnně až při hodnocení na konci hodiny.", "to": "e4", "pts": 0, "fb": "Chyba se do konce hodiny ještě několikrát zopakuje a upevní se." }
+              ]
+            },
+            "e1": { "end": true, "title": "Ztracený čas na obou stranách", "text": "Rychlí čekali bez užitku, pomalí se nezeptali a práce se rozjela pomaleji, než musela.", "lesson": "Stejný výklad pro všechny a stejně dlouho neřeší to, že žáci startují z různého místa. Rozdíly je potřeba řešit průběžně, ne jen na začátku." },
+            "e2": { "end": true, "title": "Individualizace za pochodu", "text": "Slabší žák chybu opravil hned po krátké ukázce, rychlejší měl smysluplnou práci navíc. Hodina proběhla bez zbytečného čekání.", "lesson": "Individualizace nemusí znamenat velkou přípravu předem – stačí měnit tempo, míru podpory a náročnost úlohy podle toho, co právě vidíte." },
+            "e3": { "end": true, "title": "Pomoc, která může i uškodit", "text": "Slabší žák chybu opravil, ale později se ukázalo, že mu spolužák vysvětlil princip trochu jinak, než jak jste ho učili vy.", "lesson": "Vzájemná pomoc žáků je cenná, ale u nové dovednosti si ověřte, že se žák naučil správné vysvětlení, ne jen nějaké." },
+            "e4": { "end": true, "title": "Chyba, která zůstala", "text": "Žák chybu opakoval po celou hodinu, protože ji nikdo neopravil hned, kdy vznikla.", "lesson": "Čím déle chyba trvá, tím hůř se odstraňuje. Na individuální potřebu je potřeba reagovat v okamžiku, kdy ji vidíte, ne až na konci." }
+          }
+        },
+        "_": {
+          "start": "n1",
+          "nodes": {
+            "n1": {
+              "text": "Ve třídě prvního ročníku (ekonomický obor) máte 15 žáků. Čtyřem stačilo vysvětlit postup výpočtu ceny jednou, hned ho sami správně spočítali. Pěti žákům jste museli postup ukázat potřetí, na tabuli i na příkladu. Zbytek je někde mezi. Za deset minut mají všichni začít počítat cvičný příklad samostatně. Co uděláte?",
+              "choices": [
+                { "t": "Postup vysvětlím ještě jednou celé skupině stejně dlouho jako doteď a pak necháme všechny začít. Kdo si nebude jistý, ať se zeptá.", "to": "e1", "pts": 0, "fb": "Rychlejší žáci čekají navíc bez užitku a pomalejší se stejně nezeptají – nikdo se sám nepřihlásí, že postupu nerozumí." },
+                { "t": "Necháme začít celou skupinu. Během práce budu víc času věnovat těm, kdo potřebovali víc opakování, a rychlejším rovnou zadám náročnější variantu příkladu navíc.", "to": "n2", "pts": 2, "fb": "Práce začne pro všechny včas a rozdíly řešíte průběžně podle toho, co kdo skutečně potřebuje." },
+                { "t": "Hned rozdělím třídu na dvě skupiny (kdo postup zvládl a kdo ne) a každé dám jiné zadání i jiné místo v učebně.", "to": "n2", "pts": 1, "fb": "Funkční řešení (vnitřní diferenciace), ale připravit dvě samostatná zadání za deset minut je náročné." }
+              ]
+            },
+            "n2": {
+              "text": "Práce běží deset minut. Jeden ze slabších žáků pořád dělá stejnou chybu v jednom kroku výpočtu, i po vašem vysvětlení. Jeden z rychlejších má příklad hotový a nudí se. Co uděláte?",
+              "choices": [
+                { "t": "Slabšímu žákovi ukážu ten jeden krok znovu, pomalu, a nechám ho hned zopakovat po mně. Rychlejšímu dám příklad s vyšším nárokem na přesnost.", "to": "e2", "pts": 2, "fb": "Reagujete přesně na to, co každý potřebuje: krátkou opravu jednoho kroku a náročnější cíl pro toho, kdo je dál." },
+                { "t": "Požádám rychlejšího žáka, ať slabšímu pomůže – vysvětlí mu krok po svém.", "to": "e3", "pts": 1, "fb": "Vzájemná pomoc může fungovat, ale bez vašeho vedení riskujete, že si žák osvojí trochu jiný postup, než jaký učíte vy." },
+                { "t": "Řeknu slabšímu, ať zkouší dál sám. Na jeho chybu se podíváme souhrnně až při hodnocení na konci hodiny.", "to": "e4", "pts": 0, "fb": "Chyba se do konce hodiny ještě několikrát zopakuje a upevní se." }
+              ]
+            },
+            "e1": { "end": true, "title": "Ztracený čas na obou stranách", "text": "Rychlí čekali bez užitku, pomalí se nezeptali a práce se rozjela pomaleji, než musela.", "lesson": "Stejný postup pro všechny a stejně dlouho neřeší to, že žáci startují z různého místa. Rozdíly je potřeba řešit průběžně, ne jen na začátku." },
+            "e2": { "end": true, "title": "Individualizace za pochodu", "text": "Slabší žák chybu opravil hned po krátké ukázce, rychlejší měl smysluplnou práci navíc. Hodina proběhla bez zbytečného čekání.", "lesson": "Individualizace nemusí znamenat velkou přípravu předem – stačí měnit tempo, míru podpory a náročnost úlohy podle toho, co právě vidíte." },
+            "e3": { "end": true, "title": "Pomoc, která může i uškodit", "text": "Slabší žák krok zopakoval, ale později se ukázalo, že mu spolužák vysvětlil postup trochu jinak, než jak jste ho učili vy.", "lesson": "Vzájemná pomoc žáků je cenná, ale u nové dovednosti si ověřte, že se žák naučil správný postup, ne jen nějaký postup." },
+            "e4": { "end": true, "title": "Chyba, která zůstala", "text": "Žák chybu opakoval po celou hodinu, protože ji nikdo neopravil hned, kdy vznikla.", "lesson": "Čím déle chyba trvá, tím hůř se odstraňuje. Na individuální potřebu je potřeba reagovat v okamžiku, kdy ji vidíte, ne až na konci." }
+          }
+        }
+      }
+    }
+    </script>
+  </div>
+
+  <p>Ať jste zvolili kteroukoli cestu, všimněte si jednoho: nejlepší konce mají společné to, že jste <b>reagovali na rozdíl mezi žáky za pochodu</b>, ne že jste od začátku měli dokonalý plán. To je jádro individualizace a diferenciace, kterým se věnuje zbytek kapitoly.</p>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="individualizace-diferenciace">
+  <h2>Individualizace a diferenciace výuky</h2>
+  <p>Oba pojmy řeší stejný problém – že žáci ve třídě nejsou stejní – ale jinak. <b>Diferenciace</b> znamená rozdělit žáky do skupin podle společného kritéria (tempo, úroveň, zájem): buď <i>vnější</i> (jiné obory, jiné třídy, jiné školy), nebo <i>vnitřní</i> (skupiny v rámci jedné třídy nebo dílny). <b>Individualizace</b> znamená přizpůsobit výuku jednotlivému žákovi – tempo, úkol, míru podpory nebo cíl – a nemusí přitom vzniknout žádná skupina.</p>
+
+  <div class="callout callout--def">
+    <div>
+      <div class="cl-title">Co se dá individualizovat</div>
+      <p>Pět věcí, které jako učitel měníte, aniž byste měnili obsah učiva: <b>tempo</b> (jak rychle žák postupuje), <b>formu</b> (ukázka, psaný postup, video, vlastní pokus), <b>úlohu</b> (jiný rozsah nebo obtížnost zadání), <b>cíl</b> (jak přesně nebo jak náročně má být splněno) a <b>podporu</b> (kolik pomoci a jak často žák dostává).</p>
+    </div>
+  </div>
+
+  <p>V dílně nebo učebně to jde i bez velké přípravy: úlohy ve dvou až třech obtížnostech, dílčí instruktáž jen pro ty, kdo ji potřebují, práce v tempu žáka místo jednotného pokynu pro celou třídu a cíl formulovaný na třech úrovních – <b>minimum</b> (zvládne každý), <b>standard</b> (zvládne většina) a <b>rozšíření</b> (pro toho, kdo má hotovo dřív). Rozpoznejte teď, které z pěti věcí se v konkrétních situacích mění.</p>
+
+  <div class="ex" data-type="classify" data-id="nastroje-individualizace-trideni">
+    <script type="application/json">
+    {
+      "title": "Co se v této situaci individualizuje?",
+      "instant": true,
+      "bins": [
+        { "id": "tempo", "name": "Tempo" },
+        { "id": "forma", "name": "Forma" },
+        { "id": "uloha", "name": "Úloha" },
+        { "id": "cil", "name": "Cíl" },
+        { "id": "podpora", "name": "Podpora" }
+      ],
+      "cards": [
+        { "t": "Žák, který postup zvládl, dostane navíc úlohu s vyšší přesností provedení.", "bin": "cil", "why": "Mění se kritérium úspěchu (jak přesně má být hotovo), ne obsah úlohy." },
+        { "t": "Necháte žáka dokončit cvičný kus o den později než ostatní, protože potřeboval víc času na nácvik.", "bin": "tempo", "why": "Mění se jen to, jak rychle žák postupuje, ne co má dělat ani jak dobře." },
+        { "t": "Slabšímu žákovi ukážete postup ještě jednou přímo u jeho stolu, zatímco ostatní pracují.", "bin": "podpora", "why": "Mění se míra a četnost pomoci, kterou žák dostává." },
+        { "t": "Jeden žák dostane psaný popis kroků, druhý raději vidí ukázku ještě jednou naživo.", "bin": "forma", "why": "Obsah i cíl zůstávají stejné, mění se způsob, jakým žák informaci dostává." },
+        { "t": "Nadanému žákovi zadáte stejný typ úlohy, ale s výrazně menší tolerancí přesnosti.", "bin": "cil", "why": "Mění se, jak přesně má žák výsledek splnit." },
+        { "t": "Rychlejší dvojici zadáte navíc složitější variantu zakázky se dvěma kroky navíc.", "bin": "uloha", "why": "Mění se rozsah a obtížnost samotného zadání, ne jen tempo nebo cíl." },
+        { "t": "Žákovi, který má postup zažitý z předchozí praxe, dovolíte přeskočit společný nácvik a jít rovnou na samostatnou práci.", "bin": "tempo", "why": "Žák postupuje rychleji, protože už umí to, co ostatní teprve nacvičují." },
+        { "t": "Žákovi se specifickými obtížemi rozdělíte stejný úkol na kratší kroky s dílčí kontrolou po každém z nich.", "bin": "podpora", "why": "Úkol zůstává stejný, přidává se ale častější a strukturovanější pomoc." }
+      ]
+    }
+    </script>
+  </div>
+
+  <p>Zkuste to i opačně: vezměte jednotné zadání a přepište ho na tři úrovně. Kontrola hlídá, že jde skutečně rozeznat, co je minimum, co standard a co rozšíření navíc.</p>
+
+  <div class="ex" data-type="rewrite" data-id="tri-urovne-prepsat">
+    <script type="application/json">
+    {
+      "title": "Přepište jednotné zadání na tři úrovně",
+      "need": 0.7,
+      "intro": "<p>Vaše zaměření: <b data-profile-name></b>. Zadání napište tak, aby z něj bylo jasné, co je pro každého povinné, co je běžný standard a co je dobrovolné rozšíření navíc.</p>",
+      "byProfile": {
+        "ov": { "items": [
+          {
+            "title": "Cvičný kus",
+            "situation": "V dílně máte pro celou třídu jedno zadání:",
+            "bad": "Vyrobte součást podle výkresu.",
+            "task": "Přepište zadání na tři úrovně (minimum, standard, rozšíření), aby v něm každý žák poznal, co má udělat podle svého tempa a zkušeností.",
+            "checks": [
+              { "label": "Obsahuje úroveň minimum (co zvládne každý)", "any": ["minim", "zaklad", "povinn"], "hint": "Napište, co musí splnit i nejpomalejší žák." },
+              { "label": "Obsahuje standardní úroveň", "any": ["standard", "stredni", "obvykl", "vetsina"], "hint": "Popište, co zvládne většina třídy." },
+              { "label": "Obsahuje rozšiřující úroveň navíc", "any": ["rozsir", "navic", "bonus", "extra", "nadstandard"], "hint": "Přidejte náročnější variantu pro toho, kdo má hotovo dřív." }
+            ],
+            "model": "Minimum: součást vyrobí podle výkresu v toleranci ±0,5 mm. Standard: součást vyrobí v toleranci ±0,2 mm a v časovém limitu. Rozšíření: kdo má hotovo dřív, zkusí druhý kus s přísnější tolerancí ±0,1 mm navíc.",
+            "minLen": 60
+          }
+        ] },
+        "_": { "items": [
+          {
+            "title": "Odborný úkol",
+            "situation": "V hodině máte pro celou třídu jedno zadání:",
+            "bad": "Zpracujte zadaný odborný úkol podle šablony.",
+            "task": "Přepište zadání na tři úrovně (minimum, standard, rozšíření), aby v něm každý žák poznal, co má udělat podle svého tempa a zkušeností.",
+            "checks": [
+              { "label": "Obsahuje úroveň minimum (co zvládne každý)", "any": ["minim", "zaklad", "povinn"], "hint": "Napište, co musí splnit i nejpomalejší žák." },
+              { "label": "Obsahuje standardní úroveň", "any": ["standard", "stredni", "obvykl", "vetsina"], "hint": "Popište, co zvládne většina třídy." },
+              { "label": "Obsahuje rozšiřující úroveň navíc", "any": ["rozsir", "navic", "bonus", "extra", "nadstandard"], "hint": "Přidejte náročnější variantu pro toho, kdo má hotovo dřív." }
+            ],
+            "model": "Minimum: úkol obsahuje všechny povinné části šablony bez chyb ve výpočtu. Standard: úkol navíc obsahuje krátké zdůvodnění postupu. Rozšíření: kdo má hotovo dřív, porovná svůj postup s alternativním řešením a napíše, čím je lepší nebo horší.",
+            "minLen": 60
+          }
+        ] }
+      }
+    }
+    </script>
+  </div>
+
+  <p>Sami u sebe teď zhodnoťte, které z těchto nástrojů už používáte a které byste chtěli zkusit.</p>
+
+  <div class="ex" data-type="checklist" data-id="individualizace-checklist">
+    <script type="application/json">
+    {
+      "title": "Nástroje individualizace, které používám",
+      "items": [
+        "Zadávám úlohy ve dvou až třech úrovních obtížnosti",
+        "Rychlejším žákům mám připravenou rozšiřující úlohu navíc",
+        "Žákům, kteří potřebují víc opakování, ukazuji postup zvlášť",
+        "Formuluji cíl na úrovních minimum – standard – rozšíření",
+        "Nabízím víc než jednu formu vysvětlení (ukázka, text, video)",
+        "Sleduji tempo jednotlivých žáků, ne jen třídu jako celek"
+      ],
+      "scale": ["chybí", "částečně", "zvládám"]
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="alternativni-koncepce">
+  <h2>Alternativní školské koncepce</h2>
+  <p>Individualizace a diferenciace nejsou nové nápady. Už sto let existují celé školské koncepce, které je stavějí do středu své pedagogiky. Šest nejznámějších shrnuje tabulka: kdo je vytvořil, kdy a kde vznikly, jaké mají hlavní principy a co si z nich může odnést učitel odborného výcviku nebo odborných předmětů, i když na alternativní škole neučí.</p>
+
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th>Koncepce</th><th>Autor, rok, země</th><th>Hlavní principy</th><th>Co si odnese učitel OV/OP</th></tr></thead>
+    <tbody>
+      <tr><td><b>Montessori pedagogika</b></td><td>Maria Montessoriová, 1907, Itálie (Řím)</td><td>Připravené prostředí; volná práce v nepřerušovaných blocích; smyslový (didaktický) materiál se sebekontrolou chyby; věkově smíšené skupiny; učitel jako průvodce</td><td>Nechte žáka nejdřív zkontrolovat vlastní chybu podle vzoru nebo měřidla, teprve pak mu ji opravte vy</td></tr>
+      <tr><td><b>Waldorfská pedagogika</b></td><td>Rudolf Steiner, 1919, Německo (Stuttgart)</td><td>Epochová výuka (hlavní předmět v souvislém bloku, ne rozdrobený); pravidelný rytmus dne a týdne; slovní hodnocení místo známek; umělecké a praktické činnosti vedle intelektových; dvanáctiletá škola</td><td>Naplánujte odborné téma jako souvislý blok (epochu), ne roztroušené do jednotlivých hodin</td></tr>
+      <tr><td><b>Daltonský plán</b></td><td>Helen Parkhurstová, 1920, USA (Dalton, Massachusetts)</td><td>„Smlouva“ (kontrakt) na období práce; svobodná volba pořadí úkolů; vlastní tempo; odpovědnost žáka za výsledek; učitel v roli poradce</td><td>Zadejte žákům úkol na delší období s pevným termínem a nechte je zvolit pořadí dílčích kroků</td></tr>
+      <tr><td><b>Jenský plán</b></td><td>Peter Petersen, 1927, Německo (Jena)</td><td>Kmenové (věkově smíšené) skupiny místo tříd; týdenní plán práce; čtyři situace – rozhovor, hra, práce, slavnost; důraz na společenství a slovní hodnocení</td><td>Zařaďte na začátek bloku krátký společný „kruh“ – co dnes žáky čeká a proč</td></tr>
+      <tr><td><b>Winnetka plan</b></td><td>Carleton Washburne, 1919, USA (Winnetka)</td><td>Individualizace základního učiva podle cíle; učebnice s návody a autodiagnostické testy; postup podle zvládnutí, ne podle věku; kolektivní tvořivé činnosti vedle toho</td><td>Připravte žákům sebekontrolní kontrolní list, podle kterého sami poznají, že postup zvládli</td></tr>
+      <tr><td><b>Začít spolu</b></td><td>program Step by Step, v ČR od 1994 (mateřské školy) a 1996 (1. stupeň ZŠ)</td><td>Centra aktivit (různě vybavené koutky třídy); přístup orientovaný na dítě; projektové a tematické učení; důraz na sebehodnocení dítěte; zapojení rodičů</td><td>I v dílně lze vytvořit „koutky“ pro různé fáze úkolu a nechat žáka zvolit, kde a v jakém pořadí bude pracovat</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout callout--tip">
+    <div>
+      <div class="cl-title">Jak si to zapamatovat</div>
+      <p>Montessori a Winnetka stojí na <b>sebekontrole</b> (materiál nebo test řekne žákovi, zda má pravdu). Dalton stojí na <b>smlouvě a odpovědnosti</b>. Waldorf a Jenský plán stojí na <b>rytmu a společenství</b> (epochy, kruh, slavnosti). Začít spolu stojí na <b>volbě a sebehodnocení dítěte</b>.</p>
+    </div>
+  </div>
+
+  <p>Přiřaďte teď ke každému popisu situace koncepci, ze které princip pochází.</p>
+
+  <div class="ex" data-type="match" data-id="koncepce-match">
+    <script type="application/json">
+    {
+      "title": "Ke každé situaci najděte koncepci",
+      "leftTitle": "Situace nebo princip",
+      "rightTitle": "Koncepce",
+      "pairs": [
+        { "l": "Žák si sám zkontroluje chybu podle smyslového materiálu, aniž by čekal na učitele.", "r": "Montessori pedagogika" },
+        { "l": "Výuka odborného tématu probíhá v souvislém bloku, který začíná společnou rytmickou částí.", "r": "Waldorfská pedagogika" },
+        { "l": "Žák uzavře s učitelem měsíční „smlouvu“ o tom, co má udělat, a pracuje vlastním tempem.", "r": "Daltonský plán" },
+        { "l": "Třída je organizovaná jako kmenová skupina žáků dvou až tří ročníků, den začíná společným kruhem.", "r": "Jenský plán" },
+        { "l": "Základní předměty se učí podle individuálního cíle a testu na sebekontrolu, výtvarná výchova probíhá společně.", "r": "Winnetka plan" },
+        { "l": "Třída má centra aktivit a žák si vybírá, ve kterém z nich bude dnes pracovat.", "r": "Začít spolu" }
+      ],
+      "extra": ["Tradiční frontální výuka", "Hodnocení jen sumativní známkou"],
+      "after": "Všimněte si, že žádná z koncepcí nestaví jen na jednom principu. Kombinují organizaci (skupiny, plán), obsah (co a jak dlouho) a způsob hodnocení."
+    }
+    </script>
+  </div>
+
+  <p>Teď totéž obráceně: rozeznáte, ke které koncepci princip patří především, i když v popisu není jméno?</p>
+
+  <div class="ex" data-type="classify" data-id="koncepce-trideni">
+    <script type="application/json">
+    {
+      "title": "Ke které koncepci princip patří především?",
+      "instant": true,
+      "bins": [
+        { "id": "mont", "name": "Montessori" },
+        { "id": "wal", "name": "Waldorf" },
+        { "id": "dal", "name": "Dalton" },
+        { "id": "jena", "name": "Jenský plán" },
+        { "id": "win", "name": "Winnetka" },
+        { "id": "zs", "name": "Začít spolu" }
+      ],
+      "cards": [
+        { "t": "Smyslový didaktický materiál dovolí žákovi poznat chybu bez zásahu učitele.", "bin": "mont", "why": "Sebekontrola pomocí smyslového materiálu je typický montessori princip." },
+        { "t": "Žák si každý den sám vybírá, jaké volné práci se bude věnovat v připraveném prostředí třídy.", "bin": "mont", "why": "Volná práce ve svobodně zvoleném pořadí v připraveném prostředí je jádrem montessori pedagogiky." },
+        { "t": "Umělecké činnosti (kresba, hudba) jsou pravidelnou součástí výuky vedle intelektových předmětů.", "bin": "wal", "why": "Propojení umělecké, praktické a intelektové složky je typický znak waldorfské pedagogiky." },
+        { "t": "Hlavní odborný předmět se učí v souvislém několikatýdenním bloku, který začíná společnou rytmickou částí.", "bin": "wal", "why": "Epochová výuka a rytmus dne jsou charakteristické pro waldorfskou pedagogiku." },
+        { "t": "Žák uzavírá s učitelem dohodu o úkolech na měsíc a sám volí pořadí, v jakém je splní.", "bin": "dal", "why": "Kontrakt (smlouva) na období práce je základ daltonského plánu." },
+        { "t": "Učitel je v roli poradce, žák nese odpovědnost za to, že úkoly z dohody splní v termínu.", "bin": "dal", "why": "Svoboda a odpovědnost žáka jsou klíčové zásady daltonského plánu." },
+        { "t": "Den začíná společným kruhem, třída je organizovaná jako skupina dvou až tří ročníků.", "bin": "jena", "why": "Kmenové skupiny a ranní kruh jsou typické pro jenský plán." },
+        { "t": "Základní předměty se učí podle individuálního cíle, žák se sebekontroluje pomocí testu s klíčem správných odpovědí.", "bin": "win", "why": "Individualizace podle cíle a autodiagnostické testy jsou jádro winnetského plánu." },
+        { "t": "Třída má oddělená centra aktivit k tématu týdne a největší váhu v hodnocení má sebehodnocení dítěte.", "bin": "zs", "why": "Centra aktivit a důraz na sebehodnocení dítěte jsou typické pro program Začít spolu." }
+      ]
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="procvicime-si-fakta">
+  <h2>Procvičte si autory, roky a pojmy</h2>
+  <p>U zkoušky se budete potřebovat rychle zorientovat, který princip ke které koncepci patří a kdo a kdy ji vytvořil. Nejdřív koncepce seřaďte podle stáří.</p>
+
+  <div class="ex" data-type="order" data-id="koncepce-poradi">
+    <script type="application/json">
+    {
+      "title": "Seřaďte koncepce podle roku vzniku (od nejstarší)",
+      "items": [
+        { "t": "Montessori pedagogika – Dům dětí v Římě (1907)", "why": "Nejstarší z uvedených. Maria Montessoriová otevřela první Dům dětí v roce 1907." },
+        { "t": "Waldorfská škola ve Stuttgartu (1919)", "why": "Rudolf Steiner založil první waldorfskou školu v roce 1919." },
+        { "t": "Daltonský plán v USA (1920)", "why": "Helen Parkhurstová poprvé uplatnila plán v ucelené podobě v roce 1920." },
+        { "t": "Jenský plán v Německu (1927)", "why": "Koncept dostal jméno na kongresu Nového výchovného svazu v roce 1927." },
+        { "t": "Program Začít spolu v mateřských školách v ČR (1994)", "why": "V ČR se program zavádí od roku 1994 v mateřských školách, od roku 1996 i na 1. stupni základních škol." }
+      ],
+      "after": "Všechny uvedené koncepce jsou minimálně sto let staré – reformní hnutí, ze kterého vzešly, patří na přelom 19. a 20. století. Novinkou v ČR je až způsob, jakým se s nimi dnešní školy vyrovnávají."
+    }
+    </script>
+  </div>
+
+  <p>Teď doplňte jména, místa a letopočty do souvislého textu.</p>
+
+  <div class="ex" data-type="cloze" data-id="koncepce-cloze">
+    <script type="application/json">
+    {
+      "title": "Doplňte autory, místa a letopočty",
+      "text": "Metodu volné práce se smyslovým materiálem a připraveným prostředím vytvořila italská lékařka [[Maria Montessoriová]]. Waldorfskou pedagogiku založil [[Rudolf Steiner]] v roce 1919 ve městě [[Stuttgart]]. Autorkou daltonského plánu je Američanka [[Helen Parkhurstová]]. Jenský plán je spojen se jménem německého pedagoga [[Petera Petersena]], typickým znakem konceptu jsou tzv. [[kmenové]] skupiny spojující víc ročníků. Program Začít spolu vychází z amerického programu [[Step by Step]] a v českých mateřských školách se zavádí od roku [[1994]].",
+      "bank": ["Carleton Washburne", "Londýn", "1990", "věkové", "Emil Molt"],
+      "after": "Pozor na rok u waldorfské školy: 1919 je rok založení první školy ve Stuttgartu, ne rok narození Rudolfa Steinera ani rok vzniku antroposofie."
+    }
+    </script>
+  </div>
+
+  <details class="acc">
+    <summary>Chci vědět víc: proč zrovna tyto koncepce</summary>
+    <div class="acc-body">
+      <p>Existuje víc alternativních směrů (např. francouzská Freinetova pedagogika nebo koncept otevřené školy), tato kapitola se ale drží těch, které jsou v sylabu kurzu a se kterými se jako absolvent doplňkového pedagogického studia nejspíš setkáte v ČR – buď přímo na alternativní škole, nebo jako s inspirací pro běžnou výuku.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="srovnani-s-tradicni-skolou">
+  <h2>Porovnání s tradiční školou a co je přenositelné</h2>
+  <p>Tradiční pojetí, se kterým se běžně setkáte, staví na jiných výchozích bodech než koncepce z předchozí kapitoly.</p>
+
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th>Prvek</th><th>Tradiční škola</th><th>Alternativní koncepce (typicky)</th></tr></thead>
+    <tbody>
+      <tr><td>Tempo</td><td>jednotné pro celou třídu podle rozvrhu</td><td>individuální, podle zvládnutí cíle</td></tr>
+      <tr><td>Obsah a čas</td><td>rozdělený do vyučovacích hodin podle předmětů</td><td>často v delších blocích (epochy, kontrakty, projekty)</td></tr>
+      <tr><td>Role učitele</td><td>hlavní zdroj informací a autorita</td><td>průvodce, poradce, organizátor prostředí</td></tr>
+      <tr><td>Hodnocení</td><td>převážně sumativní, klasifikace</td><td>často slovní, s důrazem na sebehodnocení</td></tr>
+      <tr><td>Uspořádání skupiny</td><td>třída jednoho ročníku</td><td>často věkově smíšené skupiny</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>Žádná z alternativních koncepcí nevznikla pro odborné vzdělávání a nepočítala s bezpečností práce na strojích ani s předepsaným obsahem RVP oboru. Přebírat se proto dá jen to, co jde ověřit a co neohrozí žáka – ne celý model najednou.</p>
+
+  <div class="callout callout--warn">
+    <div>
+      <div class="cl-title">Kdy převzetí není bezpečné</div>
+      <p>Necháte-li žáka zcela samostatně a bez dohledu zkoušet nebezpečný pracovní úkon jen vlastním tempem (podle vzoru „svobodné volby“), riskujete úraz. Volný výběr pořadí úkolů, který funguje u kontraktu z daltonského plánu, nefunguje tam, kde je pořadí kroků dané bezpečností. Podobně nejde zcela nahradit klasifikaci jen slovním hodnocením, pokud to neumožňují pravidla hodnocení vaší školy.</p>
+    </div>
+  </div>
+
+  <p>Rozhodněte u každého nápadu, jestli je do odborného vzdělávání přenositelný (s případnou úpravou), nebo jestli je bez úpravy rizikový či v rozporu s tím, co musíte dodržet.</p>
+
+  <div class="ex" data-type="classify" data-id="prenositelnost-trideni">
+    <script type="application/json">
+    {
+      "title": "Lze to bezpečně převzít do odborného vzdělávání?",
+      "instant": true,
+      "bins": [
+        { "id": "ano", "name": "Lze využít (s úpravou)" },
+        { "id": "ne", "name": "Nevhodné nebo rizikové bez úpravy" }
+      ],
+      "cards": [
+        { "t": "Zadat žákům úkol s termínem na dva týdny a nechat je zvolit pořadí dílčích kroků (podle vzoru kontraktu).", "bin": "ano", "why": "Volnost v pořadí kroků, které na sobě nezávisí, neohrožuje bezpečnost ani obsah." },
+        { "t": "Nechat žáka zcela samostatně a bez dohledu zkoušet nebezpečný pracovní úkon jen vlastním tempem.", "bin": "ne", "why": "Ohrožuje bezpečnost. Nácvik nové, rizikové činnosti vždy vyžaduje dohled a instruktáž." },
+        { "t": "Rozdělit odborné téma do delšího souvislého bloku (epochy) místo rozdrobených hodin.", "bin": "ano", "why": "Jde jen o organizaci času, obsah i dohled zůstávají zachované." },
+        { "t": "Nechat každého žáka, ať si vybere jiné učivo mimo obsah daný ŠVP a RVP oboru.", "bin": "ne", "why": "Obsah odborného vzdělávání je daný ŠVP navazujícím na RVP, učitel ho nemůže sám vynechávat." },
+        { "t": "Připravit sebekontrolní kontrolní list, podle kterého žák sám pozná, že postup zvládl.", "bin": "ano", "why": "Sebekontrola podle kritérií žáka učí a nenahrazuje dohled učitele, jen ho doplňuje." },
+        { "t": "Nahradit veškerou klasifikaci na vysvědčení jen slovní charakteristikou bez ohledu na pravidla školy.", "bin": "ne", "why": "Způsob hodnocení na vysvědčení stanoví předpis a pravidla školy, učitel si ho sám měnit nemůže." }
+      ]
+    }
+    </script>
+  </div>
+
+  <p>Nakonec si zapište vlastní závěr: co konkrétně z alternativních koncepcí zkusíte a jak to upravíte pro svůj obor.</p>
+
+  <div class="ex" data-type="reflect" data-id="co-si-odnesu">
+    <script type="application/json">
+    {
+      "title": "Co si z alternativních koncepcí odnesu",
+      "file": "opd-kapitola-8-co-si-odnesu",
+      "header": "Individualizace a alternativní koncepce – co si odnesu do praxe",
+      "min": 30,
+      "prompts": [
+        { "id": "prvek1", "q": "První prvek, který chcete zkusit (odkud pochází a co konkrétně znamená)", "ph": "Např. cíl na třech úrovních minimum–standard–rozšíření (Winnetka)…" },
+        { "id": "pouziti1", "q": "Jak přesně ho použijete ve své nejbližší hodině nebo bloku výcviku?", "ph": "Konkrétní téma, třída, kdy…" },
+        { "id": "prvek2", "q": "Druhý prvek a jeho použití", "ph": "…" },
+        { "id": "prvek3", "q": "Třetí prvek a jeho použití", "ph": "…" },
+        { "id": "hranice", "q": "Co byste naopak bez úpravy nepřevzali a proč (bezpečnost, obsah RVP, pravidla hodnocení)?", "ph": "Nepřevzal/a bych…, protože…" }
+      ]
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="system-skol-v-cr">
+  <h2>Systém škol v ČR: kde se s tím setkáte</h2>
+  <p>Montessori, waldorfské nebo daltonské zaměření, případně program Začít spolu, nejsou v ČR samostatným právním typem školy. Jde o pedagogický přístup, který si škola – veřejná i soukromá – promítne do svého vlastního školního vzdělávacího programu (ŠVP) navazujícího na příslušný rámcový vzdělávací program (RVP). Taková škola je běžnou součástí školského rejstříku MŠMT jako kterákoli jiná mateřská, základní nebo střední škola.</p>
+
+  <div class="callout callout--rev">
+    <div>
+      <div class="cl-title">Ověřte si aktuální stav</div>
+      <p>Počty a přesný právní a finanční status jednotlivých škol s alternativním zaměřením se mění. Údaj berte jako obecný princip platný v době přípravy kurzu (září 2026): najdete je ve školském rejstříku MŠMT vedle běžných škol, s vlastním ŠVP. Konkrétní školu ve svém okolí a její aktuální zařazení si ověřte přímo v rejstříku.</p>
+    </div>
+  </div>
+
+  <p>V odborném vzdělávání (SOŠ, obory s výučním listem i s maturitou) je škola s celým alternativním konceptem výjimkou. Mnohem častěji narazíte na to, že si jednotliví učitelé nebo celá škola vezmou <b>inspiraci</b> – část principů, ne celý model – a zapracují ji do běžné výuky. Přesně o tom byla předchozí sekce.</p>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="zaver-kapitoly">
+  <h2>Ověřte si, co víte</h2>
+
+  <details class="acc">
+    <summary>U zkoušky</summary>
+    <div class="acc-body">
+      <p><b>Typická otázka 1:</b> „Vysvětlete rozdíl mezi individualizací a diferenciací výuky a uveďte příklad z praxe.“ Doporučená osnova odpovědi: <b>pojem</b> (diferenciace = rozdělení do skupin podle kritéria, vnější/vnitřní; individualizace = přizpůsobení jednotlivci bez nutné skupiny) → <b>příklad z praxe</b> (rozdělení třídy na dvě skupiny podle tempa vs. jiná úloha pro jednoho žáka) → <b>souvislost</b> (obojí lze kombinovat v jedné hodině, cílem je, aby se učili všichni, ne jen průměr třídy).</p>
+      <p><b>Typická otázka 2:</b> „Charakterizujte dvě alternativní školské koncepce podle vlastního výběru a porovnejte je.“ Doporučená osnova: <b>pojem</b> (autor, rok, země, 2–3 hlavní principy u každé) → <b>příklad z praxe</b> (jak by taková hodina nebo blok vypadaly) → <b>souvislost</b> (co mají společné – např. důraz na samostatnost – a v čem se liší – např. míra svobody volby obsahu).</p>
+    </div>
+  </details>
+
+  <div class="ex" data-type="quiz" data-id="zaver-kviz">
+    <script type="application/json">
+    {
+      "title": "Závěrečný kvíz kapitoly",
+      "pass": 0.7,
+      "shuffleItems": true,
+      "items": [
+        { "q": "Diferenciace výuky vždy znamená totéž co individualizace výuky.", "tf": true, "ok": false, "why": "Diferenciace rozděluje žáky do skupin podle kritéria, individualizace přizpůsobuje výuku jednotlivci, a to i bez vytváření skupin." },
+        { "q": "Který z uvedených zásahů je příkladem vnitřní diferenciace?", "pick": ["Žák přestoupí na jinou střední školu.", "Učitel v rámci jedné třídy rozdělí žáky do dvou skupin podle tempa.", "Žák dostane jinou formu vysvětlení (text místo ukázky).", "Žák dostane přísnější kritérium přesnosti."], "answer": 1, "why": "Vnitřní diferenciace vytváří skupiny v rámci jedné třídy nebo dílny. Přestup na jinou školu je vnější diferenciace, další dvě možnosti jsou individualizace." },
+        { "q": "Kdo a kdy vytvořil metodu s připraveným prostředím a smyslovým materiálem?", "pick": ["Rudolf Steiner, 1919", "Maria Montessoriová, 1907", "Helen Parkhurstová, 1920", "Peter Petersen, 1927"], "answer": 1, "why": "Maria Montessoriová otevřela první Dům dětí v Římě v roce 1907." },
+        { "q": "Epochová výuka (učivo v souvislých blocích) je typický znak které koncepce?", "pick": ["Daltonský plán", "Winnetka plan", "Waldorfská pedagogika", "Začít spolu"], "answer": 2, "why": "Epochová výuka je charakteristickým znakem waldorfské pedagogiky Rudolfa Steinera." },
+        { "q": "V daltonském plánu žák uzavírá s učitelem měsíční „smlouvu“ (kontrakt) o úkolech, které má splnit.", "tf": true, "ok": true, "why": "Kontrakt na období práce a svoboda ve volbě pořadí úkolů jsou jádrem daltonského plánu Helen Parkhurstové." },
+        { "q": "Kmenové skupiny spojující dva až tři ročníky a čtyři situace (rozhovor, hra, práce, slavnost) patří ke které koncepci?", "pick": ["Montessori pedagogika", "Jenský plán", "Winnetka plan", "Waldorfská pedagogika"], "answer": 1, "why": "Jenský plán Petera Petersena staví na kmenových skupinách a čtyřech pedagogických situacích." },
+        { "q": "Které dva prvky jsou typické pro Winnetka plan?", "pick": ["Individualizace podle cíle a autodiagnostický test", "Epochová výuka a rytmus dne", "Centra aktivit a sebehodnocení dítěte", "Smyslový materiál a připravené prostředí"], "answer": 0, "why": "Winnetka plan individualizuje základní učivo podle cíle a používá testy, které si žák sám vyhodnotí." },
+        { "q": "Program Začít spolu se v českých mateřských školách zavádí od roku 1994.", "tf": true, "ok": true, "why": "V ČR se program zavádí od roku 1994 v mateřských školách, od roku 1996 i na 1. stupni základních škol." },
+        { "q": "Škola s montessori nebo waldorfským zaměřením je v ČR samostatný právní typ školy odlišný od běžné školy.", "tf": true, "ok": false, "why": "Jde o pedagogický přístup promítnutý do vlastního ŠVP běžné školy zapsané ve školském rejstříku, ne o zvláštní právní typ." },
+        { "q": "Necháte žáka zcela samostatně a bez dohledu zkoušet nový, nebezpečný pracovní úkon jen jeho vlastním tempem. O jaký problém jde především?", "pick": ["O ukázku dobré individualizace tempa", "O ohrožení bezpečnosti práce", "O diferenciaci podle zájmu", "O formativní hodnocení"], "answer": 1, "why": "Svoboda volby tempa nesmí jít na úkor dohledu tam, kde jde o bezpečnost práce." }
+      ]
+    }
+    </script>
+  </div>
+
+  <h3>Kartičky k opakování</h3>
+  <p>Pojmy z této kapitoly se budou hodit u ústní zkoušky. Odpověď si zkuste říct nahlas a teprve potom kartičku otočte.</p>
+
+  <div class="ex" data-type="flashcards" data-id="karticky">
+    <script type="application/json">
+    {
+      "title": "Pojmy kapitoly",
+      "cards": [
+        { "q": "Jaký je rozdíl mezi individualizací a diferenciací výuky?", "a": "Diferenciace rozděluje žáky do skupin podle kritéria (vnější nebo vnitřní). Individualizace přizpůsobuje výuku jednotlivému žákovi (tempo, forma, úloha, cíl, podpora) i bez skupin." },
+        { "q": "Pět věcí, které lze u žáka individualizovat?", "a": "Tempo, forma, úloha, cíl a podpora." },
+        { "q": "Kdo, kdy a kde založil montessori pedagogiku?", "a": "Maria Montessoriová, 1907, Řím (Dům dětí – Casa dei Bambini)." },
+        { "q": "Hlavní principy montessori pedagogiky?", "a": "Připravené prostředí, volná práce, smyslový materiál se sebekontrolou chyby, věkově smíšené skupiny." },
+        { "q": "Kdo, kdy a kde založil waldorfskou pedagogiku?", "a": "Rudolf Steiner, 1919, Stuttgart (Německo)." },
+        { "q": "Co je epochová výuka?", "a": "Výuka hlavního předmětu v souvislém několikatýdenním bloku místo rozdrobení do jednotlivých hodin – typický znak waldorfské pedagogiky." },
+        { "q": "Kdo a kdy vytvořil daltonský plán a co je jeho jádrem?", "a": "Helen Parkhurstová, 1920, USA. Jádrem je „smlouva“ (kontrakt) na období práce, svoboda ve volbě pořadí úkolů a odpovědnost žáka." },
+        { "q": "Kdo a kdy vytvořil jenský plán a co jsou kmenové skupiny?", "a": "Peter Petersen, 1927, Jena (Německo). Kmenové skupiny spojují žáky dvou až tří ročníků místo tříd jednoho ročníku." },
+        { "q": "Co je typické pro Winnetka plan?", "a": "Individualizace základního učiva podle cíle, autodiagnostické testy na sebekontrolu, postup podle zvládnutí místo podle věku." },
+        { "q": "Co jsou centra aktivit v programu Začít spolu?", "a": "Různě vybavené koutky třídy, mezi kterými si žák volí, kde a v jakém pořadí bude na tématu týdne pracovat." },
+        { "q": "Od kdy se program Začít spolu zavádí v ČR?", "a": "Od roku 1994 v mateřských školách, od roku 1996 na 1. stupni základních škol." },
+        { "q": "Proč nelze celý alternativní model bezpečně převzít do odborného vzdělávání beze změny?", "a": "Žádná z koncepcí nepočítala s bezpečností práce na strojích ani s předepsaným obsahem RVP oboru – přebírat lze jen ověřené dílčí prvky." }
+      ]
+    }
+    </script>
+  </div>
+
+  <p class="src">Zdroje k tématu: DIGIFOLIO RVP.cz, Princip individualizace a diferenciace ve vzdělávání žáků s LMP. CAPV, Individualizace a diferenciace ve výuce jako základní podmínka (2019). Wikipedia (EN), Montessori education. MUNI Pedagogická fakulta, Teorie a metodika výchovy, kap. 8.5 Waldorfská pedagogika. Wikipedia (CS), Daltonský plán; Jenský plán; Začít spolu. Encyclopaedia Britannica, Winnetka Plan. Step by Step ČR, zacitspolu.eu, O programu Začít spolu. MŠMT, Školský rejstřík.</p>
+</section>
+
+</article>
+<noscript><p style="padding:2rem;font-family:system-ui">Pro zobrazení výukových materiálů je potřeba zapnout JavaScript.</p></noscript>
+<script src="../../assets/js/boot.js"></script>
+</body>
+</html>

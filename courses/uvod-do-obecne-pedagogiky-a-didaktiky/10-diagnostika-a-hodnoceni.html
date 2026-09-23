@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="cs" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Pedagogická diagnostika a hodnocení ve výuce · Úvod do obecné pedagogiky a didaktiky</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237aa2ff'/%3E%3Cpath d='M5 13l11-5 11 5-11 5z' fill='%2308101f'/%3E%3Cpath d='M9 16v5c0 1.5 3.5 3 7 3s7-1.5 7-3v-5l-7 3z' fill='%2308101f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../assets/css/app.css">
+<script>try{var t=JSON.parse(localStorage.getItem('dps.v1')).theme;if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="chapter" data-course="uvod-do-obecne-pedagogiky-a-didaktiky" data-chapter="10-diagnostika-a-hodnoceni">
+<article id="chapter">
+
+<!-- ============ 1 ============ -->
+<section id="novy-zak">
+  <h2>Nový žák, který „nedrží postup“</h2>
+  <p>Do vaší třídy nebo dílny nastoupil na začátku roku nový žák prvního ročníku učebního oboru. Po měsíci si všimnete, že za ostatními zaostává: pracuje pomaleji, přeskakuje kroky postupu, chybuje tam, kde ostatní ne. Co teď? Nejjednodušší je usoudit „je slabý“ a nechat to být. Přesně tomu se v pedagogice říká <b>nálepkování</b> – rychlý dojem, který se dál nezkoumá a žáka natrvalo zařadí. <b>Pedagogická diagnostika</b> je opak: systematické zjišťování a posuzování, po kterém následuje konkrétní opatření. Vyzkoušejte si napřed sami, jak byste postupovali vy.</p>
+
+  <div class="ex" data-type="scenario" data-id="scenar-novy-zak">
+    <script type="application/json">
+    {
+      "title": "Žák nedrží postup. Co uděláte nejdřív?",
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "text": "Je to čtvrtý týden. Nový žák znovu prohodil pořadí dvou kroků postupu a výsledek neodpovídá zadání. Ostatní žáci stejnou chybu nedělají. Co uděláte jako první?",
+          "choices": [
+            { "t": "Zapíšu si do poznámek, že je „slabý“, a příště na něj budu víc dohlížet.", "to": "e1", "pts": 0, "fb": "Nálepka nic nevysvětluje a nevede k žádnému konkrétnímu kroku." },
+            { "t": "Při další práci si ho cíleně všímám, zeptám se, jak postupu rozumí, a podívám se do jeho dosavadních výsledků a docházky.", "to": "n2", "pts": 2, "fb": "Kombinujete pozorování, rozhovor a dostupné podklady. To je základ diagnostiky." },
+            { "t": "Rovnou zavolám rodičům, že žák na obor nestačí.", "to": "e2", "pts": 0, "fb": "Závěr bez zjištění příčiny může být předčasný a nespravedlivý." }
+          ]
+        },
+        "n2": {
+          "text": "Z rozhovoru zjistíte, že žák postupu rozumí, jen si ho nepamatuje v pořadí – vždy si musí kroky znovu promyslet. V dokumentaci navíc vidíte, že přestoupil ze školy s jinou organizací výcviku. Co uděláte dál?",
+          "choices": [
+            { "t": "Navrhnu drobné opatření (kartička s pořadím kroků na pracovišti) a za dva týdny se podívám, jestli pomohlo.", "to": "e3", "pts": 2, "fb": "Diagnóza vedla ke konkrétnímu opatření a k ověření, zda zabralo. To je smysl diagnostiky." },
+            { "t": "Nic neměním, příště to určitě půjde samo.", "to": "e1", "pts": 0, "fb": "Bez opatření se nic nezmění a žák bude chybovat dál." }
+          ]
+        },
+        "e1": { "end": true, "title": "Nálepka bez zjištění", "text": "Žák dál dělá stejnou chybu a vy si jen utvrzujete dojem, že „na to nemá“.", "lesson": "Diagnóza bez zjišťování příčiny je jen nálepka. Nevede k žádnému kroku, který by žákovi pomohl." },
+        "e2": { "end": true, "title": "Předčasný závěr", "text": "Rodiče jsou zaskočení, protože nevědí, v čem přesně je problém, a vy sami jste příčinu nezjišťovali.", "lesson": "Závěr o žákovi patří až po zjištění příčiny, ne před ním." },
+        "e3": { "end": true, "title": "Diagnóza vedla k opatření", "text": "Se zápisníkem kroků na pracovišti žák postup dodrží. Za dva týdny vidíte zlepšení a víte, že příčinou nebyla neschopnost, ale jiný návyk z předchozí školy.", "lesson": "Diagnostika má tři kroky: zjistit, posoudit příčinu a navrhnout opatření. Teprve pak se ukáže, zda pomohlo." }
+      }
+    }
+    </script>
+  </div>
+
+  <p>Pedagogická diagnostika tedy není jednorázový dojem, ale proces se třemi kroky: <b>zjistit</b> (fakta, ne domněnky), <b>posoudit</b> (proč se to děje) a <b>navrhnout opatření</b>, jehož účinek si pak ověříte. Předmětem diagnostiky přitom nemusí být jen žák – stejně systematicky lze zkoumat i třídu jako celek nebo vlastní výuku. Tomu se věnuje zbytek kapitoly.</p>
+</section>
+
+<!-- ============ 2 ============ -->
+<section id="druhy-a-metody">
+  <h2>Koho a čím diagnostikujeme</h2>
+  <p>Diagnostiku dělíme podle toho, <b>co</b> zkoumáme, a podle toho, <b>jak</b>. Podle předmětu rozlišujeme diagnostiku <b>žáka</b> (jeho znalosti, dovednosti, chování, vztahy), <b>třídy či skupiny</b> (klima, vztahy, spolupráce) a <b>vlastní výuky</b> (funguje metoda, kterou používám?). Speciálním, úžeji zaměřeným průřezem bývá <b>didaktická diagnostika</b>: soustředí se hlavně na to, co a jak dobře se žák naučil, a pracuje především s didaktickými testy a rozborem výkonů. Té se věnuje příští sekce.</p>
+
+  <div class="table-wrap"><table class="table">
+    <thead><tr><th>Metoda</th><th>Co zjistí</th><th>Příklad z dílny nebo učebny</th></tr></thead>
+    <tbody>
+      <tr><td>Pozorování</td><td>chování a postup při skutečné činnosti</td><td>Sledujete, v jakém pořadí žák provádí kroky u stroje.</td></tr>
+      <tr><td>Rozhovor</td><td>jak žák uvažuje a čemu rozumí</td><td>Zeptáte se žáka, proč postup dělá zrovna takto.</td></tr>
+      <tr><td>Dotazník</td><td>postoje, zájmy nebo názory celé skupiny najednou</td><td>Anonymní dotazník o tom, co žáky na oboru baví a co ne.</td></tr>
+      <tr><td>Analýza produktů a dokumentace</td><td>výsledky práce a záznamy v čase</td><td>Porovnáte výrobky nebo záznamy žáka za poslední tři měsíce.</td></tr>
+      <tr><td>Didaktický test</td><td>úroveň zvládnutí učiva</td><td>Krátký test před novým tématem odborného předmětu.</td></tr>
+      <tr><td>Sociometrie</td><td>vztahy a postavení žáků ve skupině</td><td>Zjistíte, kdo ve třídě zůstává mimo pracovní dvojice.</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout callout--def">
+    <div>
+      <div class="cl-title">Sociometrie: metoda pro vztahy ve třídě</div>
+      <p>Sociometrii navrhl americký psychiatr <b>J. L. Moreno</b>. Žáci odpovídají na jednoduché otázky („S kým byste chtěl/a pracovat ve dvojici?“), z odpovědí vznikne <b>sociogram</b> – schéma, které ukáže, kdo je ve třídě oblíbený, kdo neutrální a kdo zůstává stranou. Používá se citlivě a výsledky se žákům jednotlivě neoznamují.</p>
+    </div>
+  </div>
+
+  <p>Žádná metoda sama o sobě nedá úplný obraz. Test ukáže vědomosti, ne vztahy ve třídě. Pozorování ukáže postup, ne to, jak žák uvažuje. Ke každé situaci proto hledáte metodu, která odpoví na vaši konkrétní otázku.</p>
+
+  <div class="ex" data-type="match" data-id="diagnostika-metoda-match">
+    <script type="application/json">
+    {
+      "title": "Ke každé potřebě najděte vhodnou metodu",
+      "leftTitle": "Chcete zjistit…",
+      "rightTitle": "Vhodná metoda",
+      "pairs": [
+        { "l": "Jestli žák skutečně rozumí postupu, nebo ho jen mechanicky opakuje.", "r": "Rozhovor" },
+        { "l": "Jak se za poslední pololetí zlepšila kvalita žákových výrobků.", "r": "Analýza produktů a dokumentace" },
+        { "l": "Jestli žák dodržuje bezpečné pořadí kroků při skutečné práci.", "r": "Pozorování" },
+        { "l": "Kdo ve třídě zůstává mimo party a nemá s kým pracovat ve dvojici.", "r": "Sociometrie" },
+        { "l": "Co si celá třída myslí o nově zavedeném způsobu hodnocení.", "r": "Dotazník" },
+        { "l": "Jak dobře třída zvládá učivo před zahájením nového tématu.", "r": "Didaktický test" }
+      ],
+      "extra": ["Jednorázová klasifikační zkouška bez přípravy na konci roku"],
+      "after": "Všimněte si, že v praxi metody kombinujete. Pozorování doplněné krátkým rozhovorem řekne víc než každá metoda zvlášť."
+    }
+    </script>
+  </div>
+
+  <div class="callout callout--warn">
+    <div>
+      <div class="cl-title">Diagnostické informace jsou citlivé</div>
+      <p>To, co o žákovi zjistíte, je osobní údaj. Zapisujte fakta, ne dojmy nebo domněnky, a sdílejte je jen s těmi, kdo je k práci se žákem opravdu potřebují (například výchovný poradce nebo třídní učitel). Diagnostika slouží k pomoci žákovi, ne k jeho označkování před ostatními.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section id="didakticke-testy">
+  <h2>Didaktická diagnostika: didaktický test</h2>
+  <p>Nejběžnějším nástrojem didaktické diagnostiky je <b>didaktický test</b>: zkouška, která zjišťuje úroveň zvládnutí učiva podle předem daných pravidel, ne podle dojmu zkoušejícího. Testy se dělí podle původu na <b>učitelský</b> (připravíte si ho sami pro svou třídu; rychlý, ale jeho vlastnosti nejsou ověřené) a <b>standardizovaný</b> (připravený a ověřený profesionály na velkém vzorku žáků, se stejnými podmínkami a normou pro vyhodnocení – například přijímací nebo maturitní testy). Úlohy v testu bývají <b>otevřené</b> (žák odpověď sám vytvoří) nebo <b>uzavřené</b> (žák z nabídky vybírá nebo přiřazuje).</p>
+
+  <p>Kvalitu testu, stejně jako kvalitu jakéhokoli hodnocení, poznáte podle tří vlastností, kterým se podrobně věnuje kapitola <a href="../didaktika-odbornych-predmetu/03-hodnoceni-ve-vyuce.html">Hodnocení ve výuce</a>: <b>validita</b> (test opravdu měří to, co má), <b>reliabilita</b> (výsledek není věc náhody) a <b>objektivita</b> (na výsledku nezáleží, kdo test opravuje). U didaktického testu se to projeví takto: test ze svařování, který se ptá jen na definice, má nízkou validitu, protože cílem byla dovednost, ne pamětní znalost. Test s jedinou těžkou úlohou má nízkou reliabilitu, protože o výsledku rozhodne náhoda. Test bez jasného klíče k opravě má nízkou objektivitu, protože každý učitel uzná jinou odpověď.</p>
+
+  <p>Zkuste teď najít chybu přímo v testové úloze. Klepněte na části, které dělají úlohu špatnou.</p>
+
+  <div class="ex" data-type="spot" data-id="test-uloha-spot">
+    <script type="application/json">
+    {
+      "title": "Co je na této testové úloze špatně?",
+      "needed": 0.7,
+      "parts": [
+        "Učitel odborného předmětu připravil na začátek hodiny krátký test. ",
+        { "t": "První úloha zní: „Popište, jak funguje zařízení, které jsme minule probírali.“", "bad": true, "why": "Úloha neříká, které zařízení a co konkrétně popsat. Různí žáci si vyberou jiný rozsah a jiný hodnotitel jim dá jiné body – nízká objektivita." },
+        " ",
+        { "t": "Druhá úloha nabízí čtyři možnosti, z nichž si žák jednu vybere.", "bad": false, "why": "V pořádku, jde o běžnou uzavřenou úlohu s výběrem odpovědi." },
+        " Třetí úloha zní: ",
+        { "t": "„Vždy platí, že vyšší otáčky znamenají vyšší přesnost.“ Žák má napsat ano/ne.", "bad": true, "why": "Slovo „vždy“ v tvrzení prozrazuje odpověď bez ohledu na znalosti. Takové úlohy se dají uhodnout podle formulace, ne podle vědomostí." },
+        "\n\n",
+        { "t": "Čtvrtá úloha má stejnou váhu jako ostatní tři dohromady, protože je „nejdůležitější“.", "bad": true, "why": "Když jedna úloha rozhoduje o většině bodů, výsledek záleží hlavně na tom, zda žák zrovna tuto látku umí – nízká reliabilita testu jako celku." },
+        " ",
+        { "t": "U otevřených úloh má učitel předem napsaný klíč s tím, co se uznává jako správná odpověď.", "bad": false, "why": "V pořádku. Klíč k opravě je základ objektivity při hodnocení otevřených úloh." },
+        " Test navíc ",
+        { "t": "obsahuje i úlohu z tématu, které se ve výuce ještě neprobíralo.", "bad": true, "why": "Test má ověřit, co se žáci ve výuce naučili. Úloha z neprobraného tématu měří něco jiného, než má – nízká validita." }
+      ]
+    }
+    </script>
+  </div>
+
+  <p>Teď zkuste jednu ze špatných úloh sami opravit.</p>
+
+  <div class="ex" data-type="rewrite" data-id="test-uloha-rewrite">
+    <script type="application/json">
+    {
+      "title": "Opravte špatnou testovou úlohu",
+      "need": 0.7,
+      "items": [
+        {
+          "title": "Nejednoznačné zadání",
+          "situation": "V didaktickém testu z odborného předmětu je úloha:",
+          "bad": "Popište, jak funguje zařízení, které jsme minule probírali.",
+          "task": "Přepište úlohu tak, aby bylo jasné, co přesně má žák popsat, a aby ji různí hodnotitelé posoudili stejně.",
+          "checks": [
+            { "label": "Pojmenovává konkrétní zařízení nebo jev, ne obecně „to, co jsme probírali“", "any": ["\\b(motor|stroj|zarizeni|obvod|prevod|cerpadlo|snimac|soustruh|vrtacka|svarecka|pristroj)\\b"], "hint": "Napište přesný název zařízení nebo součásti." },
+            { "label": "Určuje, co přesně má žák uvést (kroky, části, princip, počet)", "any": ["\\d", "\\b(popiste|vyjmenujte|uvedte|vysvetlete)\\b.*\\b(kroky|casti|princip|funkci|postup)\\b", "aspon", "nejvyse"], "hint": "Řekněte, kolik částí nebo kroků má žák uvést, nebo co přesně vysvětlit." }
+          ],
+          "model": "Vyjmenujte tři hlavní části uvedeného zařízení a ke každé napište jednou větou, k čemu slouží.",
+          "minLen": 30
+        }
+      ]
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section id="obecny-ramec-hodnoceni">
+  <h2>Hodnocení ve výuce: obecný rámec</h2>
+  <p>Tři pojmy se v běžné řeči zaměňují, přitom označují různé věci. <b>Hodnocení</b> je celý proces: zjistit, co žák umí, posoudit to a sdělit mu to. <b>Klasifikace</b> je jeden způsob, jak výsledek hodnocení vyjádřit – stupněm, ne slovy. <b>Známka</b> je konkrétní stupeň, který žák dostane (například „dvojka“). Vedle klasifikace lze hodnocení vyjádřit i <b>slovně</b>, popisem toho, co žák zvládá a co má zlepšit, nebo kombinací obojího.</p>
+
+  <div class="ex" data-type="classify" data-id="hodnoceni-klasifikace-znamka-trideni">
+    <script type="application/json">
+    {
+      "title": "Je to hodnocení, klasifikace, nebo známka?",
+      "instant": true,
+      "bins": [
+        { "id": "hod", "name": "Hodnocení (proces)", "hint": "zjištění, posouzení a sdělení" },
+        { "id": "kla", "name": "Klasifikace (forma)", "hint": "vyjádření stupněm" },
+        { "id": "zna", "name": "Známka (výsledek)", "hint": "konkrétní stupeň" }
+      ],
+      "cards": [
+        { "t": "Učitel sleduje žákovu práci, posoudí ji podle kritérií a řekne mu, co příště zlepšit.", "bin": "hod", "why": "Jde o celý proces zjištění, posouzení a sdělení, ne jen o výsledné číslo." },
+        { "t": "Škola se rozhodla, že výsledky na vysvědčení vyjádří stupni, ne slovním popisem.", "bin": "kla", "why": "Jde o volbu formy, jakou se hodnocení navenek vyjádří." },
+        { "t": "Žák má na vysvědčení z odborného výcviku dvojku.", "bin": "zna", "why": "Dvojka je konkrétní stupeň, tedy výsledek klasifikace." },
+        { "t": "Učitel u praktické zkoušky pozoruje postup, zapisuje odchylky a na konci žákovi vysvětlí, kde dělal chybu.", "bin": "hod", "why": "Zase jde o celý proces: pozorování, posouzení a sdělení, ne jen o číslo." },
+        { "t": "Za zkušební výrobek dostal žák jedničku.", "bin": "zna", "why": "Konkrétní stupeň, který žák za výkon obdržel." }
+      ]
+    }
+    </script>
+  </div>
+
+  <p>Hodnocení má také různé funkce podle toho, kdy ho použijete: <b>formativní</b> (během učení, žák podle něj upraví, jak se učí) a <b>sumativní</b> (na konci celku, uzavírá klasifikaci). Tomuto rozlišení i jeho formám (slovní hodnocení, sebehodnocení, vzájemné hodnocení, praktická zkouška) se podrobně věnuje kapitola <a href="../didaktika-odbornych-predmetu/03-hodnoceni-ve-vyuce.html">Hodnocení ve výuce</a>, včetně toho, jak si kritéria stanovit v podobě rubriky.</p>
+
+  <h3>Podle čeho žáka srovnáváme</h3>
+  <p>Kromě funkce se hodnocení liší i tím, s čím žákův výkon <b>srovnáváte</b>. Při <b>normativním</b> hodnocení srovnáváte žáka s ostatními ve skupině („je nejlepší z třídy“). Při <b>kriteriálním</b> hodnocení srovnáváte výkon s předem daným kritériem, bez ohledu na to, jak dopadli ostatní (rozměr je, nebo není v toleranci). Při <b>individuálním (ipsativním)</b> hodnocení srovnáváte žáka se sebou samým v čase – zajímá vás jeho vlastní pokrok. V odborném vzdělávání je pro praktické zkoušky nejspravedlivější kriteriální hodnocení, individuální srovnání se hodí hlavně jako doplněk pro motivaci a zpětnou vazbu.</p>
+
+  <div class="callout callout--rev">
+    <div>
+      <div class="cl-title">Právní rámec (jen stručně, podrobně v DOP 3)</div>
+      <p>Na střední škole se hodnocení na vysvědčení vyjadřuje klasifikací (stupni 1 až 5), slovně, nebo kombinací obou způsobů (§ 69 školského zákona). Kritéria stupňů prospěchu a zásady průběžného hodnocení jsou součástí pravidel hodnocení ve školním řádu. Podrobný přehled i s odkazy na předpisy je v kapitole <a href="../didaktika-odbornych-predmetu/03-hodnoceni-ve-vyuce.html">Hodnocení ve výuce</a>. Stav odpovídá přípravě kurzu (září 2026) – ověřte si aktuální znění a školní řád své školy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section id="chyby-hodnotitele">
+  <h2>Chyby, kterých se dopouští i zkušený hodnotitel</h2>
+  <p>Diagnostika i hodnocení mají společné riziko: hodnotíte přes vlastní vnímání, a to se systematicky mýlí. Nejčastější chyby mají jména.</p>
+
+  <dl class="glossary">
+    <dt>Halo efekt</dt><dd>Jedna výrazná vlastnost žáka (sympatie, upravenost, hlasitost) zabarví hodnocení všeho ostatního.</dd>
+    <dt>Efekt prvního dojmu</dt><dd>První setkání se žákem nebo začátek jeho výkonu ovlivní celkové hodnocení, i když se výkon později změní.</dd>
+    <dt>Kontrastní efekt</dt><dd>Výkon posuzujete ve srovnání s tím, co jste hodnotili těsně před ním, ne podle kritérií.</dd>
+    <dt>Pygmalion efekt (efekt očekávání)</dt><dd>Vysoké očekávání od žáka ovlivňuje, jak jeho výkon vnímáte a jak s ním jednáte, a může zlepšit i jeho skutečný výkon.</dd>
+    <dt>Golem efekt</dt><dd>Opak Pygmalion efektu: nízké očekávání od žáka jeho výkon i hodnocení naopak zhoršuje.</dd>
+    <dt>Mírnost a přísnost hodnotitele</dt><dd>Trvalá odchylka k lepším, nebo horším známkám, než odpovídá kritériím.</dd>
+    <dt>Chyba centrální tendence</dt><dd>Hodnotitel se vyhýbá krajním stupňům škály a téměř všechny žáky hodnotí „někde uprostřed“.</dd>
+  </dl>
+
+  <div class="ex" data-type="match" data-id="chyby-hodnotitele-match">
+    <script type="application/json">
+    {
+      "title": "Poznejte chybu hodnotitele",
+      "leftTitle": "Situace",
+      "rightTitle": "Chyba hodnotitele",
+      "pairs": [
+        { "l": "Nový žák udělal první den v dílně nešikovný pohyb. Učitel ho od té doby vnímá jako nešikovného, i když se zlepšil.", "r": "Efekt prvního dojmu" },
+        { "l": "Učitel je přesvědčen, že žák „na obor nemá“, a jeho dobrý výsledek považuje za náhodu, kterou nijak neocení.", "r": "Golem efekt" },
+        { "l": "Učitel věří, že žák to dokáže, víc mu pomáhá a víc ho povzbuzuje – a žák se skutečně zlepšuje.", "r": "Pygmalion efekt (efekt očekávání)" },
+        { "l": "Po dvou velmi slabých výkonech ohodnotí učitel průměrný výkon jako výborný, i když by samostatně tak dobrý nebyl.", "r": "Kontrastní efekt" },
+        { "l": "Hodnotitel skoro nikdy nedává nejvyšší ani nejnižší stupeň, i když by si to některé výkony zasloužily.", "r": "Chyba centrální tendence" },
+        { "l": "Žák je oblíbený a vždy ochotný pomoct. Učitel mu za srovnatelný výkon dá lepší známku než mlčenlivému žákovi.", "r": "Halo efekt" }
+      ],
+      "extra": ["Nedostatečná validita testu"],
+      "after": "Chybám se úplně nevyhnete, ale omezíte je tím, že budete hodnotit podle předem daných kritérií po jednotlivých bodech, ne podle celkového dojmu. Podrobně o kritériích a rubrikách v kapitole Hodnocení ve výuce."
+    }
+    </script>
+  </div>
+
+  <p>Zkuste si teď jednu situaci prožít sami a rozhodnout se, jak byste reagovali vy.</p>
+
+  <div class="ex" data-type="scenario" data-id="scenar-chyba-hodnotitele">
+    <script type="application/json">
+    {
+      "title": "Dva žáci, stejný výkon, jiný dojem",
+      "start": "n1",
+      "nodes": {
+        "n1": {
+          "text": "Hodnotíte praktickou zkoušku. Žák A je oblíbený, veselý a vždy se hlásí. Žák B je tichý a moc nemluví. Oba odevzdali výrobek se stejnými rozměry i stejnou drobnou vadou na povrchu. Co uděláte?",
+          "choices": [
+            { "t": "Posoudím oba výrobky podle stejných kritérií z rubriky, bez ohledu na to, jak se mi který žák jeví.", "to": "n2", "pts": 2, "fb": "Kritéria vás chrání před halo efektem: hodnotíte výrobek, ne dojem ze žáka." },
+            { "t": "Žákovi A dám lepší známku, protože je vidět, jak se snaží.", "to": "e1", "pts": 0, "fb": "Snaha není totéž co výsledek a navíc ji u tichého žáka často špatně odhadneme." },
+            { "t": "Řeknu si, že u obou je to „tak nějak podobné“, a dám oběma stejnou průměrnou známku bez bližšího rozboru.", "to": "e2", "pts": 1, "fb": "Stejná známka náhodou vyjde správně, ale bez rozboru podle kritérií je to jen odhad." }
+          ]
+        },
+        "n2": {
+          "text": "Podle rubriky mají oba výrobky stejné hodnocení: rozměry v pořádku, drobná vada na povrchu o jeden stupeň sníží kvalitu. Jak výsledek žákům sdělíte?",
+          "choices": [
+            { "t": "Oběma řeknu totéž: co bylo v pořádku a co konkrétně vadu způsobilo, ať vědí, na co se příště zaměřit.", "to": "e3", "pts": 2, "fb": "Stejná zpětná vazba pro stejný výkon je spravedlivá a oběma žákům pomůže se zlepšit." },
+            { "t": "Žákovi A vadu jen zmíním v skoro pochvalném tónu, žákovi B ji zdůrazním jako problém.", "to": "e1", "pts": 0, "fb": "Stejná chyba dostala jiný důraz podle toho, jak vám je žák sympatický – to je halo efekt v praxi." }
+          ]
+        },
+        "e1": { "end": true, "title": "Stejný výkon, jiné hodnocení", "text": "Žáci mezi sebou výrobky porovnají a všimnou si, že za totéž dostali jiné hodnocení. Ztrácíte důvěryhodnost.", "lesson": "Halo efekt vzniká nenápadně, přes sympatie k žákovi. Jediná obrana jsou předem daná kritéria, kterých se držíte u každého stejně." },
+        "e2": { "end": true, "title": "Odhad, který vyšel", "text": "Známky vyšly stejné, ale žádný z žáků neví, co přesně bylo v pořádku a co ne.", "lesson": "I správný výsledek bez rozboru podle kritérií žákovi nic neřekne o tom, co má zlepšit." },
+        "e3": { "end": true, "title": "Spravedlivé a užitečné hodnocení", "text": "Oba žáci přesně vědí, co bylo v pořádku a co příště zlepšit, a vidí, že jste je posoudili stejně.", "lesson": "Kritéria drží hodnocení spravedlivé i tehdy, když vám je jeden žák sympatičtější než druhý." }
+      }
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section id="odborny-vycvik">
+  <h2>Spravedlivé hodnocení v odborném výcviku a odborném předmětu</h2>
+  <p>Praktickou zkoušku nejde opravit doma u stolu jako písemku – hodnotíte za pochodu a k průběhu se už nevrátíte. Proto potřebujete <b>kontrolní list</b>: předem daný seznam toho, co u výkonu sledujete (bezpečnost, postup, kvalita výsledku, čas). Bez něj hrozí přesně ty chyby z předchozí sekce – dojem ze žáka snadno převáží nad tím, co skutečně předvedl.</p>
+
+  <p>Seřaďte kroky, které vedou ke spravedlivému hodnocení praktického výkonu.</p>
+
+  <div class="ex" data-type="order" data-id="spravedlive-hodnoceni-poradi">
+    <script type="application/json">
+    {
+      "title": "Seřaďte kroky spravedlivého hodnocení praktického výkonu",
+      "items": [
+        { "t": "Předem sestavit kontrolní list s kritérii a sdělit ho žákům", "why": "Žák musí kritéria znát dřív, než začne pracovat, jinak se nemůže cíleně připravit." },
+        { "t": "Během výkonu sledovat a průběžně zaznamenávat podle kontrolního listu, ne až na konci z paměti", "why": "Zápisy za pochodu jsou přesnější než dojem, který si vybavíte po hodině." },
+        { "t": "Posoudit výkon podle jednotlivých kritérií zvlášť, ne podle celkového dojmu", "why": "Dílčí posouzení omezuje halo efekt i chybu centrální tendence." },
+        { "t": "Sdělit žákovi výsledek s konkrétním odůvodněním podle kritérií", "why": "Žák se má dozvědět, co přesně bylo v pořádku a co ne, ne jen výsledné číslo." }
+      ],
+      "after": "Nejčastější chyba je přeskočit první krok. Bez předem daných kritérií se čtvrtý krok (odůvodnění) nedá udělat poctivě, protože hodnotitel kritéria vymýšlí až zpětně."
+    }
+    </script>
+  </div>
+
+  <p>Přepište i vy jednu neférovou praxi z hodnocení praktické zkoušky.</p>
+
+  <div class="ex" data-type="rewrite" data-id="spravedlive-hodnoceni-rewrite">
+    <script type="application/json">
+    {
+      "title": "Přepište nespravedlivý postup hodnocení na spravedlivý",
+      "need": 0.7,
+      "items": [
+        {
+          "title": "Kritéria až po zkoušce",
+          "situation": "Učitel odborného výcviku zadá praktickou zkoušku a řekne:",
+          "bad": "Uvidíme, co komu vyjde, a podle toho to oznámkuju.",
+          "task": "Přepište tuto větu (nebo popište postup) tak, aby hodnocení bylo spravedlivé a žáci věděli, co se od nich čeká.",
+          "checks": [
+            { "label": "Kritéria se sdělují předem, ne až po výkonu", "any": ["pred", "predem", "dopredu", "na zacatku"], "hint": "Řekněte, kdy se kritéria žákům sdělí – mělo by to být před zahájením práce." },
+            { "label": "Zmiňuje konkrétní, pozorovatelné kritérium (ne jen „uvidíme“)", "any": ["rozmer", "cas", "bezpecnost", "postup", "kvalit", "kriteri", "kontroln"], "hint": "Uveďte alespoň jedno konkrétní kritérium, podle kterého se bude hodnotit." }
+          ],
+          "model": "Před zahájením práce žákům sdělím kontrolní list s kritérii (bezpečnost, postup, rozměry, čas) a podle něj budu výkon hodnotit.",
+          "minLen": 30
+        }
+      ]
+    }
+    </script>
+  </div>
+
+  <p>Než praktický výkon oznámkujete, projděte si vlastní kontrolu. Nástroj se uloží a můžete se k němu vrátit před každou další zkouškou.</p>
+
+  <div class="ex" data-type="checklist" data-id="kontrola-spravedlnosti">
+    <script type="application/json">
+    {
+      "title": "Kontrola spravedlnosti před hodnocením praktického výkonu",
+      "file": "opd-kapitola-10-kontrola-spravedlnosti",
+      "header": "Kontrola spravedlnosti hodnocení praktického výkonu",
+      "items": [
+        { "t": "Kritéria jsou předem daná a žáci je znají", "sub": "ne až po výkonu" },
+        { "t": "Vylučovací kritéria (např. bezpečnost) jsou jasně oddělená od kritérií, která se dají stupňovat" },
+        { "t": "Hodnotím podle kontrolního listu, ne z paměti po skončení výkonu" },
+        { "t": "Posuzuji jednotlivá kritéria zvlášť, ne podle celkového dojmu ze žáka" },
+        { "t": "U stejné chyby hodnotím všechny žáky stejně, bez ohledu na to, jak jsou mi sympatičtí" },
+        { "t": "Výsledek žákovi zdůvodním podle konkrétních kritérií, ne jen číslem" },
+        { "t": "Zapsal jsem si fakta z průběhu výkonu, ne jen výsledný dojem" }
+      ]
+    }
+    </script>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section id="zaver-kapitoly">
+  <h2>Ověřte si, co víte</h2>
+
+  <details class="acc">
+    <summary>U zkoušky</summary>
+    <div class="acc-body">
+      <p>Typické otázky k tomuto tématu: <i>„Co je pedagogická diagnostika a jaké metody znáte?“</i> nebo <i>„Jak se liší hodnocení, klasifikace a známka, a jaké chyby hodnotitele znáte?“</i></p>
+      <p>Doporučená osnova odpovědi: <b>pojem</b> (stručná definice) → <b>příklad z praxe</b> (konkrétní situace z dílny nebo učebny) → <b>souvislosti a význam</b> (proč na tom záleží, co se stane, když se to opomene). U diagnostiky doplňte, jaké opatření by ze zjištění plynulo. U chyb hodnotitele doplňte, jak se jim dá předcházet.</p>
+    </div>
+  </details>
+
+  <div class="ex" data-type="quiz" data-id="zaver-kviz">
+    <script type="application/json">
+    {
+      "title": "Závěrečný kvíz kapitoly",
+      "pass": 0.7,
+      "shuffleItems": true,
+      "items": [
+        { "q": "Učitel usoudí „ten žák je líný“ a dál se situací nezabývá. Jde o pedagogickou diagnostiku.", "tf": true, "ok": false, "why": "Jde o nálepkování: dojem bez zjišťování příčiny a bez návazného opatření. Diagnostika je systematický proces." },
+        { "q": "Kdo je autorem sociometrie, metody pro zjišťování vztahů ve třídě?", "pick": ["B. S. Bloom", "J. L. Moreno", "E. L. Thorndike", "J. Piaget"], "answer": 1, "why": "Sociometrii navrhl J. L. Moreno. Ostatní jména patří k jiným pedagogickým a psychologickým konceptům." },
+        { "q": "Čím se standardizovaný didaktický test liší od učitelského?", "pick": ["Je vždy kratší", "Je profesionálně připravený a ověřený na velkém vzorku žáků", "Nemá žádný klíč k opravě", "Používá jen otevřené úlohy"], "answer": 1, "why": "Standardizovaný test má ověřené vlastnosti a jednotné podmínky, učitelský test si připravuje učitel sám a jeho vlastnosti ověřené nejsou." },
+        { "q": "Test ze svařování obsahuje jen otázky na definice, přestože cílem výuky byla dovednost svařovat. Který princip je porušen?", "pick": ["Validita", "Reliabilita", "Objektivita", "Žádný, test je v pořádku"], "answer": 0, "why": "Test měří něco jiného, než má (vědomosti místo dovednosti). To je porušení validity." },
+        { "q": "Co přesně znamená, že se hodnocení na vysvědčení vyjadřuje klasifikací?", "pick": ["Žák dostane slovní popis toho, co zvládá", "Výsledek se vyjádří stupněm prospěchu", "Žák se srovnává jen sám se sebou", "Hodnotí ho jen jeden učitel"], "answer": 1, "why": "Klasifikace je forma hodnocení, která výsledek vyjadřuje stupněm (známkou). Slovní popis je jiná, rovnocenná forma." },
+        { "q": "Které z uvedených jsou vztahové normy hodnocení?", "pick": ["Normativní", "Kriteriální", "Individuální (ipsativní)", "Diagnostická", "Administrativní"], "answer": [0, 1, 2], "why": "Vztahové normy určují, s čím výkon srovnáváme: se skupinou (normativní), s kritériem (kriteriální), nebo se žákem samotným v čase (individuální/ipsativní)." },
+        { "q": "Učitel dá vždy lepší známku sympatickému a společenskému žákovi, i když je výkon stejný jako u tichého žáka. Jak se tato chyba nazývá?", "pick": ["Kontrastní efekt", "Halo efekt", "Chyba centrální tendence", "Efekt prvního dojmu"], "answer": 1, "why": "Halo efekt: jedna nápadná vlastnost žáka (sympatie) zabarví hodnocení celého výkonu." },
+        { "q": "Hodnotitel se vyhýbá nejvyšším i nejnižším stupňům a skoro všechny výkony hodnotí „průměrně“. Jak se tato chyba nazývá?", "pick": ["Golem efekt", "Chyba centrální tendence", "Mírnost hodnotitele", "Kontrastní efekt"], "answer": 1, "why": "Jde o chybu centrální tendence: hodnotitel se drží středu škály bez ohledu na skutečné rozdíly ve výkonech." },
+        { "q": "Vylučovací kritérium (například bezpečnost práce) při hodnocení praktického výkonu znamená totéž co kriteriální kritérium, jen jinak pojmenované.", "tf": true, "ok": false, "why": "Vylučovací kritérium je podmínka, bez jejíhož splnění nelze výkon uznat vůbec. Kritérium jako takové (v kriteriálním hodnocení) naopak popisuje úroveň, kterou lze stupňovat." },
+        { "q": "Proč je vhodné hodnotit praktický výkon podle jednotlivých kritérií zvlášť, ne podle celkového dojmu?", "pick": ["Je to rychlejší", "Omezuje to halo efekt i chybu centrální tendence", "Vyžaduje to menší přípravu", "Žáci to očekávají"], "answer": 1, "why": "Posuzování po jednotlivých kritériích brání tomu, aby celkový dojem ze žáka nebo strach z krajních známek ovlivnil hodnocení." }
+      ]
+    }
+    </script>
+  </div>
+
+  <h3>Vlastní diagnostika žáka nebo skupiny</h3>
+  <p>Zvolte si konkrétního žáka nebo skupinu, u které v poslední době řešíte nějaký problém, a projděte diagnostiku krok za krokem. Zápis se ukládá ve vašem prohlížeči a můžete si ho stáhnout nebo zkopírovat.</p>
+
+  <div class="ex" data-type="reflect" data-id="moje-diagnostika">
+    <script type="application/json">
+    {
+      "title": "Naplánujte diagnostiku konkrétní situace",
+      "file": "opd-kapitola-10-moje-diagnostika",
+      "header": "Pedagogická diagnostika a hodnocení – kapitola 10: moje diagnostika",
+      "min": 30,
+      "prompts": [
+        { "id": "situace", "q": "Co jste si všiml/a u žáka nebo skupiny a co byste chtěl/a zjistit?", "ph": "Např. žák opakovaně přeskakuje kroky postupu…" },
+        { "id": "metoda", "q": "Jakou metodu (nebo kombinaci metod) použijete a proč zrovna tuto?", "ph": "Pozorování při práci doplním krátkým rozhovorem, protože…" },
+        { "id": "zjisteni", "q": "Co byste chtěl/a zjistit – jaké otázky si při diagnostice položíte?", "ph": "Rozumí postupu, nebo si ho jen nepamatuje v pořadí?" },
+        { "id": "opatreni", "q": "Jaké opatření byste navrhl/a, kdyby se domněnka potvrdila, a jak ověříte, že pomohlo?", "ph": "Zkusím… a za dva týdny se podívám, zda…" }
+      ]
+    }
+    </script>
+  </div>
+
+  <h3>Kartičky k opakování</h3>
+  <p>Pojmy z této kapitoly se budou hodit u ústní zkoušky. Odpověď si zkuste říct nahlas a teprve potom kartičku otočte.</p>
+
+  <div class="ex" data-type="flashcards" data-id="karticky">
+    <script type="application/json">
+    {
+      "title": "Pojmy kapitoly",
+      "cards": [
+        { "q": "Čím se pedagogická diagnostika liší od nálepkování?", "a": "Je to systematický proces: zjistit fakta, posoudit příčinu a navrhnout opatření, jehož účinek se pak ověří. Nálepka je jen jednorázový dojem bez dalšího kroku." },
+        { "q": "Co může být předmětem pedagogické diagnostiky?", "a": "Žák, třída či skupina, i vlastní výuka učitele." },
+        { "q": "Jaké metody pedagogické diagnostiky znáte?", "a": "Pozorování, rozhovor, dotazník, analýza produktů a dokumentace, didaktický test, sociometrie." },
+        { "q": "Kdo je autorem sociometrie a co se z ní dozvíte?", "a": "J. L. Moreno. Ze sociometrického dotazníku vznikne sociogram, který ukáže vztahy a postavení žáků ve třídě." },
+        { "q": "Jaký je rozdíl mezi učitelským a standardizovaným didaktickým testem?", "a": "Učitelský test si připraví učitel sám a jeho vlastnosti nejsou ověřené. Standardizovaný test je profesionálně připravený a ověřený na velkém vzorku žáků, za jednotných podmínek." },
+        { "q": "Jak se liší hodnocení, klasifikace a známka?", "a": "Hodnocení je celý proces (zjištění, posouzení, sdělení). Klasifikace je forma vyjádření výsledku stupněm. Známka je konkrétní stupeň, který žák dostane." },
+        { "q": "Jaké jsou tři vztahové normy hodnocení?", "a": "Normativní (srovnání se skupinou), kriteriální (srovnání s předem daným kritériem) a individuální/ipsativní (srovnání žáka se sebou samým v čase)." },
+        { "q": "Jaké chyby hodnotitele znáte?", "a": "Halo efekt, efekt prvního dojmu, kontrastní efekt, Pygmalion efekt a jeho opak Golem efekt, mírnost a přísnost hodnotitele, chyba centrální tendence." },
+        { "q": "Co je vylučovací kritérium při hodnocení praktického výkonu?", "a": "Podmínka (např. bezpečnost práce), bez jejíhož splnění nelze výkon uznat, bez ohledu na to, jak je zbytek výkonu kvalitní." },
+        { "q": "Jak hodnotit praktický výkon spravedlivě?", "a": "Kritéria sdělit předem, zaznamenávat průběžně podle kontrolního listu, posuzovat kritéria jednotlivě a výsledek žákovi zdůvodnit konkrétně." }
+      ]
+    }
+    </script>
+  </div>
+
+  <p class="src">Zdroje k tématu: Pedagogická diagnostika a Didaktické testy, Pedagogický lexikon, Metodický portál RVP.CZ, https://wiki.rvp.cz/Knihovna/1.Pedagogický_lexikon. Sociometrie – přednáška Katedry sociální pedagogiky PdF MU, https://is.muni.cz. THORNDIKE, E. L. A constant error in psychological ratings. <em>Journal of Applied Psychology</em>, 1920. ROSENTHAL, R., JACOBSON, L. <em>Pygmalion in the Classroom</em>. New York: Holt, Rinehart and Winston, 1968. CHRÁSKA, M. <em>Didaktické testy</em>. Brno: Paido, 1999. Zákon č. 561/2004 Sb., školský zákon, § 69; vyhláška č. 13/2005 Sb., o středním vzdělávání a vzdělávání v konzervatoři – podrobně ověřeno v kapitole Hodnocení ve výuce (viz `docs/fakta/dop-03.md`).</p>
+</section>
+
+</article>
+<noscript><p style="padding:2rem;font-family:system-ui">Pro zobrazení výukových materiálů je potřeba zapnout JavaScript.</p></noscript>
+<script src="../../assets/js/boot.js"></script>
+</body>
+</html>

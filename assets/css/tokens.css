@@ -1,0 +1,90 @@
+/* ==========================================================================
+   DPS – design tokeny
+   Tmavý motiv je výchozí. Světlý se zapíná přes <html data-theme="light">.
+   Barva kurzu (--accent) se přepisuje na <body> z course.js.
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+
+  /* povrchy */
+  --bg: #0b0e14;
+  --bg-elev: #10141c;
+  --surface: #151a24;
+  --surface-2: #1a2130;
+  --surface-3: #212a3b;
+  --line: #232c3c;
+  --line-2: #33405a;
+
+  /* text */
+  --tx: #e8ecf4;
+  --tx-2: #b3bed0;
+  --tx-3: #8492aa;
+
+  /* výchozí akcent (kurzy si ho přepisují) */
+  --accent: #7aa2ff;
+  --on-accent: #08101f;
+
+  /* sémantické barvy */
+  --ok: #43d9a0;
+  --bad: #ff7a88;
+  --warn: #ffcb6b;
+  --info: #66d1ff;
+
+  /* geometrie */
+  --r-sm: 8px;
+  --r: 12px;
+  --r-lg: 18px;
+
+  /* rozvržení */
+  --sidebar-w: 304px;
+  --topbar-h: 56px;
+  --pager-h: 68px;
+  --content-w: 780px;
+  --toc-w: 220px;
+
+  /* typografie */
+  --font: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Roboto, Arial, sans-serif;
+  --mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, "Liberation Mono", monospace;
+
+  --shadow-1: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 6px 20px rgba(0, 0, 0, 0.28);
+  --shadow-2: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f6fb;
+  --bg-elev: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f0f3f9;
+  --surface-3: #e6ebf4;
+  --line: #dde3ee;
+  --line-2: #c4cddd;
+  --tx: #131a2a;
+  --tx-2: #3d4a63;
+  --tx-3: #66748f;
+  --accent: #3f6fe0;
+  --on-accent: #ffffff;
+  --ok: #0f9d6b;
+  --bad: #d63d52;
+  --warn: #b7791f;
+  --info: #0f7fb5;
+  --shadow-1: 0 1px 2px rgba(20, 30, 60, 0.06), 0 6px 18px rgba(20, 30, 60, 0.06);
+  --shadow-2: 0 14px 44px rgba(20, 30, 60, 0.16);
+}
+
+/* Odvozené barvy se počítají na <body>, aby respektovaly barvu kurzu. */
+body {
+  --accent-soft: color-mix(in srgb, var(--accent) 14%, transparent);
+  --accent-line: color-mix(in srgb, var(--accent) 42%, transparent);
+  --accent-strong: color-mix(in srgb, var(--accent) 82%, white);
+  --ok-soft: color-mix(in srgb, var(--ok) 14%, transparent);
+  --ok-line: color-mix(in srgb, var(--ok) 45%, transparent);
+  --bad-soft: color-mix(in srgb, var(--bad) 13%, transparent);
+  --bad-line: color-mix(in srgb, var(--bad) 45%, transparent);
+  --warn-soft: color-mix(in srgb, var(--warn) 13%, transparent);
+  --warn-line: color-mix(in srgb, var(--warn) 45%, transparent);
+  --info-soft: color-mix(in srgb, var(--info) 13%, transparent);
+  --info-line: color-mix(in srgb, var(--info) 45%, transparent);
+}

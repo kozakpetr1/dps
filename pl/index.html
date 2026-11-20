@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pracovní listy k ústní zkoušce</title>
+<style>
+  :root { --ink: #1d1b26; --muted: #5c5870; --line: #d9d5e6; --soft: #f3f0fb; --accent: #6a45dc; --bg: #f7f6fb; --card: #fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #ece9f6; --muted: #a9a4bf; --line: #3a3550; --soft: #2a2540; --accent: #b39bff; --bg: #17141f; --card: #201c2b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Segoe UI", Calibri, Arial, sans-serif; line-height: 1.45; }
+  main { max-width: 980px; margin: 0 auto; padding: 28px 16px 48px; }
+  h1 { margin: 0 0 4px; font-size: 26px; }
+  .lead { color: var(--muted); margin: 0 0 20px; }
+  .info { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; margin-bottom: 22px; }
+  .info ul { margin: 6px 0 0; padding-left: 20px; }
+  .sloupce { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  h2 { margin: 0 0 8px; font-size: 18px; }
+  .souhrn { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+  .souhrn a { background: var(--accent); color: #fff; text-decoration: none; padding: 5px 10px; border-radius: 6px; font-size: 14px; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .souhrn a { color: #140c33; } }
+  ol { margin: 0; padding: 0; list-style: none; }
+  li { display: flex; gap: 8px; align-items: baseline; padding: 5px 0; border-top: 1px solid var(--line); }
+  li .kod { font-weight: 700; color: var(--accent); min-width: 54px; font-size: 14px; }
+  li a { color: var(--ink); }
+  li .pdf { margin-left: auto; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Pracovní listy k ústní zkoušce</h1>
+  <p class="lead">Úvod do obecné pedagogiky a didaktiky · 15 listů z pedagogiky (kapitoly 1–4) a 15 listů z didaktiky (kapitoly 5–10)</p>
+
+  <div class="info">
+    <b>Jak listy používat</b>
+    <ul>
+      <li>Účastník si vylosuje jeden list z pedagogiky a jeden z didaktiky; 15 minut příprava, 15 minut rozhovor.</li>
+      <li>Každý list je jedna strana A4. K tisku použijte PDF (jednotlivě nebo souhrnné), případně HTML v prohlížeči: Ctrl+P, A4, okraje „Žádné“, bez záhlaví a zápatí, s grafikou na pozadí.</li>
+      <li>Klíč obsahuje správné odpovědi, vzorová řešení a náměty na doplňující otázky – netiskněte ho s listy pro účastníky.</li>
+      <li>Po úpravě HTML vytvoříte nová PDF příkazem <code>node tools/pl-tisk.mjs</code> (zkontroluje i to, že se list vejde na jednu stranu).</li>
+    </ul>
+  </div>
+
+  <div class="sloupce">
+    <section>
+      <h2>Pedagogika</h2>
+      <div class="souhrn"><a href="ped/PED-vsechny-listy.pdf">Všechny listy (PDF)</a><a href="ped/klic-ped.pdf">Klíč (PDF)</a></div>
+      <ol>
+        <li><span class="kod">PED 01</span><a href="ped/ped-01-vychova-vzdelavani-uceni.html">Výchova, vzdělávání, učení a edukace</a><a class="pdf" href="ped/ped-01-vychova-vzdelavani-uceni.pdf">PDF</a></li>
+        <li><span class="kod">PED 02</span><a href="ped/ped-02-pedagogika-jako-veda.html">Pedagogika jako věda a metody výzkumu</a><a class="pdf" href="ped/ped-02-pedagogika-jako-veda.pdf">PDF</a></li>
+        <li><span class="kod">PED 03</span><a href="ped/ped-03-vedy-a-discipliny.html">Pedagogika, jiné vědy a disciplíny</a><a class="pdf" href="ped/ped-03-vedy-a-discipliny.pdf">PDF</a></li>
+        <li><span class="kod">PED 04</span><a href="ped/ped-04-tradicni-a-moderni-pojeti.html">Tradiční a moderní pojetí: rozbor dvou hodin</a><a class="pdf" href="ped/ped-04-tradicni-a-moderni-pojeti.pdf">PDF</a></li>
+        <li><span class="kod">PED 05</span><a href="ped/ped-05-volba-pristupu.html">Kdy tradiční a kdy moderní přístup</a><a class="pdf" href="ped/ped-05-volba-pristupu.pdf">PDF</a></li>
+        <li><span class="kod">PED 06</span><a href="ped/ped-06-koreny-pojeti.html">Kořeny pojetí: Komenský, Herbart, Dewey</a><a class="pdf" href="ped/ped-06-koreny-pojeti.pdf">PDF</a></li>
+        <li><span class="kod">PED 07</span><a href="ped/ped-07-bariery-verbalni-neverbalni.html">Bariéry, verbální a neverbální komunikace</a><a class="pdf" href="ped/ped-07-bariery-verbalni-neverbalni.pdf">PDF</a></li>
+        <li><span class="kod">PED 08</span><a href="ped/ped-08-axiomy-komunikace.html">Axiomy komunikace</a><a class="pdf" href="ped/ped-08-axiomy-komunikace.pdf">PDF</a></li>
+        <li><span class="kod">PED 09</span><a href="ped/ped-09-druhy-informaci.html">Regulativní, afektivní, kognitivní informace</a><a class="pdf" href="ped/ped-09-druhy-informaci.pdf">PDF</a></li>
+        <li><span class="kod">PED 10</span><a href="ped/ped-10-pravidla-komunikace.html">Pravidla pedagogické komunikace</a><a class="pdf" href="ped/ped-10-pravidla-komunikace.pdf">PDF</a></li>
+        <li><span class="kod">PED 11</span><a href="ped/ped-11-modely-komunikace.html">Modely komunikace a didaktický trojúhelník</a><a class="pdf" href="ped/ped-11-modely-komunikace.pdf">PDF</a></li>
+        <li><span class="kod">PED 12</span><a href="ped/ped-12-rodice-a-kolegove.html">Komunikace s rodiči a kolegy</a><a class="pdf" href="ped/ped-12-rodice-a-kolegove.pdf">PDF</a></li>
+        <li><span class="kod">PED 13</span><a href="ped/ped-13-vychova-vzdelani-sebevychova.html">Výchova, vzdělávání, vzdělání, sebevýchova</a><a class="pdf" href="ped/ped-13-vychova-vzdelani-sebevychova.pdf">PDF</a></li>
+        <li><span class="kod">PED 14</span><a href="ped/ped-14-vychova-jako-system.html">Výchova jako systém</a><a class="pdf" href="ped/ped-14-vychova-jako-system.pdf">PDF</a></li>
+        <li><span class="kod">PED 15</span><a href="ped/ped-15-styly-vedeni-a-vychovy.html">Styly vedení skupiny a rodičovské výchovy</a><a class="pdf" href="ped/ped-15-styly-vedeni-a-vychovy.pdf">PDF</a></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Didaktika</h2>
+      <div class="souhrn"><a href="did/DID-vsechny-listy.pdf">Všechny listy (PDF)</a><a href="did/klic-did.pdf">Klíč (PDF)</a></div>
+      <ol>
+        <li><span class="kod">DID 01</span><a href="did/did-01-od-rvp-k-hodine.html">Od RVP k vyučovací hodině</a><a class="pdf" href="did/did-01-od-rvp-k-hodine.pdf">PDF</a></li>
+        <li><span class="kod">DID 02</span><a href="did/did-02-obecna-didaktika-trojuhelnik.html">Obecná didaktika a didaktický trojúhelník</a><a class="pdf" href="did/did-02-obecna-didaktika-trojuhelnik.pdf">PDF</a></li>
+        <li><span class="kod">DID 03</span><a href="did/did-03-didakticke-zasady.html">Didaktické zásady v jedné hodině</a><a class="pdf" href="did/did-03-didakticke-zasady.pdf">PDF</a></li>
+        <li><span class="kod">DID 04</span><a href="did/did-04-vyukove-cile.html">Výukové cíle</a><a class="pdf" href="did/did-04-vyukove-cile.pdf">PDF</a></li>
+        <li><span class="kod">DID 05</span><a href="did/did-05-klasicke-metody.html">Klasické výukové metody</a><a class="pdf" href="did/did-05-klasicke-metody.pdf">PDF</a></li>
+        <li><span class="kod">DID 06</span><a href="did/did-06-aktivizujici-metody.html">Aktivizující metody</a><a class="pdf" href="did/did-06-aktivizujici-metody.pdf">PDF</a></li>
+        <li><span class="kod">DID 07</span><a href="did/did-07-volba-metody.html">Volba metody: cíl, žáci, podmínky</a><a class="pdf" href="did/did-07-volba-metody.pdf">PDF</a></li>
+        <li><span class="kod">DID 08</span><a href="did/did-08-metoda-forma-prostredek.html">Metoda, forma, nebo prostředek?</a><a class="pdf" href="did/did-08-metoda-forma-prostredek.pdf">PDF</a></li>
+        <li><span class="kod">DID 09</span><a href="did/did-09-formy-prace-zaku.html">Frontální, skupinová, párová, individuální</a><a class="pdf" href="did/did-09-formy-prace-zaku.pdf">PDF</a></li>
+        <li><span class="kod">DID 10</span><a href="did/did-10-odborny-vycvik-misto-cas.html">Odborný výcvik, exkurze, praxe</a><a class="pdf" href="did/did-10-odborny-vycvik-misto-cas.pdf">PDF</a></li>
+        <li><span class="kod">DID 11</span><a href="did/did-11-individualizace-diferenciace.html">Individualizace a diferenciace</a><a class="pdf" href="did/did-11-individualizace-diferenciace.pdf">PDF</a></li>
+        <li><span class="kod">DID 12</span><a href="did/did-12-alternativni-koncepce.html">Alternativní školské koncepce</a><a class="pdf" href="did/did-12-alternativni-koncepce.pdf">PDF</a></li>
+        <li><span class="kod">DID 13</span><a href="did/did-13-podpurna-opatreni.html">Podpůrná opatření a asistent pedagoga</a><a class="pdf" href="did/did-13-podpurna-opatreni.pdf">PDF</a></li>
+        <li><span class="kod">DID 14</span><a href="did/did-14-diagnostika-a-test.html">Diagnostika a didaktický test</a><a class="pdf" href="did/did-14-diagnostika-a-test.pdf">PDF</a></li>
+        <li><span class="kod">DID 15</span><a href="did/did-15-hodnoceni-a-chyby-hodnotitele.html">Hodnocení a chyby hodnotitele</a><a class="pdf" href="did/did-15-hodnoceni-a-chyby-hodnotitele.pdf">PDF</a></li>
+      </ol>
+    </section>
+  </div>
+</main>
+</body>
+</html>

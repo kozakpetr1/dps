@@ -1,0 +1,309 @@
+/* Pracovní listy k ústní zkoušce – Úvod do obecné pedagogiky a didaktiky
+   Jeden list = jedna strana A4. Tisk: Ctrl+P, velikost A4, okraje „žádné“, bez záhlaví a zápatí. */
+
+:root {
+  --ink: #1d1b26;
+  --muted: #5c5870;
+  --line: #c9c4d8;
+  --soft: #f3f0fb;
+  --accent: #6a45dc;
+  --accent-ink: #ffffff;
+}
+
+@page { size: A4; margin: 0; }
+
+* { box-sizing: border-box; }
+
+html { background: #e9e7ef; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Segoe UI", Calibri, Arial, sans-serif;
+  font-size: 9.6pt;
+  line-height: 1.32;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.list {
+  width: 210mm;
+  height: 297mm;
+  margin: 8mm auto;
+  padding: 10mm 12mm 9mm;
+  background: #fff;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, .15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media print {
+  html { background: #fff; }
+  .list { margin: 0; box-shadow: none; }
+}
+
+/* ---------- Záhlaví ---------- */
+.hlava {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 4mm;
+  border-bottom: 1.6pt solid var(--accent);
+  padding-bottom: 2.2mm;
+}
+.kod {
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
+  font-size: 11pt;
+  letter-spacing: .04em;
+  padding: 1.6mm 3mm;
+  border-radius: 1.5mm;
+  white-space: nowrap;
+}
+.nazev .kurz {
+  font-size: 7.6pt;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.nazev h1 {
+  margin: .3mm 0 0;
+  font-size: 14pt;
+  line-height: 1.15;
+}
+.udaje {
+  font-size: 8.4pt;
+  color: var(--muted);
+  display: grid;
+  gap: 2.4mm;
+}
+.udaje span { display: block; width: 48mm; border-bottom: .6pt solid var(--line); padding-bottom: .4mm; }
+
+.pokyn {
+  margin: 2mm 0 0;
+  font-size: 8.4pt;
+  color: var(--muted);
+}
+
+/* ---------- Úlohy ---------- */
+.obsah { flex: 1; display: flex; flex-direction: column; }
+
+.uloha { margin-top: 3.2mm; }
+.uloha h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 2mm;
+  margin: 0 0 1.2mm;
+  font-size: 10.6pt;
+}
+.uloha h2 .c {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 5.4mm;
+  height: 5.4mm;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 8.6pt;
+  transform: translateY(-.3mm);
+}
+.uloha h2 .typ {
+  margin-left: auto;
+  font-size: 7.4pt;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.zadani { margin: 0 0 1.4mm; }
+
+/* Legenda – možnosti ke zkratkám */
+.legenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2mm 1.6mm;
+  margin: 0 0 1.6mm;
+  font-size: 8.5pt;
+}
+.legenda span {
+  border: .6pt solid var(--line);
+  background: var(--soft);
+  border-radius: 1.2mm;
+  padding: .4mm 1.8mm;
+}
+.legenda b { color: var(--accent); }
+
+/* Tabulky */
+table.tab {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+}
+.tab th, .tab td {
+  border: .6pt solid var(--line);
+  padding: 1.1mm 1.6mm;
+  vertical-align: top;
+  text-align: left;
+}
+.tab th {
+  background: var(--soft);
+  font-size: 8pt;
+  font-weight: 600;
+  color: var(--muted);
+}
+.tab td.p { width: 6mm; text-align: center; font-weight: 700; color: var(--accent); }
+.tab td.box, .tab th.box { width: 16mm; }
+.tab td.box-s, .tab th.box-s { width: 11mm; }
+.tab td.box-l, .tab th.box-l { width: 38mm; }
+.tab td.vys { height: 9mm; }
+.tab td.vys-l { height: 13mm; }
+.tab td.vys-xl { height: 21mm; }
+.tab td.sloupec { width: 38mm; font-weight: 600; background: #faf9fd; }
+
+/* Text s očíslovanými úseky (rozbor hodiny, přepis) */
+.text {
+  border-left: 1.6pt solid var(--accent);
+  background: #faf9fd;
+  padding: 1.6mm 2.4mm;
+  margin: 0 0 1.6mm;
+}
+.text p { margin: 0 0 1mm; }
+.text p:last-child { margin-bottom: 0; }
+.n {
+  display: inline;          /* inline (ne inline-block), aby číslo nezůstalo odtržené na konci řádku */
+  padding: .1mm 1.2mm;
+  border-radius: .8mm;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 7.6pt;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.45;
+}
+
+.nw { white-space: nowrap; }
+
+/* Špatná věta k přepsání */
+.spatne {
+  margin: 0 0 1.4mm;
+  padding: 1.2mm 2.4mm;
+  border: .6pt dashed #b7462f;
+  background: #fdf3f0;
+  border-radius: 1.2mm;
+}
+.spatne b { color: #b7462f; }
+
+/* Linky pro psaní */
+.linky {
+  --n: 3;
+  height: calc(var(--n) * 6.6mm);
+  background-image: linear-gradient(to bottom, transparent calc(100% - .6pt), var(--line) calc(100% - .6pt));
+  background-size: 100% 6.6mm;
+  background-repeat: repeat-y;
+}
+.linky.n1 { --n: 1; } .linky.n2 { --n: 2; } .linky.n3 { --n: 3; }
+.linky.n4 { --n: 4; } .linky.n5 { --n: 5; } .linky.n6 { --n: 6; }
+
+/* Úloha, jejíž psací plocha doroste do volného místa na stránce */
+.obsah > .roste { flex: 1 1 auto; display: flex; flex-direction: column; }
+.roste > .linky.pruzna { flex: 1 1 auto; }
+
+.stitek { font-size: 8.4pt; color: var(--muted); font-weight: 600; margin: 1mm 0 0; }
+
+/* Dva sloupce */
+.dva { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+.dva > .uloha { margin-top: 3.2mm; }
+
+/* Otázky A–E */
+.otazky {
+  margin-top: 3.4mm;
+  border: .6pt solid var(--line);
+  border-radius: 1.6mm;
+  padding: 2mm 2.6mm 1.6mm;
+}
+.otazky h2 { margin: 0 0 1mm; font-size: 10.6pt; display: flex; gap: 2mm; align-items: baseline; }
+.otazky h2 .typ { margin-left: auto; font-size: 7.4pt; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: .06em; }
+.otazka { margin: 0 0 1.6mm; break-inside: avoid; }
+.otazka:last-child { margin-bottom: 0; }
+.otazka > p { margin: 0 0 .6mm; font-weight: 600; }
+.otazka ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: .3mm;
+}
+.otazka ol.vedle { grid-template-columns: repeat(5, auto); justify-content: start; column-gap: 7mm; }
+.otazka ol.dva-sl { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, auto); grid-auto-flow: column; column-gap: 5mm; }
+.otazka li { padding-left: 6mm; position: relative; }
+.otazka li::before {
+  position: absolute;
+  left: 0;
+  top: .2mm;
+  width: 4.2mm;
+  height: 4.2mm;
+  border: .6pt solid var(--accent);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 7.4pt;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 4.2mm;
+  text-align: center;
+}
+.otazka li:nth-child(1)::before { content: "A"; }
+.otazka li:nth-child(2)::before { content: "B"; }
+.otazka li:nth-child(3)::before { content: "C"; }
+.otazka li:nth-child(4)::before { content: "D"; }
+.otazka li:nth-child(5)::before { content: "E"; }
+
+/* Škála tradiční–moderní apod. */
+.skala {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2mm;
+  align-items: center;
+  font-size: 8.4pt;
+  font-weight: 600;
+  margin: 1.4mm 0 1mm;
+}
+.skala .osa {
+  height: 5mm;
+  background:
+    linear-gradient(to right, var(--muted) .8pt, transparent .8pt) 0 0 / 25% 100% repeat-x,
+    linear-gradient(var(--muted), var(--muted)) center / 100% .8pt no-repeat;
+  border-right: .8pt solid var(--muted);
+}
+
+/* Schéma – řada políček */
+.schema { display: flex; gap: 1.4mm; align-items: stretch; margin: 0 0 1.4mm; }
+.schema > div {
+  flex: 1;
+  border: .6pt solid var(--line);
+  border-radius: 1.2mm;
+  padding: .8mm 1.4mm 0;
+  min-height: 15mm;
+  font-size: 7.8pt;
+  font-weight: 600;
+  color: var(--accent);
+}
+.schema > i { align-self: center; font-style: normal; color: var(--muted); }
+
+/* Zápatí */
+.pata {
+  margin-top: auto;
+  padding-top: 2mm;
+  border-top: .6pt solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 4mm;
+  font-size: 7.8pt;
+  color: var(--muted);
+}
+.pata b { color: var(--ink); }
+
+.mala { font-size: 7.8pt; color: var(--muted); margin: .8mm 0 0; }

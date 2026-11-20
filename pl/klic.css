@@ -1,0 +1,25 @@
+/* Klíč pro zkoušejícího – vícestránkový dokument, navazuje na barvy pracovních listů */
+@page { size: A4; margin: 12mm 13mm; }
+:root { --ink: #1d1b26; --muted: #5c5870; --line: #c9c4d8; --soft: #f3f0fb; --accent: #6a45dc; }
+* { box-sizing: border-box; }
+html { background: #e9e7ef; }
+body {
+  margin: 0; color: var(--ink);
+  font-family: "Segoe UI", Calibri, Arial, sans-serif; font-size: 9.4pt; line-height: 1.38;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.klic { max-width: 210mm; margin: 8mm auto; padding: 12mm 13mm; background: #fff; box-shadow: 0 2px 14px rgba(0,0,0,.15); }
+@media print { html { background: #fff; } .klic { margin: 0; padding: 0; box-shadow: none; max-width: none; } }
+header { border-bottom: 1.6pt solid var(--accent); padding-bottom: 2mm; margin-bottom: 3mm; }
+header .kurz { font-size: 7.6pt; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+header h1 { margin: .5mm 0 1mm; font-size: 15pt; }
+header p { margin: 0; color: var(--muted); font-size: 8.6pt; }
+section.k { break-inside: avoid; border: .6pt solid var(--line); border-radius: 1.6mm; padding: 2mm 3mm; margin: 0 0 2.6mm; }
+section.k h2 { margin: 0 0 1.2mm; font-size: 10.6pt; display: flex; gap: 2.4mm; align-items: baseline; }
+section.k h2 .kod { background: var(--accent); color: #fff; font-size: 8.4pt; padding: .5mm 2mm; border-radius: 1mm; }
+section.k ul { margin: 0; padding: 0; list-style: none; display: grid; gap: .6mm; }
+section.k li { padding-left: 7mm; position: relative; }
+section.k li > b:first-child { position: absolute; left: 0; color: var(--accent); }
+.ptat { margin: 1.4mm 0 0; padding: 1.2mm 2.2mm; background: var(--soft); border-radius: 1.2mm; }
+.ptat b { color: var(--accent); }
+.pozn { color: var(--muted); }
